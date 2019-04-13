@@ -1,0 +1,11 @@
+IF
+	Global("LK#StartTalking","GLOBAL",0)
+	Detect([PC])
+	Allegiance(Myself,NEUTRAL)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+	SetGlobal("LK#StartTalking","GLOBAL",1)
+	Dialogue(Player1)
+END

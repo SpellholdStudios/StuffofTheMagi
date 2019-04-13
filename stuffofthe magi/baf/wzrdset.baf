@@ -1,0 +1,226 @@
+IF
+	Global("wzrdset1","GLOBAL",0)			// Global is unset or off
+	HasItemEquiped("wzrdring",Player1)		// Shield in shield slot -> player
+	HasItemEquiped("wzrdclck",Player1)		// cloak in cloak slot -> player
+	HasItemEquiped("wzrdrobe",Player1)		// robe in robe slot -> player
+	HasItemEquiped("wzrdhelm",Player1)		// Helm in helm slot -> player
+	HasItemEquiped("wzrdboot",Player1)		// boot in boot slot -> player
+	HasItemEquiped("wzrdbrac",Player1)		// bracers in glove slot -> player
+	HasItemEquiped("wzrdamul",Player1)		// amulet in amulet slot -> player
+	HasItemEquiped("wzrdbelt",Player1)		// belt in belt slot -> player
+	HasItemEquipedReal("wzrdstaf",Player1)	// Staff is being weilded (quick item slot selected) -> player
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset1","GLOBAL",1)	// Set global
+		DisplayString(Player1,@54)			// ~Stuff of the Magi set completed!~
+		ActionOverride(Player1,ApplySpellRES("wzrdset0",Myself))	// Apply spell to player
+END
+
+IF
+	!Global("wzrdset1","GLOBAL",0)			// Global is set or borked
+	OR(9)
+		!HasItemEquiped("wzrdring",Player1)	// Shield not in shield slot -> player
+		!HasItemEquiped("wzrdclck",Player1)	// cloak not in cloak slot -> player
+		!HasItemEquiped("wzrdrobe",Player1)	// robe not in robe slot -> player
+		!HasItemEquiped("wzrdhelm",Player1)	// Helm not in helm slot -> player
+		!HasItemEquiped("wzrdboot",Player1)	// boot not in boot slot -> player
+		!HasItemEquiped("wzrdbrac",Player1)	// bracers not in glove slot -> player
+		!HasItemEquiped("wzrdamul",Player1)	// amulet not in amulet slot -> player
+		!HasItemEquiped("wzrdbelt",Player1)	// belt not in belt slot -> player
+		!HasItemEquipedReal("wzrdstaf",Player1)	// Staff is not being weilded (quick item slot not selected) -> player
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset1","GLOBAL",0)
+		DisplayString(Player1,@55)			// ~Stuff of the Magi set not completed!~
+		ActionOverride(Player1,ApplySpellRES("wzrdset1",Myself))
+END
+
+
+IF
+	Global("wzrdset2","GLOBAL",0)
+	HasItemEquiped("wzrdring",player2)
+	HasItemEquiped("wzrdclck",player2)
+	HasItemEquiped("wzrdrobe",player2)
+	HasItemEquiped("wzrdhelm",player2)
+	HasItemEquiped("wzrdboot",player2)
+	HasItemEquiped("wzrdbrac",player2)
+	HasItemEquiped("wzrdamul",player2)
+	HasItemEquiped("wzrdbelt",player2)
+	HasItemEquipedReal("wzrdstaf",player2)
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset2","GLOBAL",1)
+		DisplayString(player2,@54)
+		ActionOverride(player2,ApplySpellRES("wzrdset0",Myself))
+END
+
+IF
+	!Global("wzrdset2","GLOBAL",0)
+	OR(9)
+		!HasItemEquiped("wzrdring",player2)
+		!HasItemEquiped("wzrdclck",player2)
+		!HasItemEquiped("wzrdrobe",player2)
+		!HasItemEquiped("wzrdhelm",player2)
+		!HasItemEquiped("wzrdboot",player2)
+		!HasItemEquiped("wzrdbrac",player2)
+		!HasItemEquiped("wzrdamul",player2)
+		!HasItemEquiped("wzrdbelt",player2)
+		!HasItemEquipedReal("wzrdstaf",player2)
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset2","GLOBAL",0)
+		DisplayString(player2,@55)
+		ActionOverride(player2,ApplySpellRES("wzrdset1",Myself))
+END
+
+
+IF
+	Global("wzrdset3","GLOBAL",0)
+	HasItemEquiped("wzrdring",player3)
+	HasItemEquiped("wzrdclck",player3)
+	HasItemEquiped("wzrdrobe",player3)
+	HasItemEquiped("wzrdhelm",player3)
+	HasItemEquiped("wzrdboot",player3)
+	HasItemEquiped("wzrdbrac",player3)
+	HasItemEquiped("wzrdamul",player3)
+	HasItemEquiped("wzrdbelt",player3)
+	HasItemEquipedReal("wzrdstaf",player3)
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset3","GLOBAL",1)
+		DisplayString(player3,@54)
+		ActionOverride(player3,ApplySpellRES("wzrdset0",Myself))
+END
+
+IF
+	!Global("wzrdset3","GLOBAL",0)
+	OR(9)
+		!HasItemEquiped("wzrdring",player3)
+		!HasItemEquiped("wzrdclck",player3)
+		!HasItemEquiped("wzrdrobe",player3)
+		!HasItemEquiped("wzrdhelm",player3)
+		!HasItemEquiped("wzrdboot",player3)
+		!HasItemEquiped("wzrdbrac",player3)
+		!HasItemEquiped("wzrdamul",player3)
+		!HasItemEquiped("wzrdbelt",player3)
+		!HasItemEquipedReal("wzrdstaf",player3)
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset3","GLOBAL",0)
+		DisplayString(player3,@55)
+	ActionOverride(player3,ApplySpellRES("wzrdset1",Myself))
+END
+
+
+IF
+	Global("wzrdset4","GLOBAL",0)
+	HasItemEquiped("wzrdring",player4)
+	HasItemEquiped("wzrdclck",player4)
+	HasItemEquiped("wzrdrobe",player4)
+	HasItemEquiped("wzrdhelm",player4)
+	HasItemEquiped("wzrdboot",player4)
+	HasItemEquiped("wzrdbrac",player4)
+	HasItemEquiped("wzrdamul",player4)
+	HasItemEquiped("wzrdbelt",player4)
+	HasItemEquipedReal("wzrdstaf",player4)
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset4","GLOBAL",1)
+		DisplayString(player4,@54)
+		ActionOverride(player4,ApplySpellRES("wzrdset0",Myself))
+END
+
+IF
+	!Global("wzrdset4","GLOBAL",0)
+	OR(9)
+		!HasItemEquiped("wzrdring",player4)
+		!HasItemEquiped("wzrdclck",player4)
+		!HasItemEquiped("wzrdrobe",player4)
+		!HasItemEquiped("wzrdhelm",player4)
+		!HasItemEquiped("wzrdboot",player4)
+		!HasItemEquiped("wzrdbrac",player4)
+		!HasItemEquiped("wzrdamul",player4)
+		!HasItemEquiped("wzrdbelt",player4)
+		!HasItemEquipedReal("wzrdstaf",player4)
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset4","GLOBAL",0)
+		DisplayString(player4,@55)
+		ActionOverride(player4,ApplySpellRES("wzrdset1",Myself))
+END
+
+
+IF
+	Global("wzrdset5","GLOBAL",0)
+	HasItemEquiped("wzrdring",player5)
+	HasItemEquiped("wzrdclck",player5)
+	HasItemEquiped("wzrdrobe",player5)
+	HasItemEquiped("wzrdhelm",player5)
+	HasItemEquiped("wzrdboot",player5)
+	HasItemEquiped("wzrdbrac",player5)
+	HasItemEquiped("wzrdamul",player5)
+	HasItemEquiped("wzrdbelt",player5)
+	HasItemEquipedReal("wzrdstaf",player5)
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset5","GLOBAL",1)
+		DisplayString(player5,@54)
+		ActionOverride(player5,ApplySpellRES("wzrdset0",Myself))
+END
+
+IF
+	!Global("wzrdset5","GLOBAL",0)
+	OR(9)
+		!HasItemEquiped("wzrdring",player5)
+		!HasItemEquiped("wzrdclck",player5)
+		!HasItemEquiped("wzrdrobe",player5)
+		!HasItemEquiped("wzrdhelm",player5)
+		!HasItemEquiped("wzrdboot",player5)
+		!HasItemEquiped("wzrdbrac",player5)
+		!HasItemEquiped("wzrdamul",player5)
+		!HasItemEquiped("wzrdbelt",player5)
+		!HasItemEquipedReal("wzrdstaf",player5)
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset5","GLOBAL",0)
+		DisplayString(player5,@55)
+		ActionOverride(player5,ApplySpellRES("wzrdset1",Myself))
+END
+
+
+IF
+	Global("wzrdset6","GLOBAL",0)
+	HasItemEquiped("wzrdring",player6)
+	HasItemEquiped("wzrdclck",player6)
+	HasItemEquiped("wzrdrobe",player6)
+	HasItemEquiped("wzrdhelm",player6)
+	HasItemEquiped("wzrdboot",player6)
+	HasItemEquiped("wzrdbrac",player6)
+	HasItemEquiped("wzrdamul",player6)
+	HasItemEquiped("wzrdbelt",player6)
+	HasItemEquipedReal("wzrdstaf",player6)
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset6","GLOBAL",1)
+		DisplayString(player6,@54)
+		ActionOverride(player6,ApplySpellRES("wzrdset0",Myself))
+END
+
+IF
+	!Global("wzrdset6","GLOBAL",0)
+	OR(9)
+		!HasItemEquiped("wzrdring",player6)
+		!HasItemEquiped("wzrdclck",player6)
+		!HasItemEquiped("wzrdrobe",player6)
+		!HasItemEquiped("wzrdhelm",player6)
+		!HasItemEquiped("wzrdboot",player6)
+		!HasItemEquiped("wzrdbrac",player6)
+		!HasItemEquiped("wzrdamul",player6)
+		!HasItemEquiped("wzrdbelt",player6)
+		!HasItemEquipedReal("wzrdstaf",player6)
+THEN
+	RESPONSE #100
+		SetGlobal("wzrdset6","GLOBAL",0)
+		DisplayString(player6,@55)
+		ActionOverride(player6,ApplySpellRES("wzrdset1",Myself))
+END

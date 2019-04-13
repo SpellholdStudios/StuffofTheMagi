@@ -1,0 +1,17 @@
+IF
+	Global("WZRDSpawnLich","GLOBAL",0)
+	PartyHasItem("WZRDAMUL")
+	PartyHasItem("WZRDCLCK")
+	PartyHasItem("WZRDHELM")
+	PartyHasItem("WZRDSTAF")
+	PartyHasItem("WZRDBELT")
+	PartyHasItem("WZRDBOOT")
+	PartyHasItem("WZRDBRAC")
+	PartyHasItem("WZRDRING")
+	PartyHasItem("WZRDROBE")
+THEN
+	RESPONSE #100
+		CreateCreature("wzrdlich",[1999.1218],0)
+		SetGlobal("WZRDSpawnLich","GLOBAL",1)
+		Continue()
+END
