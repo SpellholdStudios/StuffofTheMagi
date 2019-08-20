@@ -1,12 +1,14 @@
-# L'Arsenal du mage
+# <a name="top" id="top"></a>L'Arsenal du mage
 
 <strong>Auteur original :</strong> Victor Straffe<br />
 <strong>Version :</strong> 6.0.0<br />
 <strong>Langues :</strong> <a href="README.md">anglais</a>, français<br />
 <strong>Platforme :</strong> Windows
 
-<strong>Site et forum du mod :</strong> <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">Spellhold Studios</a><br />
-</br>
+<strong>Site et forum du mod :</strong> <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">Spellhold Studios</a></p>
+
+
+<center><a href="#intro">Présentation</a> &#x2B25; <a href="#compat">Compatibilité</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Composants</a> &#x2B25; <a href="#credits">Crédits</a> &#x2B25; <a href="#version">Historique des versions</a></center></br></br>
 
 
 <hr>
@@ -28,7 +30,7 @@ Ce mod ajoute l'arsenal du mage dans l'inventaire des créatures suivantes :
 
 Si vous possédez tous les objets, celui qui les porte tous obtient un bonus exceptionnel, et vous rencontrerez quelqu'un qui voudra vous parler dans l'antichambre....
 
-Note du traducteur : Si vous choisissez les objets "surpuissants", vous n'en aurez que 7 - pas de cape ni d'anneau.
+Note du traducteur : Si vous choisissez les objets "surpuissants", vous n'en aurez que 7 (pas de cape, ni d'anneau).
 
 <strong>N'oubliez jamais :</strong> Ce mod a été conçu et publié par Victor Straff sur le site Sorcerer's Place.
 
@@ -38,9 +40,10 @@ Note du traducteur : Si vous choisissez les objets "surpuissants", vous n'en aur
 
 ## <a name="compat" id="compat"></a>Compatibilité
 
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+Ce mod est conçu pour fonctionner sur les jeux Infinity Engine suivants : le jeu original Baldur's Gate II (Les Ombres d'Amn : BG2-SoA) avec son extension Trône de Bhaal (Throne of Bhaal : ToB), Baldur's Gate II: Enhanced Edition (BG2EE), les mods de conversion Baldur's Gate Trilogy (BGT) et Enhanced Edition Trilogy (EET).
 
-Ce mod est un mod <acronym title="Weimer Dialogue Utility">WeiDU</acronym> et devrait par conséquent être compatible avec n'importe quel mod WeiDU. Si vous rencontrez des bugs, veuillez les signaler dans le forum, s'il vous plaît.
+C'est un mod <acronym title="Weimer Dialogue Utility">WeiDU</acronym> et devrait par conséquent être compatible avec n'importe quel mod WeiDU. Si vous rencontrez des bugs, veuillez les signaler dans le forum, s'il vous plaît.<br>
+<div style="text-align:right"><a href="#top">Haut de page</a></div>
 
 
 <hr>
@@ -48,7 +51,7 @@ Ce mod est un mod <acronym title="Weimer Dialogue Utility">WeiDU</acronym> et de
 
 ## <a name="installation" id="installation"></a>Installation
 
-#### Notes
+#### Mise en garde
 
 <em>Si une ancienne version de ce mod est déjà installée, il est nécessaire de la désinstaller d'abord. Pour cela, lancez <strong>setup-stuffofthemagi.exe</strong> et désinstallez tous les composants précédemment installés. Une fois la désinstallation achevée, supprimez le répertoire stuffofthemagi.</em>
 
@@ -68,24 +71,61 @@ Si vous pouvez retarder la mise à jour du patch en plein milieu d'un partie modd
 
 ## 
 
+#### <a name="config" id="config">:warning: Avertissement : procédure d'installation
+
+##### À partir de la version 6.0.0, les variables nécessaires à l'installation sont lues dans le fichier <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</em></a> file, ou dans le fichier <em>stuffofthemagi_user.ini</em>, si ce dernier existe.
+
+Pour éviter d'interrompre la procédure d'installation par de nombreux messages vous permettant de personnaliser certains composants à votre convenance, ces choix de variables ont été externalisés dans le fichier <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</a> situé dans le répertoire <strong>stuffofthemagi</strong>. Ce fichier définit une installation « <em>standard</em> ».
+
+Si vous souhaitez choisir d'autres options d'installation, il vous suffit de modifier les variables souhaitées dans le fichier <strong><em>stuffofthemagi.ini</em></strong>, puis de sauvegarder ce dernier sous le nom <strong><em>stuffofthemagi_user.ini</em></strong>.
+
+Le programme d'installation lira les valeurs des variables dans les deux fichiers ini et donnera la priorité aux vôtres. Si le fichier stuffofthemagi_user.ini contient une variable non conforme, ou si une variable est manquante, il la remplacera par sa valeur par défaut (celle correspondant à l'installation « <em>standard</em> »).</br>
+
+Voici le tableau des variables concernées :<br>
+
+<table style="margin-left: 80px" summary="Liste des variables d'installation">
+	<tr>
+		<th>Variables</th>
+		<th>Signification</th>
+		<th>Type</th>
+		<th>Valeurs possibles</th>
+		<th>Défaut</th>
+	</tr>
+	<tr>
+		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_use</span></td>
+		<td style="padding-left:10px;padding-right:10px;text-align: justify">Puissance des objets</td>
+		1 = Utiliser les nouveaux objets, moins grobillesques (recommandé)<br>
+		2 = Utiliser les objets originaux, surpuissants<br>
+		<td>numérique</td>
+		<td>1 ou 2</td>
+		<td><strong><span style="color: #FFCC33">1</span><strong></td>
+	</tr>
+	<tr>
+		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_equip</span></td>
+		<td style="padding-left:10px;padding-right:10px;text-align: justify">Où trouver les objets<br>
+		1 = Ajouter les objets a l'equipement des creatures (recommandé)<br>
+		2 = Ajouter les objets a l'inventaire des creatures<br>
+		</td>
+		<td>numérique</td>
+		<td>1 ou 2</td>
+		<td><strong><span style="color: #FFCC33">1</span><strong></td>
+	</tr>
+</table><br>
+
+## 
+
 #### Windows
 
-Vous devez extraire les fichiers de l'archive dans votre répertoire de jeu (<em>le dossier qui contient le fichier CHITIN.KEY</em>). Une fois l'archive extraite correctement, vous devriez trouver le répertoire stuffofthemagi et le fichier setup-stuffofthemagi.exe dans votre répertoire de jeu. Pour installer le mod, il suffit de double-cliquer sur <strong>setup-stuffofthemagi.exe</strong> et de suivre les instructions affichées à l'écran.
+Vous devez extraire les fichiers de l'archive dans votre répertoire de jeu (<em>le dossier qui contient le fichier CHITIN.KEY</em>) à l'aide de <a href="http://www.7-zip.org/download.html">7zip</a> ou de <a href="http://www.rarlab.com/download.htm">WinRAR</a>. Une fois l'archive extraite correctement, vous devriez trouver le répertoire stuffofthemagi et le fichier setup-stuffofthemagi.exe dans votre répertoire de jeu. Pour installer le mod, il suffit de double-cliquer sur <strong>setup-stuffofthemagi.exe</strong> et de suivre les instructions affichées à l'écran.
 
-Vous pouvez lancer <strong>setup-stuffofthemagi.exe/strong> dans votre répertoire de jeu pour réinstaller, désinstaller, ou encore changer des composants.
+Vous pouvez lancer <strong>setup-stuffofthemagi.exe</strong> dans votre répertoire de jeu pour réinstaller, désinstaller, ou encore changer des composants.
 
 ##
 
 #### Note pour effectuer une désinstallation complète
 
 En plus des méthodes détaillées plus haut pour supprimer des composants, il est possible de désinstaller complètement le mod en tapant <strong>setup-stuffofthemagi --uninstall</strong> dans une ligne de commandes, ce qui supprimera tous les composants sans devoir ingurgiter tous les messages.</br>
-
-## 
-
-#### <a name="config" id="config">:warning: Avertissement : procédure d'installation
-
-##### As of version 6.0.0, options needed for installation are read from <a href="stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</em></a> file, or <em>stuffofthemagi_user.ini</em> if it exists.
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+<div style="text-align:right"><a href="#top">Haut de page</a></div>
 
 
 <hr>
@@ -94,25 +134,25 @@ En plus des méthodes détaillées plus haut pour supprimer des composants, il est 
 ## <a name="components" id="components"></a>Composants
 
 The installer includes the following components. The number of each is the component DESIGNATED number which gives it a fixed install position, lets other components detect it and allows automated installers like the BiG World Setup specify component choices.
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+<div style="text-align:right"><a href="#top">Haut de page</a></div>
 
 
 <hr>
 
 
-## <a name="credits" id="credits"></a>Crédits rt remerciements
+## <a name="credits" id="credits"></a>Crédits et remerciements
 
 #### Auteur : Victor Straffe (sur le site Sorcerer's Place)
 
 
 #### Remerciements (par ordre alphabétique):
 
-- Cmorgan: Help with bugsquishing/tidiness/etc.
-- Deratiseur: Made it compatible with translations, wrote the French translation, and provided the EE compatible version.
-- Kevmus: Updated the mod to WeiDU, added the more balanced items, and bug fixed.
-- Rastamage: Item stories/Erevain's talk
-- Tassadar88: Help with coding
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+- Cmorgan : Help with bugsquishing/tidiness/etc.
+- Deratiseur : Made it compatible with translations, wrote the French translation, and provided the EE compatible version.
+- Kevmus : Updated the mod to WeiDU, added the more balanced items, and bug fixed.
+- Rastamage : Item stories/Erevain's talk
+- Tassadar88 : Help with coding
+<div style="text-align:right"><a href="#top">Haut de page</a></div>
 
 
 <hr>
@@ -255,4 +295,4 @@ The installer includes the following components. The number of each is the compo
 ##### Version 1.1
 
 - Updated to WEIDU.
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+<div style="text-align:right"><a href="#top">Haut de page</a></div>

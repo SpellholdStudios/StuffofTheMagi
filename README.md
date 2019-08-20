@@ -1,12 +1,14 @@
-# Stuff of The Magi
+# <a name="top" id="top"></a>Stuff of The Magi
 
 <strong>Original Author:</strong> Victor Straffe<br />
 <strong>Version:</strong> 6.0.0<br />
 <strong>Language:</strong> English, <a href="README-FR.md">French</a><br />
 <strong>Platforms:</strong> Windows
 
-<strong>Mod Website and Forum:</strong> <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">Spellhold Studios</a><br />
-</br>
+<strong>Mod Website and Forum:</strong> <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">Spellhold Studios</a></p>
+
+
+<center><a href="#intro">Overview</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Components</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#version">Version History</a></center></br></br>
 
 
 <hr>
@@ -28,10 +30,9 @@ Note: If you choose the original items you will only end up with 7 items instead
 
 ## <a name="compat" id="compat"></a>Compatibility
 
+This mod is designed to work on the following Infinity Engine games: the original Baldur's Gate II (BG2 or just SoA) with the Throne of Bhaal (ToB) expansion, Baldur's Gate II: Enhanced Edition (BG2EE), the conversion projects Baldur's Gate Trilogy (BGT) and Enhanced Edition Trilogy (EET).
 
-This is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and therefore should be compatible with all WeiDU mods. If you encounter any bugs, please report them on the forum!
-
-
+This is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and therefore should be compatible with all WeiDU mods. If you encounter any bugs, please report them on the forum!<br>
 <div style="text-align:right"><a href="#top">Back to top</a></div>
 
 
@@ -40,26 +41,68 @@ This is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and ther
 
 ## <a name="installation" id="installation"></a>Installation
 
-#### Mise en garde
+#### Notes
 
 <em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-stuffofthemagi.exe</strong>, uninstall all previously installed components and delete the stuffofthemagi folder.</em>
 
 <em>When installing or uninstalling, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
 
-<strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast!) have a tendency to report false positives with mod activity, resulting in failed installs.
+<strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.
 
 ## 
 
 #### Enhanced Editions Note
 
 The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
-You can extract files from the archive using <a href="http://www.rarlab.com/download.htm">WinRAR</a>, <a href="http://www.zipgenius.it/ita/?page_id=12">ZipGenius</a> or another file compression utility that handles .zip files.
+
+## 
+
+#### <a name="config" id="config">:warning: Warning: new installation process
+
+##### As of version 6.0.0, options needed for installation are read from <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</em></a> file, or <em>stuffofthemagi_user.ini</em> if it exists.
+
+As interrupting installation with plain text prompts allowing players to customise components to their liking, those variables have been moved into <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini">stuffofthemagi.ini</a> file in <strong>stuffofthemagi</strong> folder. This file provides a '<em>standard</em>' installation.
+
+If you want to define your own customized installation, you have to modify the variables involved in <strong><em>stuffofthemagi.ini</em></strong>, then save this file as <strong><em>stuffofthemagi_user.ini</em></strong>.
+
+The installation process will read both ini files and prioritize user values. If a value is not set or mismatched in stuffofthemagi_user.ini, any installation failure will be prevented by reverting it back to its default value.</br>
+
+Here is a chart listing the variables related to the installation process:<br>
+
+<table style="margin-left: 80px" summary="Installation variables listing">
+	<tr>
+		<th>Variables</th>
+		<th>Description</th>
+		<th>Type</th>
+		<th>Scope values</th>
+		<th>Default value</th>
+	</tr>
+	<tr>
+	<tr>
+		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_use</span></td>
+		<td style="padding-left:10px;padding-right:10px;text-align: justify">Items Power</td>
+		1 = Use new, less cheesy items (recommended).<br>
+		2 = Use original, overpowered items.<br>
+		<td>integer</td>
+		<td>1 or 2</td>
+		<td><strong><span style="color: #FFCC33">1</span><strong></td>
+	</tr>
+	<tr>
+		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_equip</span></td>
+		<td style="padding-left:10px;padding-right:10px;text-align: justify">Where to find items</td>
+		<td>integer</td>
+		1 = Add items to creature's equipment (recommended, enemies will use these items against you).<br>
+		2 = Add items to creature's inventory (does not change difficulty of fights).<br>
+		<td>1 or 2</td>
+		<td><strong><span style="color: #FFCC33">1</span><strong></td>
+	</tr>
+</table>
 
 ## 
 
 #### Windows
 
-Extract the contents of the mod to the folder of the game you wish to modify. On successful extraction, there should be an stuffofthemagi folder and a setup-stuffofthemagi.exe file in your game folder. To install, simply double-click <strong>setup-stuffofthemagi.exe</strong> and follow the instructions on screen.
+Extract the contents of the mod archive into the folder of the game you wish to modify, using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. On successful extraction, there should be an stuffofthemagi folder and a setup-stuffofthemagi.exe file in your game folder. To install, simply double-click <strong>setup-stuffofthemagi.exe</strong> and follow the instructions on screen.
 
 Run <strong>setup-stuffofthemagi.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
 
@@ -68,12 +111,6 @@ Run <strong>setup-stuffofthemagi.exe</strong> in your game folder to reinstall, 
 #### Note for Complete Uninstallation
 
 In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-stuffofthemagi --uninstall</strong> at the command line to remove all components without wading through prompts.</br>
-
-## 
-
-#### <a name="config" id="config">:warning: Warning: new installation process
-
-##### As of version 6.0.0, options needed for installation are read from <a href="stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</em></a> file, or <em>stuffofthemagi_user.ini</em> if it exists.
 <div style="text-align:right"><a href="#top">Back to top</a></div>
 
 
@@ -91,7 +128,7 @@ The installer includes the following components. The number of each is the compo
 
 ## <a name="credits" id="credits"></a>Credits and Acknowledgements
 
-#### Author: Victor Straffe
+#### Author: Victor Straffe (at Sorcerer's Place)
 
 
 #### Special Acknowledgements to (alphabetical order):
