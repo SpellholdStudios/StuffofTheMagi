@@ -19,7 +19,10 @@
 Ce mod ajoute l'arsenal du mage dans l'inventaire des créatures suivantes :
 - Robe : Vongoethe
 - Amulette : Démogorgon
-- Bottes : Kangaxx (une demiliche sans corps avec des bottes ? remarque, elle porte bien un anneau :x)
+- Bottes : Kangaxx (une demiliche sans corps avec des bottes ? remarque, elle porte bien un anneau :grimacing: :confused: :hushed: :expressionless:
+:unamused: :fearful:
+:cold_sweat:
+:persevere:)
 - Bâton : Layene à la Rune Tordue
 - Bracelets : Firkraag
 - Bandeau : Sendai
@@ -53,13 +56,11 @@ C'est un mod <acronym title="Weimer Dialogue Utility">WeiDU</acronym> et devrait
 
 #### Mise en garde
 
-<em>Si une ancienne version de ce mod est déjà installée, il est nécessaire de la désinstaller d'abord. Pour cela, lancez <strong>setup-stuffofthemagi.exe</strong> et désinstallez tous les composants précédemment installés. Une fois la désinstallation achevée, supprimez le répertoire stuffofthemagi.</em>
+<em>Si une ancienne version de ce mod est déjà installée, il est nécessaire de la désinstaller d'abord. Pour cela, lancez <strong>setup-stuffofthemagi.exe</strong> et désinstallez le composant principal précédemment installé. Une fois la désinstallation achevée, supprimez le répertoire stuffofthemagi.</em>
 
 <em>Lorsque vous installez ou désinstallez, <strong>ne fermez pas la fenêtre <acronym title="Disk Operating System">DOS</acronym></strong> en cliquant sur le bouton <strong>X</strong> ! Au lieu de cela, appuyez sur la touche <strong>Entrée</strong> lorsque l'invite de commandes vous le demande.</em>
 
 Par précaution, <strong>désactivez les antivirus</strong> ou tout logiciel résidant en mémoire avant d'installer ce mod, ou tout autre mod. Certains (en particulier avast et Norton !) ont une fâcheuse tendance à déclarer les exécutables des mods comme des faux positifs, provoquant ainsi l'échec de la procédure d'installation.
-
-You can extract files from the archive using <a href="http://www.rarlab.com/download.htm">WinRAR</a>, <a href="http://www.zipgenius.it/ita/?page_id=12">ZipGenius</a> or another file compression utility that handles .zip files.
 
 ## 
 
@@ -73,7 +74,7 @@ Si vous pouvez retarder la mise à jour du patch en plein milieu d'un partie modd
 
 #### <a name="config" id="config">:warning: Avertissement : procédure d'installation
 
-##### À partir de la version 6.0.0, les variables nécessaires à l'installation sont lues dans le fichier <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</em></a> file, ou dans le fichier <em>stuffofthemagi_user.ini</em>, si ce dernier existe.
+##### À partir de la version 6.0.0, les variables nécessaires à l'installation sont lues dans le fichier <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</em></a>, ou dans le fichier <em>stuffofthemagi_user.ini</em>, si ce dernier existe.
 
 Pour éviter d'interrompre la procédure d'installation par de nombreux messages vous permettant de personnaliser certains composants à votre convenance, ces choix de variables ont été externalisés dans le fichier <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</a> situé dans le répertoire <strong>stuffofthemagi</strong>. Ce fichier définit une installation « <em>standard</em> ».
 
@@ -93,9 +94,10 @@ Voici le tableau des variables concernées :<br>
 	</tr>
 	<tr>
 		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_use</span></td>
-		<td style="padding-left:10px;padding-right:10px;text-align: justify">Puissance des objets</td>
+		<td style="padding-left:10px;padding-right:10px;text-align: justify">Puissance des objets<br>
 		1 = Utiliser les nouveaux objets, moins grobillesques (recommandé)<br>
 		2 = Utiliser les objets originaux, surpuissants<br>
+		</td>
 		<td>numérique</td>
 		<td>1 ou 2</td>
 		<td><strong><span style="color: #FFCC33">1</span><strong></td>
@@ -103,8 +105,8 @@ Voici le tableau des variables concernées :<br>
 	<tr>
 		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_equip</span></td>
 		<td style="padding-left:10px;padding-right:10px;text-align: justify">Où trouver les objets<br>
-		1 = Ajouter les objets a l'equipement des creatures (recommandé)<br>
-		2 = Ajouter les objets a l'inventaire des creatures<br>
+		1 = Ajouter les objets à l'equipement des créatures (recommandé)<br>
+		2 = Ajouter les objets à l'inventaire des créatures<br>
 		</td>
 		<td>numérique</td>
 		<td>1 ou 2</td>
@@ -118,7 +120,7 @@ Voici le tableau des variables concernées :<br>
 
 Vous devez extraire les fichiers de l'archive dans votre répertoire de jeu (<em>le dossier qui contient le fichier CHITIN.KEY</em>) à l'aide de <a href="http://www.7-zip.org/download.html">7zip</a> ou de <a href="http://www.rarlab.com/download.htm">WinRAR</a>. Une fois l'archive extraite correctement, vous devriez trouver le répertoire stuffofthemagi et le fichier setup-stuffofthemagi.exe dans votre répertoire de jeu. Pour installer le mod, il suffit de double-cliquer sur <strong>setup-stuffofthemagi.exe</strong> et de suivre les instructions affichées à l'écran.
 
-Vous pouvez lancer <strong>setup-stuffofthemagi.exe</strong> dans votre répertoire de jeu pour réinstaller, désinstaller, ou encore changer des composants.
+Vous pouvez lancer <strong>setup-stuffofthemagi.exe</strong> dans votre répertoire de jeu pour réinstaller, désinstaller, ou encore modifier lesparamètres du composant.
 
 ##
 
@@ -133,7 +135,7 @@ En plus des méthodes détaillées plus haut pour supprimer des composants, il est 
 
 ## <a name="components" id="components"></a>Composants
 
-The installer includes the following components. The number of each is the component DESIGNATED number which gives it a fixed install position, lets other components detect it and allows automated installers like the BiG World Setup specify component choices.
+Le programme d'installation ne comprend qu'un seul composant, le composant principal.
 <div style="text-align:right"><a href="#top">Haut de page</a></div>
 
 

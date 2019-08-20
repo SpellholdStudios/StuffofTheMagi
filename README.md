@@ -43,7 +43,7 @@ This is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and ther
 
 #### Notes
 
-<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-stuffofthemagi.exe</strong>, uninstall all previously installed components and delete the stuffofthemagi folder.</em>
+<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-stuffofthemagi.exe</strong>, uninstall the previously installed main component and delete the stuffofthemagi folder.</em>
 
 <em>When installing or uninstalling, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
 
@@ -80,19 +80,20 @@ Here is a chart listing the variables related to the installation process:<br>
 	<tr>
 	<tr>
 		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_use</span></td>
-		<td style="padding-left:10px;padding-right:10px;text-align: justify">Items Power</td>
+		<td style="padding-left:10px;padding-right:10px;text-align: justify">Items Power<br>
 		1 = Use new, less cheesy items (recommended).<br>
 		2 = Use original, overpowered items.<br>
+		</td>
 		<td>integer</td>
 		<td>1 or 2</td>
 		<td><strong><span style="color: #FFCC33">1</span><strong></td>
 	</tr>
 	<tr>
 		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_equip</span></td>
-		<td style="padding-left:10px;padding-right:10px;text-align: justify">Where to find items</td>
-		<td>integer</td>
+		<td style="padding-left:10px;padding-right:10px;text-align: justify">Where to find items<br>
 		1 = Add items to creature's equipment (recommended, enemies will use these items against you).<br>
 		2 = Add items to creature's inventory (does not change difficulty of fights).<br>
+		<td>integer</td>
 		<td>1 or 2</td>
 		<td><strong><span style="color: #FFCC33">1</span><strong></td>
 	</tr>
@@ -104,7 +105,7 @@ Here is a chart listing the variables related to the installation process:<br>
 
 Extract the contents of the mod archive into the folder of the game you wish to modify, using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. On successful extraction, there should be an stuffofthemagi folder and a setup-stuffofthemagi.exe file in your game folder. To install, simply double-click <strong>setup-stuffofthemagi.exe</strong> and follow the instructions on screen.
 
-Run <strong>setup-stuffofthemagi.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
+Run <strong>setup-stuffofthemagi.exe</strong> in your game folder to reinstall, uninstall or otherwise change the component settings.
 
 ## 
 
@@ -119,8 +120,7 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="components" id="components"></a>Components
 
-The installer includes the following components. The number of each is the component DESIGNATED number which gives it a fixed install position, lets other components detect it and allows automated installers like the BiG World Setup specify component choices.
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+The installer includes only one component, the main component.
 
 
 <hr>
