@@ -1,38 +1,46 @@
-# Stuff of The Magi
+# L'Arsenal du mage
 
-<strong>Original Author:</strong> Victor Straffe<br />
-<strong>Version:</strong> 6.0.0<br />
-<strong>Language:</strong> English, <a href="README-FR.md">French</a><br />
-<strong>Platforms:</strong> Windows
+<strong>Auteur original :</strong> Victor Straffe<br />
+<strong>Version :</strong> 6.0.0<br />
+<strong>Langues :</strong> <a href="README.md">anglais</a>, français<br />
+<strong>Platforme :</strong> Windows
 
-<strong>Mod Website and Forum:</strong> <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">Spellhold Studios</a><br />
+<strong>Site et forum du mod :</strong> <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">Spellhold Studios</a><br />
 </br>
 
 
 <hr>
 
 
-## <a name="intro" id="intro"></a>Overview
+## <a name="intro" id="intro"></a>Présentation
 
-This mod adds the Stuff of the Magi set to some creatures. Please read <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/readme/sotm-spoilers.txt">sotm-spoilers.txt</a> for details.
+Ce mod ajoute l'arsenal du mage dans l'inventaire des créatures suivantes :
+- Robe : Vongoethe
+- Amulette : Démogorgon
+- Bottes : Kangaxx (une demiliche sans corps avec des bottes ? remarque, elle porte bien un anneau :x)
+- Bâton : Layene à la Rune Tordue
+- Bracelets : Firkraag
+- Bandeau : Sendai
+- Ceinture : Mère matrone Ardulace
+- Cape : Temple de Rillifane dans Suldanessellar
+- Anneau : Lavok
 
-Also, if you have all items, you will meet someone in the Pocket Plane who will want to speak with you...
 
-Note: If you choose the original items you will only end up with 7 items instead of 9, no cape nor ring.
+Si vous possédez tous les objets, celui qui les porte tous obtient un bonus exceptionnel, et vous rencontrerez quelqu'un qui voudra vous parler dans l'antichambre....
 
-<strong>Never forget:</strong> All the original work was done by Victor Straffe at Sorcerer's Place.
+Note du traducteur : Si vous choisissez les objets "surpuissants", vous n'en aurez que 7 - pas de cape ni d'anneau.
+
+<strong>N'oubliez jamais :</strong> Ce mod a été conçu et publié par Victor Straff sur le site Sorcerer's Place.
 
 
 <hr>
 
 
-## <a name="compat" id="compat"></a>Compatibility
-
-
-This is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and therefore should be compatible with all WeiDU mods. If you encounter any bugs, please report them on the forum!
-
+## <a name="compat" id="compat"></a>Compatibilité
 
 <div style="text-align:right"><a href="#top">Back to top</a></div>
+
+Ce mod est un mod <acronym title="Weimer Dialogue Utility">WeiDU</acronym> et devrait par conséquent être compatible avec n'importe quel mod WeiDU. Si vous rencontrez des bugs, veuillez les signaler dans le forum, s'il vous plaît.
 
 
 <hr>
@@ -40,38 +48,41 @@ This is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and ther
 
 ## <a name="installation" id="installation"></a>Installation
 
-#### Mise en garde
+#### Notes
 
-<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-stuffofthemagi.exe</strong>, uninstall all previously installed components and delete the stuffofthemagi folder.</em>
+<em>Si une ancienne version de ce mod est déjà installée, il est nécessaire de la désinstaller d'abord. Pour cela, lancez <strong>setup-stuffofthemagi.exe</strong> et désinstallez tous les composants précédemment installés. Une fois la désinstallation achevée, supprimez le répertoire stuffofthemagi.</em>
 
-<em>When installing or uninstalling, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
+<em>Lorsque vous installez ou désinstallez, <strong>ne fermez pas la fenêtre <acronym title="Disk Operating System">DOS</acronym></strong> en cliquant sur le bouton <strong>X</strong> ! Au lieu de cela, appuyez sur la touche <strong>Entrée</strong> lorsque l'invite de commandes vous le demande.</em>
 
-<strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast!) have a tendency to report false positives with mod activity, resulting in failed installs.
+Par précaution, <strong>désactivez les antivirus</strong> ou tout logiciel résidant en mémoire avant d'installer ce mod, ou tout autre mod. Certains (en particulier avast et Norton !) ont une fâcheuse tendance à déclarer les exécutables des mods comme des faux positifs, provoquant ainsi l'échec de la procédure d'installation.
+
+You can extract files from the archive using <a href="http://www.rarlab.com/download.htm">WinRAR</a>, <a href="http://www.zipgenius.it/ita/?page_id=12">ZipGenius</a> or another file compression utility that handles .zip files.
 
 ## 
 
-#### Enhanced Editions Note
+#### Note pour les jeux en Édition Améliorée (EE)
 
-The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
-You can extract files from the archive using <a href="http://www.rarlab.com/download.htm">WinRAR</a>, <a href="http://www.zipgenius.it/ita/?page_id=12">ZipGenius</a> or another file compression utility that handles .zip files.
+Les Éditions améliorées sont des jeux que le développeur fait encore évoluer, notamment par l'ajout de capacités supplémentaires destinées à la création de mods et par l'ajout de contenus. N'oubliez pas que chaque patch de mise à jour effacera les mods que vous avez installés ! Ce mod ne fera pas exception à la règle.
+
+Si vous pouvez retarder la mise à jour du patch en plein milieu d'un partie moddée (si vous en avez la possibilité, notamment chez Beamdog et Good Old Games), n'oubliez pas que même après avoir réinstallé les mods sur un nouveau patch, vous ne pourrez peut-être pas continuer le jeu avec vos anciennes sauvegardes, en particulier à cause de noms de personnages, de lieux, etc, qui pourraient être incorrects. Pour y remédier, copiez tout le dossier du jeu dans un nouveau dossier dans lequel vous installerez vos mods, et qui ne sera pas modifié par les patches de mise à jour. Il est important que vous installiez le mod dans la version linguistique dans laquelle vous jouez. Sinon, les dialogues du mod ne s'afficheront pas et provoqueront des messages d'erreur.
 
 ## 
 
 #### Windows
 
-Extract the contents of the mod to the folder of the game you wish to modify. On successful extraction, there should be an stuffofthemagi folder and a setup-stuffofthemagi.exe file in your game folder. To install, simply double-click <strong>setup-stuffofthemagi.exe</strong> and follow the instructions on screen.
+Vous devez extraire les fichiers de l'archive dans votre répertoire de jeu (<em>le dossier qui contient le fichier CHITIN.KEY</em>). Une fois l'archive extraite correctement, vous devriez trouver le répertoire stuffofthemagi et le fichier setup-stuffofthemagi.exe dans votre répertoire de jeu. Pour installer le mod, il suffit de double-cliquer sur <strong>setup-stuffofthemagi.exe</strong> et de suivre les instructions affichées à l'écran.
 
-Run <strong>setup-stuffofthemagi.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
+Vous pouvez lancer <strong>setup-stuffofthemagi.exe/strong> dans votre répertoire de jeu pour réinstaller, désinstaller, ou encore changer des composants.
+
+##
+
+#### Note pour effectuer une désinstallation complète
+
+En plus des méthodes détaillées plus haut pour supprimer des composants, il est possible de désinstaller complètement le mod en tapant <strong>setup-stuffofthemagi --uninstall</strong> dans une ligne de commandes, ce qui supprimera tous les composants sans devoir ingurgiter tous les messages.</br>
 
 ## 
 
-#### Note for Complete Uninstallation
-
-In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-stuffofthemagi --uninstall</strong> at the command line to remove all components without wading through prompts.</br>
-
-## 
-
-#### <a name="config" id="config">:warning: Warning: new installation process
+#### <a name="config" id="config">:warning: Avertissement : procédure d'installation
 
 ##### As of version 6.0.0, options needed for installation are read from <a href="stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</em></a> file, or <em>stuffofthemagi_user.ini</em> if it exists.
 <div style="text-align:right"><a href="#top">Back to top</a></div>
@@ -80,7 +91,7 @@ In addition to the methods above for removing individual components, you can com
 <hr>
 
 
-## <a name="components" id="components"></a>Components
+## <a name="components" id="components"></a>Composants
 
 The installer includes the following components. The number of each is the component DESIGNATED number which gives it a fixed install position, lets other components detect it and allows automated installers like the BiG World Setup specify component choices.
 <div style="text-align:right"><a href="#top">Back to top</a></div>
@@ -89,12 +100,12 @@ The installer includes the following components. The number of each is the compo
 <hr>
 
 
-## <a name="credits" id="credits"></a>Credits and Acknowledgements
+## <a name="credits" id="credits"></a>Crédits rt remerciements
 
-#### Author: Victor Straffe
+#### Auteur : Victor Straffe (sur le site Sorcerer's Place)
 
 
-#### Special Acknowledgements to (alphabetical order):
+#### Remerciements (par ordre alphabétique):
 
 - Cmorgan: Help with bugsquishing/tidiness/etc.
 - Deratiseur: Made it compatible with translations, wrote the French translation, and provided the EE compatible version.
@@ -107,7 +118,7 @@ The installer includes the following components. The number of each is the compo
 <hr>
 
 
-## <a name="versions" id="versions"></a>Versions History
+## <a name="versions" id="versions"></a>Historique des versions
 
 ##### Version 6.0.0 - Month day, 2019
 
