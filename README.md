@@ -1,7 +1,6 @@
-# StuffofTheMagi
+# Stuff of The Magi
 
-<strong>Author:</strong> Victor Straffe<br />
-<strong>WeiDU coding:</strong> Kevmus<br />
+<strong>Original Author:</strong> Victor Straffe<br />
 <strong>Version:</strong> 6.0.0<br />
 <strong>Language:</strong> English, <a href="README-FR.md">French</a><br />
 <strong>Platforms:</strong> Windows
@@ -15,13 +14,19 @@
 
 ## <a name="intro" id="intro"></a>Overview
 
-This mod adds the Stuff of the Magi set to several creatures.
+This mod adds the Stuff of the Magi set to some creatures. Please read <a href="stuffofthemagi/readme/sotm-spoilers.txt">sotm-spoilers.txt</a> for details.
+Also, if you have all the items, you'll meet someone in the Pocket Plane who will want to speak with you...
+Note: If you choose the original items you'll only end up with 7 items instead of 9, no cape nor ring.
+
+<strong>Never forget:</strong> All the original work was done by Victor Straffe at Sorcerer's Place.
 
 
 <hr>
 
 
 ## <a name="compat" id="compat"></a>Compatibility
+
+<div style="text-align:right"><a href="#top">Back to top</a></div>
 
 
 <hr>
@@ -37,13 +42,13 @@ This mod adds the Stuff of the Magi set to several creatures.
 
 <strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast!) have a tendency to report false positives with mod activity, resulting in failed installs.
 
-You can extract files from the archive using <a href="http://www.rarlab.com/download.htm">WinRAR</a>, <a href="http://www.zipgenius.it/ita/?page_id=12">ZipGenius</a> or another file compression utility that handles .rar files.
+You can extract files from the archive using <a href="http://www.rarlab.com/download.htm">WinRAR</a>, <a href="http://www.zipgenius.it/ita/?page_id=12">ZipGenius</a> or another file compression utility that handles .zip files.
 
 ## 
 
 #### Windows
 
-Extract the contents of the mod to the folder of the game you wish to modify (<acronym title="Baldur's Gate II">BG2</acronym>, <acronym title="Baldur's Gate Trilogy">BGT</acronym> or EasyTutu). On successful extraction, there should be an stuffofthemagi folder and a setup-stuffofthemagi.exe file in your game folder. To install, simply double-click <strong>setup-stuffofthemagi.exe</strong> and follow the instructions on screen.
+Extract the contents of the mod to the folder of the game you wish to modify. On successful extraction, there should be an stuffofthemagi folder and a setup-stuffofthemagi.exe file in your game folder. To install, simply double-click <strong>setup-stuffofthemagi.exe</strong> and follow the instructions on screen.
 
 Run <strong>setup-stuffofthemagi.exe</strong> in your game folder to reinstall, uninstall or otherwise change components.
 
@@ -52,13 +57,13 @@ Run <strong>setup-stuffofthemagi.exe</strong> in your game folder to reinstall, 
 #### Note for Complete Uninstallation
 
 In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-stuffofthemagi --uninstall</strong> at the command line to remove all components without wading through prompts.</br>
-<div style="text-align:right"><a href="#top">Back to top</a></div>
 
 ## 
 
 #### <a name="config" id="config">:warning: Warning: new installation process
 
-##### As of version 6.0.0, options needed for installation are read from <a href="../infinityanimations-config-default.ini"><em>infinityanimations-config-default.ini</em></a> file, or <em>infinityanimations-config.ini</em> if it exists.
+##### As of version 6.0.0, options needed for installation are read from <a href="stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</em></a> file, or <em>stuffofthemagi_user.ini</em> if it exists.
+<div style="text-align:right"><a href="#top">Back to top</a></div>
 
 
 <hr>
@@ -67,6 +72,7 @@ In addition to the methods above for removing individual components, you can com
 ## <a name="components" id="components"></a>Components
 
 The installer includes the following components. The number of each is the component DESIGNATED number which gives it a fixed install position, lets other components detect it and allows automated installers like the BiG World Setup specify component choices.
+<div style="text-align:right"><a href="#top">Back to top</a></div>
 
 
 <hr>
@@ -84,6 +90,7 @@ The installer includes the following components. The number of each is the compo
 - Kevmus: Updated the mod to WeiDU, added the more balanced items, and bug fixed.
 - Rastamage: Item stories/Erevain's talk
 - Tassadar88: Help with coding
+<div style="text-align:right"><a href="#top">Back to top</a></div>
 
 
 <hr>
@@ -182,11 +189,13 @@ The installer includes the following components. The number of each is the compo
 - Added stuffofthemagi.ini with mod info metadata to support ALIEN's "Project Infinity".
 - Updated to Weidu 246.
 
+## 
 
 ##### Version 5
 
 - Added BG2EE compatibility. Thanks, Deratiseur! ( again :) )
 
+## 
 
 ##### Version 4
 
@@ -195,27 +204,33 @@ The installer includes the following components. The number of each is the compo
 - Fixed: Unidentified cape had description of a belt. Oops.
 - Added: French Translation! Thanks, Deratiseur!
 
+## 
 
 ##### Version 2.4
 
 - Fixed a bunch of bugs.
 
+## 
 
 ##### Version 2
 
 - Added balanced items, encounter in Pocket plane.
 
+## 
 
 ##### Version 1.3
 
 - Fixed the No wizard amulet from Demogorgon bug.
 
+## 
 
 ##### Version 1.2
 
 - Fixed the 2 staffs from Layene bug.
 
+## 
 
 ##### Version 1.1
 
 - Updated to WEIDU.
+<div style="text-align:right"><a href="#top">Back to top</a></div>
