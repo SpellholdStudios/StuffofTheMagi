@@ -14,7 +14,8 @@ $RECYCLE.BIN/
 *.7z
 *.rar
 *.zip
-/infinityanimations/animpatch
+dev_notes.txt
+
 # Windows Installer files
 
 # Windows shortcuts

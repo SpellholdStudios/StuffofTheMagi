@@ -16,7 +16,7 @@
 
 ## <a name="intro" id="intro"></a>Overview
 
-This mod adds the Stuff of the Magi set to some creatures. Please read <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/readme/sotm-spoilers.txt">sotm-spoilers.txt</a> for details.
+This mod adds a new set of Mage items scattered through the game. Please read <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/readme/sotm-spoilers.txt">sotm-spoilers.txt</a> for details.
 
 Also, if you have all items, you will meet someone in the Pocket Plane who will want to speak with you...
 

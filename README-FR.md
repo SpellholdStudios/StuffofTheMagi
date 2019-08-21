@@ -19,10 +19,7 @@
 Ce mod ajoute l'arsenal du mage dans l'inventaire des créatures suivantes :
 - Robe : Vongoethe
 - Amulette : Démogorgon
-- Bottes : Kangaxx (une demiliche sans corps avec des bottes ? remarque, elle porte bien un anneau :grimacing: :confused: :hushed: :expressionless:
-:unamused: :fearful:
-:cold_sweat:
-:persevere:)
+- Bottes : Kangaxx (une demiliche sans corps avec des bottes ? remarque, elle porte bien un anneau :confused:)
 - Bâton : Layene à la Rune Tordue
 - Bracelets : Firkraag
 - Bandeau : Sendai
