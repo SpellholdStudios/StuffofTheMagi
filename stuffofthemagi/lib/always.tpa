@@ -1,0 +1,173 @@
+/* ============================================ *
+ *                                              *
+ *                 ALWAYS BLOCK                 *
+ *                                              *
+ * ============================================ */
+
+// Concept borrowed from DavidW's Immutability and encapsulation in mod design (https://github.com/Gibberlings3/immutable)
+
+
+/* =================================================================== *
+ *  This code only runs once, even if you install lots of components.  *
+ * =================================================================== */
+
+ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
+
+	OUTER_SET always_once_section = 1
+
+//	ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN FAIL @1003 END // Modmerge check
+
+	CLEAR_EVERYTHING
+	SILENT
+	OUTER_SPRINT configuration-default "stuffofthemagi.ini"		// default configuration file to read initial configuration options
+	OUTER_SPRINT configuration-user "stuffofthemagi_user.ini"	// user created ini file, not included inside mod archive. If exists, it will overwrite configuration options from stuffofthemagi.ini file
+
+
+	/* -------------------------------------------------------------------------------- *
+	 *    Determines which game is installed and if the game is an Enhanced Edition.    *
+	 * -------------------------------------------------------------------------------- */
+
+	OUTER_SET is_ee = (GAME_IS ~bgee bg2ee iwdee eet~) ? 1 : 0					// EE game, except PSTEE
+	OUTER_SET is_tob = (GAME_IS ~bgt tob tutu tutu_totsc~) ? 1 : 0				// based on vanilla ToB engine
+	OUTER_SET is_tutu = (GAME_IS ~tutu tutu_totsc~) ? 1 : 0						// tutu
+	OUTER_SET is_bgee = (GAME_IS "bgee" AND NOT GAME_INCLUDES ~sod~) ? 1 : 0	// bgee without SoD
+	OUTER_SET is_sod = (GAME_IS ~bgee~ AND GAME_INCLUDES ~sod~) ? 1 : 0			// SoD
+	OUTER_SET is_bg2ee = (GAME_IS "bg2ee") ? 1 : 0								// b2gee
+	OUTER_SET is_eet = (GAME_IS "eet") ? 1 : 0									// eet
+	OUTER_SET is_iwdee = (GAME_IS "iwdee") ? 1 : 0								// iwdee
+
+
+	/* ---------------------------------- *
+	 *    general macros and functions    *
+	 * ---------------------------------- */
+
+	INCLUDE ~%MOD_FOLDER%/lib/sotm_read_configuration.tph~		// Library of functions and macros reading the configuration options values (Bibliothèque de fonctions et de macros lisant les options de configuration).
+	INCLUDE ~%MOD_FOLDER%/lib/gw_functions.tpa~					// Shared general functions and macros library (Bibliothèque de fonctions et de macros générales).
+
+	ACTION_IF (is_ee OR is_1pp_staff OR is_1pp_helmet) BEGIN
+		INCLUDE ~%MOD_FOLDER%/lib/1pp_macros.tpa~
+		LAM ~Locations~
+	END
+
+
+	/* ------------------------ *
+	 *    Detects other mods    *
+	 * ------------------------ */
+
+	// Detects 1PP
+ 	OUTER_SET is_1pp_helmet = (MOD_IS_INSTALLED ~1pp.tp2~ ~208~) ? 1 : 0		// 1ppv4: Additional Helmet Animations (core)
+	OUTER_SET is_1pp_staff = (MOD_IS_INSTALLED ~1pp.tp2~ ~207~) ? 1 : 0			// 1ppv4: Wizards' Staves (core)
+	// Detects ToBEx																// if TobEx Magical weapon dispel behaviour option is installed
+	OUTER_SET is_tobex_disp = (FILE_EXISTS_IN_GAME ~tobex_ini/tobexcore.ini~ AND FILE_CONTAINS_EVALUATED (~tobex_ini/tobexcore.ini~ ~Configurable Magical Item Dispel Behaviour=1~)) ? 1 : 0
+
+
+PRINT "CONTROL VARIABLES for DEBUGGING:
+is_ee = %is_ee% - is_tob = %is_tob% - is_tutu %is_tutu% - is_bgee = %is_bgee% - is_sod = %is_sod% - is_bg2ee = %is_bg2ee% - is_eet = %is_eet% - is_iwdee = %is_iwdee%
+is_1pp_helmet = %is_1pp_helmet% - is_1pp_staff = %is_1pp_staff% - is_tobex_disp = %is_tobex_disp%"
+
+
+	/* ---------------------- *
+	 *  Creates a blank file  *
+	 * ---------------------- */
+
+<<<<<<<< .../stuffofthemagi-inline/blank
+
+>>>>>>>>
+
+
+	/* -------------------------------------- *
+	 *    Reading .ini configuration files    *
+	 * -------------------------------------- */
+
+	ACTION_IF (VARIABLE_IS_SET configuration-default) BEGIN
+		OUTER_SPRINT ini_to_read "%MOD_FOLDER%/%configuration-default%"
+		LAM ~GW_READ_INI_FILE~
+	END
+
+	ACTION_IF (VARIABLE_IS_SET configuration-user) BEGIN
+		OUTER_SPRINT ini_to_read "%MOD_FOLDER%/%configuration-user%"
+		LAM ~GW_READ_INI_FILE~
+	END
+
+	LAM ~GW_CHECK_CONFIG_VARIABLES~
+
+	PRINT @1013 /* ~LIST OF CONFIGURATION OPTIONS SET FOR INSTALLATION:
+---------------------------------------------------
+	sotm_use = %sotm_use%
+	[1 = Use new, less cheesy items (recommended)
+	 2 = Use original, overpowered items]
+	sotm_equip = %sotm_equip%
+	{1 = Add items to creatures' equipment (recommended)
+	 2 = Add items to creatures' inventory]
+---------------------------------------------------~*/
+
+
+	/* ----------------------- *
+	 *    general variables    *
+	 * ----------------------- */
+
+	ACTION_IF !VARIABLE_IS_SET base_language BEGIN
+		OUTER_SPRINT base_language "english"
+	END
+
+	ACTION_IF (is_ee) BEGIN
+		OUTER_SPRINT ee_folder "_ee"	// classic games portrait
+	END ELSE BEGIN
+		OUTER_SPRINT ee_folder ""		// EE games portrait
+	END
+
+	ACTION_IF (sotm_use = 1) BEGIN		// Option 1: Use new, less cheesy items (recommended)	==> compile "scriptfile.baf"
+		OUTER_SPRINT prefix_ovp ""
+	END ELSE BEGIN						// Option 2: Use original, overpowered items			==> compile "oscriptfile.baf"
+		OUTER_SPRINT prefix_ovp "o"
+	END
+
+
+	/* --------------------------------------------------------------------------------- *
+	 *                     Handling of correctly formatted tra-files                     *
+	 *    Copies tra files into the autotra folder (to leave the originals untouched)    *
+	 * --------------------------------------------------------------------------------- */
+
+	DEFINE_ACTION_FUNCTION ~autotra_workaround~ BEGIN
+		MKDIR "%MOD_FOLDER%/lang/autotra"
+		MKDIR "%MOD_FOLDER%/lang/autotra/%base_language%"
+		MKDIR "%MOD_FOLDER%/lang/autotra/%LANGUAGE%"
+		COPY ~%MOD_FOLDER%/lang/%LANGUAGE%~	~%MOD_FOLDER%/lang/autotra/%LANGUAGE%~
+		ACTION_MATCH "%LANGUAGE%" WITH
+			"%base_language%" BEGIN END
+			DEFAULT
+				COPY ~%MOD_FOLDER%/lang/%base_language%~	~%MOD_FOLDER%/lang/autotra/%base_language%~
+		END
+	END
+
+	/* Converts tra files to UTF-8 */
+	ACTION_IF (VARIABLE_IS_SET sotm_force_tra_rebuild) BEGIN
+		LAF ~check_ini~ STR_VAR ini = sotm_force_tra_rebuild RET sotm_force_tra_rebuild = value END
+	END
+	ACTION_IF (!FILE_EXISTS "%MOD_FOLDER%/sotm_languages_installed.mrk" || sotm_force_tra_rebuild) BEGIN
+		COPY ~.../stuffofthemagi-inline/blank~ ~%MOD_FOLDER%/sotm_languages_installed.mrk~	// Converts once .tra files
+		LAF ~autotra_workaround~ END
+		ACTION_DEFINE_ARRAY sotm#noconvert BEGIN setup END
+		ACTION_DEFINE_ARRAY sotm#reload BEGIN strings wzrdlich wzrdset END
+		LAF HANDLE_CHARSETS 
+			INT_VAR	infer_charsets = 1
+			STR_VAR	tra_path = EVAL ~%MOD_FOLDER%/lang/autotra~
+					noconvert_array = sotm#noconvert
+					reload_array = sotm#reload
+					default_language = english
+					iconv_path = EVAL ~%MOD_FOLDER%/lang/iconv~
+		END
+	END
+
+	/* TRAs declared in LANGUAGE must be reloaded - by hand, because of the copying (for non-EE version */
+	LOAD_TRA ~%MOD_FOLDER%/lang/autotra/%base_language%/setup.tra~
+	LOAD_TRA ~%MOD_FOLDER%/lang/autotra/%LANGUAGE%/setup.tra~
+
+	/* TRAs used in classic games must be loadedby hand */
+	ACTION_IF (is_tob) BEGIN
+		LOAD_TRA ~%MOD_FOLDER%/lang/autotra/%base_language%/strings.tra~	~%MOD_FOLDER%/lang/autotra/%LANGUAGE%/strings.tra~
+				 ~%MOD_FOLDER%/lang/autotra/%base_language%/wzrdlich.tra~	~%MOD_FOLDER%/lang/autotra/%LANGUAGE%/wzrdlich.tra~
+				 ~%MOD_FOLDER%/lang/autotra/%base_language%/wzrdset.tra~	~%MOD_FOLDER%/lang/autotra/%LANGUAGE%/wzrdset.tra~
+	END
+
+END	// of ACTION_IF !VARIABLE_IS_SET always_once_section BEGIN
