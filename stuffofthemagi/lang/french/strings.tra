@@ -1,16 +1,16 @@
 @9001 = ~[Uu]tilisable[ %tab%]+[Uu]niquement[ %tab%]+[Pp]ar[ %tab%]*:~
 @9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
 
-@7  = ~Erevain Beraskána~
+@107  = ~Erevain Beraskána~
 
-@8  = ~Cape~
-@9  = ~Cape du Mage~
-@10 = ~Une cape peut être fabriquée dans presque n'importe quel type de tissu et prendre n'importe quelle forme. Les capes les plus courantes sont faites d'un morceau de tissu circulaire troué en son centre pour passer la tête et d'un tissu drapé à partir du cou, attaché par une chaîne, une broche, une ficelle ou des épingles.
+@108  = ~Cape~
+@109  = ~Cape du Mage~
+@110 = ~Une cape peut être fabriquée dans presque n'importe quel type de tissu et prendre n'importe quelle forme. Les capes les plus courantes sont faites d'un morceau de tissu circulaire troué en son centre pour passer la tête et d'un tissu drapé à partir du cou, attaché par une chaîne, une broche, une ficelle ou des épingles.
 
 PARAMÈTRES :
 
 Poids : 2~
-@11 =~Erevain Beraskána fabriqua la cape du Mage quand il créa son arsenal du Mage. Erevain faisait figure d'anticonformiste parmi les Hauts Mages de Suldanessalar. Il était devenu un maître dans l'utilisation des vagues de magie entropique des siècles avant que le Temps des Troubles n'en rende la pratique beaucoup plus commune. Après ses études à Château-Suif, Erevain devint également un expert des prophéties d'Alaundo sur les rejetons de Bhaal. Il comprit le profit qu'il pouvait tirer de cette période de conflits pour nuire au mode de vie elfes de Suldanessalar. Pour des raisons connues de lui-seul, il légua cette cape au Haut Mage elfe Joneleth, qui allait devenir Irenicus l'Exilé, juste avant de trouver la mort dans une bataille contre les elfes noirs d'Ust Natha, il y a deux cents ans. Irenicus n'apprécia jamais cet objet à cause de la façon dont il l'avait reçu, et il le donna plus tard à son apprenti Suneer.
+@111 =~Erevain Beraskána fabriqua la cape du Mage quand il créa son arsenal du Mage. Erevain faisait figure d'anticonformiste parmi les Hauts Mages de Suldanessalar. Il était devenu un maître dans l'utilisation des vagues de magie entropique des siècles avant que le Temps des Troubles n'en rende la pratique beaucoup plus commune. Après ses études à Château-Suif, Erevain devint également un expert des prophéties d'Alaundo sur les rejetons de Bhaal. Il comprit le profit qu'il pouvait tirer de cette période de conflits pour nuire au mode de vie elfes de Suldanessalar. Pour des raisons connues de lui-seul, il légua cette cape au Haut Mage elfe Joneleth, qui allait devenir Irenicus l'Exilé, juste avant de trouver la mort dans une bataille contre les elfes noirs d'Ust Natha, il y a deux cents ans. Irenicus n'apprécia jamais cet objet à cause de la façon dont il l'avait reçu, et il le donna plus tard à son apprenti Suneer.
 Cet objet est l'un des neuf éléments composant l'arsenal du Mage. Selon la légende, quiconque s'équiperait de l'arsenal complet pourrait contrôler plus facilement les effets chaotiques de la magie entropique et obtiendrait une résistance contre les dégâts élémentaires.
 
 PARAMÈTRES :
@@ -25,10 +25,10 @@ Utilisable uniquement par :
  Sorcier~
 
 
-@12 = ~Anneau~
-@13 = ~Anneau du Mage~
-@14 = ~Un anneau est une fine lanière de métal précieux. Il sert en général d'ornement. Plus rarement, certains sont enchantés et permettent à quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait très recherchés par les aventuriers.~
-@15 = ~Il s'agit de l'unique anneau fabriqué par l'archimage Erevain Beraskána. L'anneau du Mage fut l'avant-dernier élément de l'arsenal créé par le Haut Mage elfe. Peu de temps après l'avoir fabriqué, il rencontra le nécromancien Lavok Corthala lorsque sa sphère planaire atterrit pour la dernière fois sur Féérûne il y a deux siècles. Les deux hommes s'engagèrent rapidement dans un duel de mages. Bien que sur son territoire, Lavok n'était pas de taille face à Erevain et l'affrontement fut bref. Bien que vainqueur, Erevain négocia avec Lavok. On sait que Lavok entra en possession de l'anneau, même si son incapacité à maîtriser les voies de la magie entropique l'empêchait d'en utiliser tous les pouvoirs. En revanche, personne ne sait ce qu'Erevain gagna en retour. On ignore également pourquoi Erevain est allé voir Lavok.
+@112 = ~Anneau~
+@113 = ~Anneau du Mage~
+@114 = ~Un anneau est une fine lanière de métal précieux. Il sert en général d'ornement. Plus rarement, certains sont enchantés et permettent à quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait très recherchés par les aventuriers.~
+@115 = ~Il s'agit de l'unique anneau fabriqué par l'archimage Erevain Beraskána. L'anneau du Mage fut l'avant-dernier élément de l'arsenal créé par le Haut Mage elfe. Peu de temps après l'avoir fabriqué, il rencontra le nécromancien Lavok Corthala lorsque sa sphère planaire atterrit pour la dernière fois sur Féérûne il y a deux siècles. Les deux hommes s'engagèrent rapidement dans un duel de mages. Bien que sur son territoire, Lavok n'était pas de taille face à Erevain et l'affrontement fut bref. Bien que vainqueur, Erevain négocia avec Lavok. On sait que Lavok entra en possession de l'anneau, même si son incapacité à maîtriser les voies de la magie entropique l'empêchait d'en utiliser tous les pouvoirs. En revanche, personne ne sait ce qu'Erevain gagna en retour. On ignore également pourquoi Erevain est allé voir Lavok.
 Cet objet est l'un des neuf éléments composant l'arsenal du Mage. Selon la légende, quiconque s'équiperait de l'arsenal complet pourrait contrôler plus facilement les effets chaotiques de la magie entropique et obtiendrait une résistance contre les dégâts élémentaires.
 
 PARAMÈTRES :
@@ -45,14 +45,14 @@ Utilisable uniquement par :
  Sorcier~
 
 
-@16 = ~Robe de mage~
-@17 = ~Robe du Mage~
-@18 = ~Depuis l'ère de Néthéril, les mages ont appris à conférer une grande variété de propriétés magiques aux objets quotidiens qui les entourent. L'un des plus usités de ces objets est la robe courante. Elle est légère, peu onéreuse, et conserve bien ses enchantements. Cela en fait une parure de mage idéale. Cependant, en raison de leur héritage magique, ces robes enchantées ne peuvent être portées que par des mages mono classés, à classes jumelées ou multiclassés.
+@116 = ~Robe de mage~
+@117 = ~Robe du Mage~
+@118 = ~Depuis l'ère de Néthéril, les mages ont appris à conférer une grande variété de propriétés magiques aux objets quotidiens qui les entourent. L'un des plus usités de ces objets est la robe courante. Elle est légère, peu onéreuse, et conserve bien ses enchantements. Cela en fait une parure de mage idéale. Cependant, en raison de leur héritage magique, ces robes enchantées ne peuvent être portées que par des mages mono classés, à classes jumelées ou multiclassés.
 
 PARAMÈTRES :
 
 Poids : 3~
-@19 = ~Il s'agit de la pièce finale de l'arsenal du Mage créé par Erevain Beraskána il y a près de deux cents ans, et aussi la plus puissamment enchantée. Il en usa de même qu'avec les autres objets du Mage qu'il fabriqua et s'en sépara avant sa mort. Comme souvent, Erevain provoquait en duel un infâme nécromancien. Dans ce cas, il partit à la recherche de la liche Vongoethe. Le duel de mages qui résulta de leur rencontre fut vraiment épique. Assez étrangement, mais comme cela arrivait fréquemment dans ces confrontations magiques, le combat se termina en match nul. Comme d'habitude, les deux adversaires engagèrent la conversation lorsque le duel prit fin. De nouveau, comme après ces autres duels, Erevain se sépara de manière suspecte de l'un de ses objets ; cette fois, de la Robe du Mage. Comme d'habitude, Erevain repartit sans en avoir tiré un profit apparent.
+@119 = ~Il s'agit de la pièce finale de l'arsenal du Mage créé par Erevain Beraskána il y a près de deux cents ans, et aussi la plus puissamment enchantée. Il en usa de même qu'avec les autres objets du Mage qu'il fabriqua et s'en sépara avant sa mort. Comme souvent, Erevain provoquait en duel un infâme nécromancien. Dans ce cas, il partit à la recherche de la liche Vongoethe. Le duel de mages qui résulta de leur rencontre fut vraiment épique. Assez étrangement, mais comme cela arrivait fréquemment dans ces confrontations magiques, le combat se termina en match nul. Comme d'habitude, les deux adversaires engagèrent la conversation lorsque le duel prit fin. De nouveau, comme après ces autres duels, Erevain se sépara de manière suspecte de l'un de ses objets ; cette fois, de la Robe du Mage. Comme d'habitude, Erevain repartit sans en avoir tiré un profit apparent.
 Cet objet est l'un des neuf éléments composant l'arsenal du Mage. Selon la légende, quiconque s'équiperait de l'arsenal complet pourrait contrôler plus facilement les effets chaotiques de la magie entropique et obtiendrait une résistance contre les dégâts élémentaires.
 
 PARAMÈTRES :
@@ -68,14 +68,14 @@ Utilisable uniquement par :
  Sorcier~
 
 
-@20 = ~Amulette d'argent~
-@21 = ~Amulette du Mage~
-@22 = ~Les amulettes sont généralement des objets magiques suspendus autour du cou par une chaîne. Le type de chaîne accompagnant l'amulette augmente souvent la valeur esthétique de l'objet, mais pas ses propriétés magiques. On ne peut porter qu'une seule amulette autour du cou.
+@120 = ~Amulette d'argent~
+@121 = ~Amulette du Mage~
+@122 = ~Les amulettes sont généralement des objets magiques suspendus autour du cou par une chaîne. Le type de chaîne accompagnant l'amulette augmente souvent la valeur esthétique de l'objet, mais pas ses propriétés magiques. On ne peut porter qu'une seule amulette autour du cou.
 
 PARAMÈTRES :
 
 Poids : 1~
-@23 = ~L'Amulette du Mage fut le premier élément de l'arsenal du Mage fabriqué par l'archimage elfe Erevain Beraskána. Il la conserva presque jusqu'à sa mort. Peu de temps de perdre la vie dans une bataille contre les elfes noirs, il la donna à son dernier apprenti, l'humain Vithal. Plus tard victime d'un sort d'emprisonnement au cours d'une bataille de sorts contre les drows dans les Tréfonds obscurs, ce dernier donna l'Amulette du Mage aux suivants de Heaum qui surveillaient la Tour de Garde. Tout ceci reste inexplicable. Mais, puisque Erevain fut l'un des tout premiers pratiquants reconnus de magie entropique, il est impossible de deviner la raison de ses actes chaotiques apparemment aléatoires.
+@123 = ~L'Amulette du Mage fut le premier élément de l'arsenal du Mage fabriqué par l'archimage elfe Erevain Beraskána. Il la conserva presque jusqu'à sa mort. Peu de temps de perdre la vie dans une bataille contre les elfes noirs, il la donna à son dernier apprenti, l'humain Vithal. Plus tard victime d'un sort d'emprisonnement au cours d'une bataille de sorts contre les drows dans les Tréfonds obscurs, ce dernier donna l'Amulette du Mage aux suivants de Heaum qui surveillaient la Tour de Garde. Tout ceci reste inexplicable. Mais, puisque Erevain fut l'un des tout premiers pratiquants reconnus de magie entropique, il est impossible de deviner la raison de ses actes chaotiques apparemment aléatoires.
 Cet objet est l'un des neuf éléments composant l'arsenal du Mage. Selon la légende, quiconque s'équiperait de l'arsenal complet pourrait contrôler plus facilement les effets chaotiques de la magie entropique et obtiendrait une résistance contre les dégâts élémentaires.
 
 PARAMÈTRES :
@@ -92,14 +92,14 @@ Utilisable uniquement par :
  Sorcier~
 
 
-@24 = ~Bottes~
-@25 = ~Bottes du Mage~
-@26 = ~Les bottes sont généralement fabriquées artisanalement par des cordonniers. Les bottes ordinaires sont fabriquées à l'aide d'un moule, mais les bottes de qualité supérieure sont faites sur mesure.
+@124 = ~Bottes~
+@125 = ~Bottes du Mage~
+@126 = ~Les bottes sont généralement fabriquées artisanalement par des cordonniers. Les bottes ordinaires sont fabriquées à l'aide d'un moule, mais les bottes de qualité supérieure sont faites sur mesure.
 
 PARAMÈTRES :
 
 Poids : 4~
-@27 = ~Les Bottes du Mage furent fabriquées par l'archimage elfe Erevain Beraskána il a des siècles. Comme tous les objets qu'il créa, ces bottes étaient conçues pour faciliter son interminable quête de perfection mentale. Erevain alla affronter la demi-liche Kangaxx. Si on ne connaît pas la raison pour laquelle il le fit, on sait que le duel de mages se termina par un match nul à l'issue duquel les deux protagonistes entamèrent une brève négociation. Erevain dut laisser ses précieuses bottes à Kangaxx. Mais personne ne sait ce qu'il obtint en échange.
+@127 = ~Les Bottes du Mage furent fabriquées par l'archimage elfe Erevain Beraskána il a des siècles. Comme tous les objets qu'il créa, ces bottes étaient conçues pour faciliter son interminable quête de perfection mentale. Erevain alla affronter la demi-liche Kangaxx. Si on ne connaît pas la raison pour laquelle il le fit, on sait que le duel de mages se termina par un match nul à l'issue duquel les deux protagonistes entamèrent une brève négociation. Erevain dut laisser ses précieuses bottes à Kangaxx. Mais personne ne sait ce qu'il obtint en échange.
 Cet objet est l'un des neuf éléments composant l'arsenal du Mage. Selon la légende, quiconque s'équiperait de l'arsenal complet pourrait contrôler plus facilement les effets chaotiques de la magie entropique et obtiendrait une résistance contre les dégâts élémentaires.
 
 PARAMÈTRES :
@@ -116,9 +116,9 @@ Utilisable uniquement par :
  Sorcier~
 
 
-@28 = ~Bâton~
-@29 = ~Bâton du Mage~
-@30 = ~Réputée être l'arme contondante la moins sophistiquée, le bâton est un bout de bois d'une longueur de 1,80 m à 2,80 m. Les bâtons de qualité supérieure sont fabriqués en chêne robuste et sont ferrés de métal aux deux extrémités. Le bâton doit être manié des deux mains.
+@128 = ~Bâton~
+@129 = ~Bâton du Mage~
+@130 = ~Réputée être l'arme contondante la moins sophistiquée, le bâton est un bout de bois d'une longueur de 1,80 m à 2,80 m. Les bâtons de qualité supérieure sont fabriqués en chêne robuste et sont ferrés de métal aux deux extrémités. Le bâton doit être manié des deux mains.
 
 PARAMÈTRES :
 
@@ -132,7 +132,7 @@ Force nécessaire : 5
 
 Inutilisable par :
  Moine~
-@31 = ~Il existe plus d'un Bâton du Mage. Seul un archimage peut fabriquer un de ces artefacts magiques et, comme une lame sainte de paladin, chacun à ses similarités et ses différences. Quoi que très rare, ce type de bâton est parfaitement lié à l'image du lanceur de sort. C'est l'un des outils les plus puissants dont un mage puisse disposer, la culmination d'enchantements complexes et d'études interminables. C'est la quintessence d'un objet de mage. Celui-ci a été fabriqué par le haut Mage elfe Erevain Beraskána. Erevain ne voulut jamais révéler, même pas à ses plus proches apprentis, comment et pourquoi il le fabriqua, mais il semble qu'il s'en soit séparé plus tard de son plein gré. Comment il se retrouva en possession de Layene de la Rune tordue reste encore un mystère.
+@131 = ~Il existe plus d'un Bâton du Mage. Seul un archimage peut fabriquer un de ces artefacts magiques et, comme une lame sainte de paladin, chacun à ses similarités et ses différences. Quoi que très rare, ce type de bâton est parfaitement lié à l'image du lanceur de sort. C'est l'un des outils les plus puissants dont un mage puisse disposer, la culmination d'enchantements complexes et d'études interminables. C'est la quintessence d'un objet de mage. Celui-ci a été fabriqué par le haut Mage elfe Erevain Beraskána. Erevain ne voulut jamais révéler, même pas à ses plus proches apprentis, comment et pourquoi il le fabriqua, mais il semble qu'il s'en soit séparé plus tard de son plein gré. Comment il se retrouva en possession de Layene de la Rune tordue reste encore un mystère.
 Cet objet est l'un des neuf éléments composant l'arsenal du Mage. Selon la légende, quiconque s'équiperait de l'arsenal complet pourrait contrôler plus facilement les effets chaotiques de la magie entropique et obtiendrait une résistance contre les dégâts élémentaires.
 
 PARAMÈTRES :
@@ -170,14 +170,14 @@ Utilisable uniquement par :
  Sorcier~
 
 
-@32 = ~Gantelets~
-@33 = ~Gantelets du Mage~
-@34 = ~Les gantelets sont des gants blindés. Il en existe en cuir, en plaques de métal et en cotte de mailles. Chaque armure complète doit comporter des gantelets d'un type approprié. Les gantelets magiques ont tendance à être plus fins, plus légers et plus confortables que les modèles ordinaires.
+@132 = ~Gantelets~
+@133 = ~Gantelets du Mage~
+@134 = ~Les gantelets sont des gants blindés. Il en existe en cuir, en plaques de métal et en cotte de mailles. Chaque armure complète doit comporter des gantelets d'un type approprié. Les gantelets magiques ont tendance à être plus fins, plus légers et plus confortables que les modèles ordinaires.
 
 PARAMÈTRES :
 
 Poids : 2~
-@35 = ~Cette paire de gantelets est presque aussi précieuse que le vénérable Bâton du Mage, et faisait partie d'un ensemble d'objets conçu pour transformer un mage ordinaire en un un magicien extraordinaire. En fait, un certain mage, le vieux mage qui les créa, Erevain Beraskána. Personne ne sait vraiment comment Firkraag en prit possession. Il n'existe aucun indice permettant d'affirmer qu'Erevain et Firkraag se soient jamais rencontrés. Cependant, le mage Conster, qui servait Firkraag, fut l'apprenti de Malchimer, un nécromancien. Malchimer était le bras droit de Firkraag avant que Conster n'obtienne le poste. On sait que Malchimer a été en relations avec Erevain à Château-Suif. En tant que Haut Mage elfe, Erevain n'était pas un familier des bibliothèques de Château-Suif. Malchimer, lui, était un fournisseur régulier de volumes anciens pour ce bastion de la connaissance. Il est donc tout à fait possible qu'Erevain ait échangé ses précieux gantelets contre l'aide que Malchimer pouvait lui offrir pour acquérir un quelconque savoir qu'Erevain cherchait dans les allées vénérables de Château-Suif.
+@135 = ~Cette paire de gantelets est presque aussi précieuse que le vénérable Bâton du Mage, et faisait partie d'un ensemble d'objets conçu pour transformer un mage ordinaire en un un magicien extraordinaire. En fait, un certain mage, le vieux mage qui les créa, Erevain Beraskána. Personne ne sait vraiment comment Firkraag en prit possession. Il n'existe aucun indice permettant d'affirmer qu'Erevain et Firkraag se soient jamais rencontrés. Cependant, le mage Conster, qui servait Firkraag, fut l'apprenti de Malchimer, un nécromancien. Malchimer était le bras droit de Firkraag avant que Conster n'obtienne le poste. On sait que Malchimer a été en relations avec Erevain à Château-Suif. En tant que Haut Mage elfe, Erevain n'était pas un familier des bibliothèques de Château-Suif. Malchimer, lui, était un fournisseur régulier de volumes anciens pour ce bastion de la connaissance. Il est donc tout à fait possible qu'Erevain ait échangé ses précieux gantelets contre l'aide que Malchimer pouvait lui offrir pour acquérir un quelconque savoir qu'Erevain cherchait dans les allées vénérables de Château-Suif.
 Cet objet est l'un des neuf éléments composant l'arsenal du Mage. Selon la légende, quiconque s'équiperait de l'arsenal complet pourrait contrôler plus facilement les effets chaotiques de la magie entropique et obtiendrait une résistance contre les dégâts élémentaires.
 
 PARAMÈTRES :
@@ -193,10 +193,10 @@ Utilisable uniquement par :
  Sorcier~
 
 
-@36 = ~Bandeau doré~
-@37 = ~Bandeau du Mage~
-@38 = ~Ce bandeau doré est trop simple pour être une couronne. Cependant, la présence de symboles magiques à sa surface masque le manque de gemmes et laisse supposer qu'il recèle des pouvoirs cachés.~
-@39 = ~Magnifique pièce d'artisanat, le Bandeau du Mage est l'une des premières créations d'Erevain Beraskána. Comme tous les autres de son arsenal, on ne sait pas pourquoi il le fabriqua et il subit le même sort : il le perdit un peu plus tard. Cependant, la nature du propriétaire suivant du bandeau peut permettre de déterminer l'une des raisons de sa création. Il fallait une intelligence exceptionnelle pour le porter ; ce qui permettait à Erevain de tester ses apprentis potentiels. Après avoir commencé ses recherches à Château-Suif, Erevain fit quelque chose d'inouï pour un Haut Mage elfe : il prit un apprenti humain. Cependant, il restait toutefois loyal aux coutumes des elfes et n'apprit aucune magie elfique à son nouvel apprenti ; il lui enseigna seulement les bases de la magie traditionnelle. Le jeune mage qu'Erevain prit sous son aile était Vithal. C'était un candidat improbable pour l'apprentissage non seulement parce qu'il était humain, mais aussi parce qu'il était exceptionnellement égocentrique. On ne sait pas pourquoi Everain rompit la tradition et forma un humain. En revanche, il est certifié qu'il envoya Vithal mener une funeste expédition dans les Tréfonds obscurs pour y explorer les connections vers les Plans élémentaires. Il est probable que Sendai a obtenu le bandeau de ceux-là mêmes qui ont emprisonné Vithal dans l'Ombreterre.
+@136 = ~Bandeau doré~
+@137 = ~Bandeau du Mage~
+@138 = ~Ce bandeau doré est trop simple pour être une couronne. Cependant, la présence de symboles magiques à sa surface masque le manque de gemmes et laisse supposer qu'il recèle des pouvoirs cachés.~
+@139 = ~Magnifique pièce d'artisanat, le Bandeau du Mage est l'une des premières créations d'Erevain Beraskána. Comme tous les autres de son arsenal, on ne sait pas pourquoi il le fabriqua et il subit le même sort : il le perdit un peu plus tard. Cependant, la nature du propriétaire suivant du bandeau peut permettre de déterminer l'une des raisons de sa création. Il fallait une intelligence exceptionnelle pour le porter ; ce qui permettait à Erevain de tester ses apprentis potentiels. Après avoir commencé ses recherches à Château-Suif, Erevain fit quelque chose d'inouï pour un Haut Mage elfe : il prit un apprenti humain. Cependant, il restait toutefois loyal aux coutumes des elfes et n'apprit aucune magie elfique à son nouvel apprenti ; il lui enseigna seulement les bases de la magie traditionnelle. Le jeune mage qu'Erevain prit sous son aile était Vithal. C'était un candidat improbable pour l'apprentissage non seulement parce qu'il était humain, mais aussi parce qu'il était exceptionnellement égocentrique. On ne sait pas pourquoi Everain rompit la tradition et forma un humain. En revanche, il est certifié qu'il envoya Vithal mener une funeste expédition dans les Tréfonds obscurs pour y explorer les connections vers les Plans élémentaires. Il est probable que Sendai a obtenu le bandeau de ceux-là mêmes qui ont emprisonné Vithal dans l'Ombreterre.
 Cet objet est l'un des neuf éléments composant l'arsenal du Mage. Selon la légende, quiconque s'équiperait de l'arsenal complet pourrait contrôler plus facilement les effets chaotiques de la magie entropique et obtiendrait une résistance contre les dégâts élémentaires.
 
 PARAMÈTRES :
@@ -213,14 +213,14 @@ Utilisable uniquement par :
  Sorcier~
 
 
-@40 = ~Ceinturon~
-@41 = ~Ceinturon du Mage~
-@42 = ~Les ceinturons ressemblent généralement aux ceintures. Mais à la différence de ces dernières, ils ne servent pas à retenir les pantalons ou les salopettes, mais à porter bourses, fourreaux et choses de ce genre.
+@140 = ~Ceinturon~
+@141 = ~Ceinturon du Mage~
+@142 = ~Les ceinturons ressemblent généralement aux ceintures. Mais à la différence de ces dernières, ils ne servent pas à retenir les pantalons ou les salopettes, mais à porter bourses, fourreaux et choses de ce genre.
 
 PARAMÈTRES :
 
 Poids : 2~
-@43 = ~Ce ceinturon ressemble aux autres éléments de l'ensemble fabriqué par le Haut Mage légendaire, Erevain Beraskána. On sait qu'il a fabriqué ces objets et les a utilisés peu de temps avant de s'en séparer mystérieusement. Parfois, il semble qu'il les ait égarés volontairement. Cependant, ça ne semble pas être le cas du Ceinturon du Mage, du moins pas apparemment. Erevain était un Haut Mage des elfes de Suldanessalar dans la foret du Téthyr. Lors d'une incursion menée par les drows contre le royaume elfique, Erevain affronta seul une grande troupe d'elfes noirs. Ses sorts lui permirent de les obliger à battre en retraite. À cette époque, le Ceinturon du Mage était le seul objet de son arsenal qu'il possédait encore. Un éclaireur elfe qui vit la bataille rapporta qu'Erevain fut tué sous l'avalanche de sorts combinés de magiciens et de prêtres drows alignés contre lui. Cependant, même si le corps d'Erevain avait été détruit et avait disparu après la bataille, l'éclaireur jura qu'il avait entendu le magicien rire quand les drows retournèrent dans les Tréfonds Obscurs avant que les renforts de Suldanessalar n'arrivent sur les lieux du combat. On pense que la mère matrone Ardulace revendiqua le ceinturon comme un trophée de guerre après l'échec de la campagne drow lancée contre contre Suldanessalar.
+@143 = ~Ce ceinturon ressemble aux autres éléments de l'ensemble fabriqué par le Haut Mage légendaire, Erevain Beraskána. On sait qu'il a fabriqué ces objets et les a utilisés peu de temps avant de s'en séparer mystérieusement. Parfois, il semble qu'il les ait égarés volontairement. Cependant, ça ne semble pas être le cas du Ceinturon du Mage, du moins pas apparemment. Erevain était un Haut Mage des elfes de Suldanessalar dans la foret du Téthyr. Lors d'une incursion menée par les drows contre le royaume elfique, Erevain affronta seul une grande troupe d'elfes noirs. Ses sorts lui permirent de les obliger à battre en retraite. À cette époque, le Ceinturon du Mage était le seul objet de son arsenal qu'il possédait encore. Un éclaireur elfe qui vit la bataille rapporta qu'Erevain fut tué sous l'avalanche de sorts combinés de magiciens et de prêtres drows alignés contre lui. Cependant, même si le corps d'Erevain avait été détruit et avait disparu après la bataille, l'éclaireur jura qu'il avait entendu le magicien rire quand les drows retournèrent dans les Tréfonds Obscurs avant que les renforts de Suldanessalar n'arrivent sur les lieux du combat. On pense que la mère matrone Ardulace revendiqua le ceinturon comme un trophée de guerre après l'échec de la campagne drow lancée contre contre Suldanessalar.
 Cet objet est l'un des neuf éléments composant l'arsenal du Mage. Selon la légende, quiconque s'équiperait de l'arsenal complet pourrait contrôler plus facilement les effets chaotiques de la magie entropique et obtiendrait une résistance contre les dégâts élémentaires.
 
 PARAMÈTRES :
@@ -236,7 +236,7 @@ Utilisable uniquement par :
  Sorcier~
 
 
-@44 = ~Il s'agit de la pièce finale de l'ensemble de sept objets créé par Erevain Beraskána il y a près de deux siècles, et aussi la plus puissamment enchanté. Elle augmente la Classe d'armure de son porteur autant qu'une armure de plates complètes, mais ne pèse presque rien.
+@144 = ~Il s'agit de la pièce finale de l'ensemble de sept objets créé par Erevain Beraskána il y a près de deux siècles, et aussi la plus puissamment enchanté. Elle augmente la Classe d'armure de son porteur autant qu'une armure de plates complètes, mais ne pèse presque rien.
 
 PARAMÈTRES :
 
@@ -253,7 +253,7 @@ Utilisable uniquement par :
  Mage
  Sorcier~
 
-@45 = ~Il s'agit de la fameuse Amulette du Mage, encore un autre élément d'un ensemble d'objets. Ce fut la première pièce de l'arsenal du Mage à être fabriquée, et elle est vraiment puissante. Elle protège quiconque la porte des métamorphoses hostiles, tout en réduisant ses temps d'incantations et en augmentant de 25 % sa résistance à la magie.
+@145 = ~Il s'agit de la fameuse Amulette du Mage, encore un autre élément d'un ensemble d'objets. Ce fut la première pièce de l'arsenal du Mage à être fabriquée, et elle est vraiment puissante. Elle protège quiconque la porte des métamorphoses hostiles, tout en réduisant ses temps d'incantations et en augmentant de 25 % sa résistance à la magie.
 
 PARAMÈTRES :
 
@@ -270,7 +270,7 @@ Utilisable uniquement par :
  Mage
  Sorcier~
 
-@46 = ~Comme leurs semblables, ces bottes étaient conçues pour faciliter l'interminable quête de perfection mentale des mages, ou plutôt pour faciliter la quête de perfection mentale de leur créateur. Elles augmentent la vitesse d'incantation et octroient un important bonus aux jets de sauvegarde, ainsi que quelques autres « petits plus ».
+@146 = ~Comme leurs semblables, ces bottes étaient conçues pour faciliter l'interminable quête de perfection mentale des mages, ou plutôt pour faciliter la quête de perfection mentale de leur créateur. Elles augmentent la vitesse d'incantation et octroient un important bonus aux jets de sauvegarde, ainsi que quelques autres « petits plus ».
 
 PARAMÈTRES :
 
@@ -285,7 +285,7 @@ Utilisable uniquement par :
  Mage
  Sorcier~
 
-@47 = ~Quoi que très rare, ce type de bâton est parfaitement lié à l'image du lanceur de sort. C'est l'un des outils les plus puissants dont un mage puisse disposer, la culmination d'enchantements complexes et d'études interminables. Celui-ci est efficace en combat de mêlée, rend invisible et offre une protection contre les charmes et le mal. Il peut aussi invoquer un piège à sorts, lancer une combinaison de boule de feu et d'éclair magique, et dissiper la magie. C'est la quintessence d'un objet de mage. Il faisait partie d'un ensemble de sept objets créé il y a près de deux siècles par puissant mage elfe appelé Erevain Beraskána.
+@147 = ~Quoi que très rare, ce type de bâton est parfaitement lié à l'image du lanceur de sort. C'est l'un des outils les plus puissants dont un mage puisse disposer, la culmination d'enchantements complexes et d'études interminables. Celui-ci est efficace en combat de mêlée, rend invisible et offre une protection contre les charmes et le mal. Il peut aussi invoquer un piège à sorts, lancer une combinaison de boule de feu et d'éclair magique, et dissiper la magie. C'est la quintessence d'un objet de mage. Il faisait partie d'un ensemble de sept objets créé il y a près de deux siècles par le puissant mage elfe appelé Erevain Beraskána.
 
 PARAMÈTRES :
 
@@ -321,7 +321,7 @@ Utilisable uniquement par :
  Mage
  Sorcier~
 
-@48 = ~Cette paire de gantelets est presque aussi précieuse que le vénérable Bâton du Mage, et faisait partie d'un ensemble d'objets conçu pour transformer un mage ordinaire en un magicien extraordinaire. En fait, un certain mage, le vieux mage qui les créa, Erevain Beraskána. Ils donnent un petit bonus à la classe d'armure, permettent de mémoriser plus de sorts et accordent d'autre petites choses.
+@148 = ~Cette paire de gantelets est presque aussi précieuse que le vénérable Bâton du Mage, et faisait partie d'un ensemble d'objets conçu pour transformer un mage ordinaire en un magicien extraordinaire. En fait, un certain mage, le vieux mage qui les créa, Erevain Beraskána. Ils donnent un petit bonus à la classe d'armure, permettent de mémoriser plus de sorts et accordent d'autre petites choses.
 
 PARAMÈTRES :
 
@@ -336,7 +336,7 @@ Utilisable uniquement par :
  Mage
  Sorcier~
 
-@49 = ~Ce bandeau est semblable aux autres éléments de l'ensemble qu'il compose. Étant porté près du cerveau, il procure des protections plus efficaces, comme un bouclier mental et permet de mémoriser des sorts de haut niveau supplémentaires. Il ne sera cependant d'aucune utilité pour les magiciens ne bénéficiant pas d'une grande intelligence.
+@149 = ~Ce bandeau est semblable aux autres éléments de l'ensemble qu'il compose. Étant porté près du cerveau, il procure des protections plus efficaces, comme un bouclier mental et permet de mémoriser des sorts de haut niveau supplémentaires. Il ne sera cependant d'aucune utilité pour les magiciens ne bénéficiant pas d'une grande intelligence.
 
 PARAMÈTRES :
 
@@ -355,7 +355,7 @@ Utilisable uniquement par :
  Mage
  Sorcier~
 
-@50 = ~Ce ceinturon est l'un des éléments de l'ensemble d'objets créé par Erevain Beraskána, et probablement le moins enchanté des sept. Il procure l'immunité à tous les projectiles et réduit les temps d'incantation d'une unité.
+@150 = ~Ce ceinturon est l'un des éléments de l'ensemble d'objets créé par Erevain Beraskána, et probablement le moins enchanté des sept. Il procure l'immunité à tous les projectiles et réduit les temps d'incantation d'une unité.
 
 PARAMÈTRES :
 
@@ -368,14 +368,14 @@ Utilisable uniquement par :
  Mage
  Sorcier~
 
-@51 = ~Étui à parchemins~
-@52 = ~Boite solide permettant de ranger des douzaines de parchemins à l'intérieur, à l'abri du feu, de la pluie ou des éclairs - dangers fréquents pour les aventuriers.
+@151 = ~Étui à parchemins~
+@152 = ~Boite solide permettant de ranger des douzaines de parchemins à l'intérieur, à l'abri du feu, de la pluie ou des éclairs - dangers fréquents pour les aventuriers.
 
 PARAMÈTRES :
 
 Capacité de stockage : 20 parchemins
 Poids : 2~
-@53 = ~Reçu d'Erevain Beraskána lui-même, cet étui à parchemins peut contenir une quantité illimitée de parchemins.
+@153 = ~Reçu d'Erevain Beraskána lui-même, cet étui à parchemins peut contenir une quantité illimitée de parchemins.
 
 PARAMÈTRES :
 
