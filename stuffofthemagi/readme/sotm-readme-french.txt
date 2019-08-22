@@ -1,135 +1,86 @@
-# <a name="top" id="top"></a>Stuff of The Magi (WIP)
+PRÉSENTATION
+============
 
-<strong>Original Author:</strong> Victor Straffe<br />
-<strong>Version:</strong> 6.0.0<br />
-<strong>Language:</strong> English, <a href="README-FR.md">French</a><br />
-<strong>Platforms:</strong> Windows
+Ce mod a été conçu et publié par Victor Straff sur le site Sorcerer's Place
+Kevmus l'a mis à jour au format Weidu, a ajouté les objets plus équilibrés et a corrigé plusieurs bugs (en espérant que ça marche).
 
-<strong>Mod Website and Forum:</strong> <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">Spellhold Studios</a></p>
+Ce mod ajoute l'arsenal du mage dans l'inventaire des créatures suivantes :
 
+Robe : Vongoethe
+Amulette : Démogorgon
+Bottes : Kangaxx (une demiliche sans corps avec des bottes ? remarque, elle porte bien un anneau :x)
+Bâton : Layene à la Rune Tordue
+Bracelets : Firkraag
+Bandeau : Sendai
+Ceinture : Mère matrone Ardulace
+Cape : Temple de Rillifane dans Suldanessellar
+Anneau : Lavok
 
-<center><a href="#intro">Overview</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Components</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#versions">Version History</a></center></br></br>
-
-
-<hr>
-
-
-## <a name="intro" id="intro"></a>Overview
-
-This mod adds a new set of Mage items scattered through the game. Please read <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/readme/sotm-spoilers.txt">sotm-spoilers.txt</a> for details.
-
-Also, if you have all items, you will meet someone in the Pocket Plane who will want to speak with you...
 Si vous possédez tous les objets, celui qui les porte tous obtient un bonus exceptionnel, et vous rencontrerez quelqu'un qui voudra vous parler dans l'antichambre....
 
-Note: If you choose the original overpowered items you will only end up with 7 items instead of 9, no cape nor ring.
-
-<strong>Never forget:</strong> All the original work was done by Victor Straffe at Sorcerer's Place.
+Note du traducteur : Si vous choisissez les objets "surpuissants", vous n'en aurez que 7 (pas de cape, ni d'anneau).
 
 
-<hr>
+COMPATIBLITÉ
+============
+
+Ce mod est conçu pour fonctionner sur les jeux Infinity Engine suivants : le jeu original Baldur's Gate II (Les Ombres d'Amn : BG2-SoA) avec son extension Trône de Bhaal (Throne of Bhaal : ToB), Baldur's Gate II: Enhanced Edition (BG2EE), les mods de conversion Baldur's Gate Trilogy (BGT) et Enhanced Edition Trilogy (EET).
+C'est un mod WeiDU qui devrait par conséquent être compatible avec n'importe quel mod WeiDU. Si vous rencontrez des bugs, veuillez les signaler dans le forum, s'il vous plaît.
 
 
-## <a name="compat" id="compat"></a>Compatibility
+INSTALLATION
+============
 
-This mod is designed to work on the following Infinity Engine games: the original Baldur's Gate II (BG2 or just SoA) with the Throne of Bhaal (ToB) expansion, Baldur's Gate II: Enhanced Edition (BG2EE), the conversion projects Baldur's Gate Trilogy (BGT) and Enhanced Edition Trilogy (EET).
+Si une ancienne version de ce mod est déjà installée, il est nécessaire de la désinstaller d'abord. Pour cela, lancez setup-stuffofthemagi.exe et désinstallez le composant principal précédemment installé. Une fois la désinstallation achevée, supprimez le répertoire stuffofthemagi.
 
-This is a <acronym title="Weimer Dialogue Utility">WeiDU</acronym> mod, and therefore should be compatible with all WeiDU mods. If you encounter any bugs, please report them on the forum!<br>
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+- Note pour les jeux en Édition Améliorée (EE)
+  Les Éditions améliorées sont des jeux que le développeur fait encore évoluer, notamment par l'ajout de capacités supplémentaires destinées à la création de mods et par l'ajout de contenus. N'oubliez pas que chaque patch de mise à jour effacera les mods que vous avez installés ! Ce mod ne fera pas exception à la règle.
+  Si vous pouvez retarder la mise à jour du patch en plein milieu d'un partie moddée (si vous en avez la possibilité, notamment chez Beamdog et Good Old Games), n'oubliez pas que même après avoir réinstallé les mods sur un nouveau patch, vous ne pourrez peut-être pas continuer le jeu avec vos anciennes sauvegardes, en particulier à cause de noms de personnages, de lieux, etc, qui pourraient être incorrects. Pour y remédier, copiez tout le dossier du jeu dans un nouveau dossier dans lequel vous installerez vos mods, et qui ne sera pas modifié par les patches de mise à jour. Il est important que vous installiez le mod dans la version linguistique dans laquelle vous jouez. Sinon, les dialogues du mod ne s'afficheront pas et provoqueront des messages d'erreur.
 
+- Avertissement : nouvelle procédure d'installation
+  À partir de la version 6.0.0, les variables nécessaires à l'installation sont lues dans le fichier stuffofthemagi.ini, ou dans le fichier stuffofthemagi_user.ini, si ce dernier existe.
+  Pour éviter d'interrompre la procédure d'installation par de nombreux messages vous permettant de personnaliser certains composants à votre convenance, ces choix d'options ne sont plus déterminées par la procédure d'installation, mais ont été externalisés dans le fichier stuffofthemagi.ini situé dans le répertoire stuffofthemagi. Ce fichier définit une installation « standard ».
+  Si vous souhaitez choisir d'autres options d'installation, il vous suffit de modifier, avec Notepad ou un autre éditeur de texte, les options de configuration de la section [Mod_content] dans le fichier stuffofthemagi.ini, puis de sauvegarder ce dernier sous le nom stuffofthemagi_user.ini.
+  Chaque ligne de ce fichier comprend une option de configuration, suivie de « = », puis d'un chiffre. Tout ce que vous avez à faire, c'est modifier la valeur du chiffre.
+  Le programme d'installation lira les valeurs des variables dans les deux fichiers ini et donnera la priorité aux vôtres. Si le fichier stuffofthemagi_user.ini contient une variable non conforme, ou si une variable est manquante, il la remplacera par sa valeur par défaut (celle correspondant à l'installation « standard »).
 
-<hr>
+  Voici la liste des options concernées et de la signification de leur valeur  (ne modifiez pas les variables non listées ; elle font partie de l'architecture de debugging et de test) :
 
+    - sotm_use : Puissance des objets
+        (1) = Utiliser les nouveaux objets, moins grobillesques (recommandé)
+        2 = Utiliser les objets originaux, surpuissants (pas de cape ni d'anneau dans ce cas)
+    - sotm_equip : Où trouver les objets
+        (1) = Ajouter les objets à l'equipement des créatures (recommandé, les ennemis les utiliseront contre vous)
+        2 = Ajouter les objets à l'inventaire des créatures (ne change en rien la difficulté des combats)
 
-## <a name="installation" id="installation"></a>Installation
+- Windows
+  Vous devez extraire les fichiers de l'archive dans votre répertoire de jeu (le dossier qui contient le fichier CHITIN.KEY) à l'aide de 7zip, de WinRAR< ou de tout autre utilitaire de compression gérant les fichiers zip. Une fois l'archive extraite correctement, vous devriez trouver le répertoire stuffofthemagi et le fichier setup-stuffofthemagi.exe dans votre répertoire de jeu. Pour installer le mod, il suffit de double-cliquer sur setup-stuffofthemagi.exe et de suivre les instructions affichées à l'écran.
+  Vous pouvez lancer setup-stuffofthemagi.exe dans votre répertoire de jeu pour réinstaller, désinstaller, ou encore modifier les paramètres du composant.
 
-#### Notes
-
-<em>If you've previously installed the mod, remove it before extracting the new version. To do this, run <strong>setup-stuffofthemagi.exe</strong>, uninstall the previously installed main component and delete the stuffofthemagi folder.</em>
-
-<em>When installing or uninstalling, <strong>do not close the <acronym title="Disk Operating System">DOS</acronym> window</strong> by clicking on the <strong>X</strong> button! Instead, press the <strong>Enter</strong> key whenever instructed to do so.</em>
-
-<strong>Disable any antivirus</strong> or other memory-resident software before installing this or any other mod. Some (particularly avast and Norton!) have a tendency to report false positives with mod activity, resulting in failed installs.
-
-## 
-
-#### Enhanced Editions Note
-
-The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
-
-## 
-
-#### <a name="config" id="config">:warning: Warning: new installation process
-
-##### As of version 6.0.0, options needed for installation are read from <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</em></a> file, or <em>stuffofthemagi_user.ini</em> if it exists.
-
-As interrupting installation with plain text prompts allowing players to customise installation to their liking, those install options are no longer available via the main installer, and have been moved into <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini">stuffofthemagi.ini</a> file in <strong>stuffofthemagi</strong> folder. This file provides a '<em>default</em>' installation.
-
-If you want to define your own customized installation, you have to edit the <strong><em>[Mod_content]</em></strong> section of <strong><em>stuffofthemagi.ini</em></strong> with Notepad or another text editor, then save this file as <strong><em>stuffofthemagi_user.ini</em></strong>.
-
-Each line consists of a configuration option, then '=', then a number. The only thing you should edit is the number.
-
-The installation process will read both ini files and prioritize user's options values. If a value is not set or mismatched in stuffofthemagi_user.ini, any installation failure will be prevented by reverting it back to its default value.</br>
-
-Here is a chart listing the install options related to the installation process (Don't change anything not listed; these are part of the testing framework.):<br>
-
-| Variable | Install Option Description | Type | Values | Default |
-| :---: | --- | :---: | :---: | :---: |
-| sotm_use | Items Power<br> 1 = Use new, less cheesy items (recommended).<br>2 = Use original, overpowered items (no cape nor ring).<br> | integer | 1 or 2 | <strong>1<strong> |
-| sotm_equip | Where to find items<br>1 = Add items to creatures' equipment (recommended, enemies will use these items against you).<br>2 = Add items to creatures' inventory (does not change difficulty of fights).<br> | integer | 1 or 2 | <strong>1<strong> |
-
-## 
-
-#### Windows
-
-Extract the contents of the mod archive into the folder of the game you wish to modify (<em>the folder which contains the "CHITIN.KEY" file</em>), using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. On successful extraction, there should be an stuffofthemagi folder and a setup-stuffofthemagi.exe file in your game folder. To install, simply double-click <strong>setup-stuffofthemagi.exe</strong> and follow the instructions on screen.
-
-Run <strong>setup-stuffofthemagi.exe</strong> in your game folder to reinstall, uninstall or otherwise change the component settings.
-
-## 
-
-#### Note for Complete Uninstallation
-
-In addition to the methods above for removing individual components, you can completely uninstall the mod using <strong>setup-stuffofthemagi --uninstall</strong> at the command line to remove all components without wading through prompts.</br>
-<div style="text-align:right"><a href="#top">Back to top</a></div>
+- Note pour effectuer une désinstallation complète
+  En plus des méthodes détaillées plus haut pour supprimer des composants, il est possible de désinstaller complètement le mod en tapant "setup-stuffofthemagi --uninstall" dans une ligne de commandes, ce qui supprimera tous les composants sans devoir ingurgiter tous les messages.
 
 
-<hr>
+CRÉDITS (par ordre alphabétique)
+================================
 
-
-## <a name="components" id="components"></a>Components
-
-The installer includes only one component, the main component.
-
-
-<hr>
-
-
-## <a name="credits" id="credits"></a>Credits and Acknowledgements
-
-#### Author: Victor Straffe (at Sorcerer's Place)
-
-
-#### Special Acknowledgements to (alphabetical order):
-
-- Cmorgan: Help with bug-squishing/tidiness/etc.
+- Cmorgan: Help with bugsquishing/tidiness/etc.
 - Deratiseur: Made it compatible with translations, wrote the French translation, and provided the EE compatible version.
 - Gwendolyne: Fixed French translation and released version 6.0.0.
-- Kevmus: Updated the mod to WeiDU, added the more balanced items, and fixed bugs.
 - Rastamage: Item stories/Erevain's talk.
 - Tassadar88: Help with coding.
-- Anastasya Zakharova: <a href="https://www.artstation.com/artwork/AznzX">Matatel portrait</a> for Erevain Beraskána.
+- Anastasya Zakharova: Matatel portrait for Erevain Beraskána at https://www.artstation.com/artwork/AznzX
 
-If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href=""http://www.shsforums.net/topic/34134-stuff-of-the-magi/">mod forum</a>.</br>
-<div style="text-align:right"><a href="#top">Back to top</a></div>
-
-
-<hr>
+Si vous avez une suggestion, ou si vous rencontrez un bogue, veuillez en informer les mainteneurs dans le forum du mod : http://www.shsforums.net/topic/34134-stuff-of-the-magi/
 
 
-## <a name="versions" id="versions"></a>Versions History
+VERSIONS
+========
 
-##### Version 6.0.0 - Month day, 2019
+Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour continue du mod.
 
+Version 6.0.0
+-------------
 - Major updates:
 	- Renamed Setup-StuffofTheMagi.tp2 -> stuffofthemagi.tp2 to support AL|EN's "Project Infinity".
 	- Installation options have been moved into stuffofthemagi.ini file and replaced READLN actions to support AL|EN's "Project Infinity".
@@ -224,49 +175,34 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Updated French translation (Gwendolyne).
 - Updated WeiDU installer to v246.
 
-## 
-
-##### Version 5
-
+Version 5:
+----------
 - Added BG2EE compatibility. Thanks, Deratiseur! ( again :) )
 - Removed unnecessary backup folder.
 
-## 
-
-##### Version 4
-
+Version 4:
+----------
 - Apparently, a version of 1.3 had gotten out into the wild labeled v3. This should remove any doubt as to which version is latest.
 - Fixed: original gauntlets gave +2 ninth level spells permanently. This was also in the non-WeiDU SOTM.
 - Fixed: Unidentified cape had description of a belt. Oops.
 - Added: French Translation! Thanks, Deratiseur!
 
-## 
-
-##### Version 2.4
-
+Version 2.4:
+------------
 - Fixed a bunch of bugs.
 
-## 
-
-##### Version 2
-
+Version 2:
+----------
 - Added balanced items, encounter in Pocket plane.
 
-## 
-
-##### Version 1.3
-
+Version 1.3:
+------------
 - Fixed the No wizard amulet from Demogorgon bug.
 
-## 
-
-##### Version 1.2
-
+Version 1.2:
+------------
 - Fixed the 2 staffs from Layene bug.
 
-## 
-
-##### Version 1.1
-
+Version 1.1:
+------------
 - Updated to WeiDU.
-<div style="text-align:right"><a href="#top">Back to top</a></div>

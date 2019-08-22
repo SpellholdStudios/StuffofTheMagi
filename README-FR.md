@@ -1,4 +1,4 @@
-# <a name="top" id="top"></a>L'Arsenal du mage
+# <a name="top" id="top"></a>L'Arsenal du mage (WIP)
 
 <strong>Auteur original :</strong> Victor Straffe<br />
 <strong>Version :</strong> 6.0.0<br />
@@ -8,7 +8,7 @@
 <strong>Site et forum du mod :</strong> <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">Spellhold Studios</a></p>
 
 
-<center><a href="#intro">Présentation</a> &#x2B25; <a href="#compat">Compatibilité</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Composants</a> &#x2B25; <a href="#credits">Crédits</a> &#x2B25; <a href="#version">Historique des versions</a></center></br></br>
+<center><a href="#intro">Présentation</a> &#x2B25; <a href="#compat">Compatibilité</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Composants</a> &#x2B25; <a href="#credits">Crédits</a> &#x2B25; <a href="#versions">Historique des versions</a></center></br></br>
 
 
 <hr>
@@ -69,55 +69,32 @@ Si vous pouvez retarder la mise à jour du patch en plein milieu d'un partie modd
 
 ## 
 
-#### <a name="config" id="config">:warning: Avertissement : procédure d'installation
+#### <a name="config" id="config">:warning: Avertissement : nouvelle procédure d'installation
 
 ##### À partir de la version 6.0.0, les variables nécessaires à l'installation sont lues dans le fichier <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</em></a>, ou dans le fichier <em>stuffofthemagi_user.ini</em>, si ce dernier existe.
 
-Pour éviter d'interrompre la procédure d'installation par de nombreux messages vous permettant de personnaliser certains composants à votre convenance, ces choix de variables ont été externalisés dans le fichier <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</a> situé dans le répertoire <strong>stuffofthemagi</strong>. Ce fichier définit une installation « <em>standard</em> ».
+Pour éviter d'interrompre la procédure d'installation par de nombreux messages vous permettant de personnaliser certains composants à votre convenance, ces choix d'options ne sont plus déterminées par la procédure d'installation, mais ont été externalisés dans le fichier <a href="https://raw.githubusercontent.com/GwendolyneFreddy/StuffOfTheMagi/master/stuffofthemagi/stuffofthemagi.ini"><em>stuffofthemagi.ini</a> situé dans le répertoire <strong>stuffofthemagi</strong>. Ce fichier définit une installation « <em>standard</em> ».
 
-Si vous souhaitez choisir d'autres options d'installation, il vous suffit de modifier les variables souhaitées dans le fichier <strong><em>stuffofthemagi.ini</em></strong>, puis de sauvegarder ce dernier sous le nom <strong><em>stuffofthemagi_user.ini</em></strong>.
+Si vous souhaitez choisir d'autres options d'installation, il vous suffit de modifier, avec Notepad ou un autre éditeur de texte, les options de configuration de la section <strong><em>[Mod_content]</em></strong> dans le fichier <strong><em>stuffofthemagi.ini</em></strong>, puis de sauvegarder ce dernier sous le nom <strong><em>stuffofthemagi_user.ini</em></strong>.
+
+Chaque ligne de ce fichier comprend une option de configuration, suivie de « = », puis d'un chiffre. Tout ce que vous avez à faire, c'est modifier la valeur du chiffre.
 
 Le programme d'installation lira les valeurs des variables dans les deux fichiers ini et donnera la priorité aux vôtres. Si le fichier stuffofthemagi_user.ini contient une variable non conforme, ou si une variable est manquante, il la remplacera par sa valeur par défaut (celle correspondant à l'installation « <em>standard</em> »).</br>
 
-Voici le tableau des variables concernées :<br>
+Voici le tableau des variables concernées (ne modifiez pas les variables non listées ; elle font partie de l'architecture de debugging et de test) :<br>
 
-<table style="margin-left: 80px" summary="Liste des variables d'installation">
-	<tr>
-		<th>Variables</th>
-		<th>Signification</th>
-		<th>Type</th>
-		<th>Valeurs possibles</th>
-		<th>Défaut</th>
-	</tr>
-	<tr>
-		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_use</span></td>
-		<td style="padding-left:10px;padding-right:10px;text-align: justify">Puissance des objets<br>
-		1 = Utiliser les nouveaux objets, moins grobillesques (recommandé)<br>
-		2 = Utiliser les objets originaux, surpuissants<br>
-		</td>
-		<td>numérique</td>
-		<td>1 ou 2</td>
-		<td><strong><span style="color: #FFCC33">1</span><strong></td>
-	</tr>
-	<tr>
-		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_equip</span></td>
-		<td style="padding-left:10px;padding-right:10px;text-align: justify">Où trouver les objets<br>
-		1 = Ajouter les objets à l'equipement des créatures (recommandé)<br>
-		2 = Ajouter les objets à l'inventaire des créatures<br>
-		</td>
-		<td>numérique</td>
-		<td>1 ou 2</td>
-		<td><strong><span style="color: #FFCC33">1</span><strong></td>
-	</tr>
-</table><br>
+| Variable | Signification de l'option d'installation | Type | Valeurs | Défaut |
+| :---: | --- | :---: | :---: | :---: |
+| sotm_use | Puissance des objets<br> 1 = Utiliser les nouveaux objets, moins grobillesques (recommandé).<br>2 = Utiliser les objets originaux, surpuissants (pas de cape ni d'anneau dans ce cas).<br> | numérique | 1 or 2 | <strong>1<strong> |
+| sotm_equip | Où trouver les objets<br>1 = Ajouter les objets à l'equipement des créatures (recommandé, les ennemis les utiliseront contre vous)<br>2 = Ajouter les objets à l'inventaire des créatures (ne change en rien la difficulté des combats).<br> | numérique | 1 or 2 | <strong>1<strong> |
 
 ## 
 
 #### Windows
 
-Vous devez extraire les fichiers de l'archive dans votre répertoire de jeu (<em>le dossier qui contient le fichier CHITIN.KEY</em>) à l'aide de <a href="http://www.7-zip.org/download.html">7zip</a> ou de <a href="http://www.rarlab.com/download.htm">WinRAR</a>. Une fois l'archive extraite correctement, vous devriez trouver le répertoire stuffofthemagi et le fichier setup-stuffofthemagi.exe dans votre répertoire de jeu. Pour installer le mod, il suffit de double-cliquer sur <strong>setup-stuffofthemagi.exe</strong> et de suivre les instructions affichées à l'écran.
+Vous devez extraire les fichiers de l'archive dans votre répertoire de jeu (<em>le dossier qui contient le fichier CHITIN.KEY</em>) à l'aide de <a href="http://www.7-zip.org/download.html">7zip</a>, de <a href="http://www.rarlab.com/download.htm">WinRAR</a> ou de tout autre utilitaire de compression gérant les fichiers zip. Une fois l'archive extraite correctement, vous devriez trouver le répertoire stuffofthemagi et le fichier setup-stuffofthemagi.exe dans votre répertoire de jeu. Pour installer le mod, il suffit de double-cliquer sur <strong>setup-stuffofthemagi.exe</strong> et de suivre les instructions affichées à l'écran.
 
-Vous pouvez lancer <strong>setup-stuffofthemagi.exe</strong> dans votre répertoire de jeu pour réinstaller, désinstaller, ou encore modifier lesparamètres du composant.
+Vous pouvez lancer <strong>setup-stuffofthemagi.exe</strong> dans votre répertoire de jeu pour réinstaller, désinstaller, ou encore modifier les paramètres du composant.
 
 ##
 
@@ -146,11 +123,15 @@ Le programme d'installation ne comprend qu'un seul composant, le composant princ
 
 #### Remerciements (par ordre alphabétique):
 
-- Cmorgan : Help with bugsquishing/tidiness/etc.
+- Cmorgan : Help with bugs-quishing/tidiness/etc.
 - Deratiseur : Made it compatible with translations, wrote the French translation, and provided the EE compatible version.
-- Kevmus : Updated the mod to WeiDU, added the more balanced items, and bug fixed.
-- Rastamage : Item stories/Erevain's talk
-- Tassadar88 : Help with coding
+- Gwendolyne : Fixed French translation and released version 6.0.0
+- Kevmus : Updated the mod to WeiDU, added the more balanced items, and fixed bugs.
+- Rastamage : Item stories/Erevain's talk.
+- Tassadar88 : Help with coding.
+- Anastasya Zakharova : <a href="https://www.artstation.com/artwork/AznzX">Matatel portrait</a> for Erevain Beraskána.
+
+Si vous avez une suggestion, ou si vous rencontrez un bogue, veuillez en informer les mainteneurs dans le <a href=""http://www.shsforums.net/topic/34134-stuff-of-the-magi/">forum du mod</a>.</br>
 <div style="text-align:right"><a href="#top">Haut de page</a></div>
 
 
@@ -159,19 +140,26 @@ Le programme d'installation ne comprend qu'un seul composant, le composant princ
 
 ## <a name="versions" id="versions"></a>Historique des versions
 
+Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour continue du mod.
+
 ##### Version 6.0.0 - Month day, 2019
 
-- Removed unnecessary files: handle_charsets.tpa, .
-- Removed unnecessary backup folder.
-
-- stuffofthemagi.ini:
-- Removed READLN to support ALIEN's "Project Infinity".
-
-- Added compatibility with 1PP and ToBEx.
-- Added Detectable Spells variables.
-- Appended items to tooltip.2da file.
-- Fixed remaining glitches and bugs.
-- Scroll Case (wzrdbag1): Fixed wrong Storage capacity (made it botomless as per its description).
+- Major updates:
+	- Renamed Setup-StuffofTheMagi.tp2 -> stuffofthemagi.tp2 to support AL|EN's "Project Infinity".
+	- Installation options have been moved into stuffofthemagi.ini file and replaced READLN actions to support AL|EN's "Project Infinity".
+	- Reorganized mod architecture tree: created lib and readme folders, renamed script and language folders as baf and lang folders.
+	- Removed unnecessary or unused files : wzrdlic2.baf, wzrdlichold.cre and wzrdbag.itm.
+	- Split setup.tra file into separate thematic files for more comfortable readability.
+	- Provided compatibility with 1PP and TobEx.
+	- Added Detectable Spells variables.
+	- Appended items (wzrdboot, wzrdhelm and wzrdstaf) to tooltip.2da file.
+	- Provided a portrait to Erevain Beraskána.
+	- Fixed an installation issue preventing the player wearing whole Stuff of the Magi set to gain an extra bonus if Option 2 (Use original, overpowered items) was selected.
+	- Fixed remaining glitches and bugs.
+	- Hard-coded item unidentified names and descriptions in .itm files to avoid writing them in installation process.
+	- Updated English item descriptions for compatibility with GW_UPDATE_ITM_DESCRIPTION_TO_EE WeiDU function requirements which automatically removes usability restrictions for EE games.
+	- Added stuffofthemagi.ini metadata file to support AL|EN's "Project Infinity".
+- Scroll Case (wzrdbag1): Fixed wrong Storage capacity (made it bottomless as per its description) and fixed a typo and wrong scroll code (was adding 2 scrolls of Freedom instead of 1 Freedom and 1 Imprisonment).
 - Option 1: Use new, less cheesy items.
 	- Cape of the Magi (wzrdrobe)
 		- Removed useless Chain Contingency ability that did not do anything and was not described in identified description string.
@@ -183,6 +171,7 @@ Le programme d'installation ne comprend qu'un seul composant, le composant princ
 		- Decided not to add opcode #142 Display portrait icon (90 : Negative Plane Protection).
 	- Robe of the Magi (wzrdclck)
 		- Fixed opcode #142 (Display portrait icon): replaced wrong 76 icon (Protected from the Elements) with 63 (Magic Resistance).
+		- Fixed wrong weight (3 replaces 2).
 	- Amulet of the Magi (wzrdamul)
 		- Replaced Protection from spell opcodes (#206) with full effects granting immunity to Petrification.
 		- Removed all inaccurate opcodes #206 (Protection from Spell) protecting from Polymorph Other spells.
@@ -190,7 +179,7 @@ Le programme d'installation ne comprend qu'un seul composant, le composant princ
 		- Added DS values (176 LOCKPICKINGMTPBONUS = 176 WIZARD_PROTECTION_FROM_PETRIFICATION) for classical games and Set State PROTECTION_FROM_PETRIFICATION (107) for EE games.
 	- Boots of the Magi (wzrdboot)
 		- Fixed description string: same movement rate as Boots of Speed instead of "Movement rate increased by 50%", and replaced "Aura cleansed after each spell" with "Improved Alacrity one per day".
-		- Fixed ability icon (SPWI921B) and replaced opocde #148 with opcode #146.
+		- Fixed ability icon (SPWI921B) and replaced opcode #148 with opcode #146.
 		- Appended tooltip.2da: Improved Alacrity.
 	- Staff of the Magi (wzrdstaf)
 		- Fixed wrong damages.
@@ -198,11 +187,11 @@ Le programme d'installation ne comprend qu'un seul composant, le composant princ
 		- Added missing opcode #296 Graphics: Protection from Specific Animation (SPNWCHRM).
 		- Added opcodes #247 (Text: Protection from Display Specific String): 8364 (dominated), 14672 (charmed), 14780 (dire charmed).
 		- Fixed opcode #142 (Graphics: Display Special Effect Icon) = replaces wrong parameter2 28 (Protection from Magic) with 52 (Mind Shield).
-		- Removed ugly Protection drom Evil glowing colors: Glow Pulse [9] effect
+		- Removed ugly Protection from Evil glowing colors: Glow Pulse [9] effect
 		- Replaced Dispel magic effects with more accurate BG2 Fixpack ones.
 		- Added DS values (117 PROTECTION_FROM_EVIL).
 		- Fireball-Lightning ability: added Break Sanctuary flag for EE games.
-		- Spel trap ability: replaced with STAF11.spl.
+		- Spell trap ability: replaced with STAF11.spl.
 		- Added Glowing staff animation (and colors) for EE game or if 1PP is installed.
 		- Appended tooltip.2da
 	- Gauntlets of the Magi (wzrdbrac)
@@ -218,6 +207,7 @@ Le programme d'installation ne comprend qu'un seul composant, le composant princ
 		- Added DS values (179 PICKPOCKETMTPBONUS = 179 WIZARD_PROTECTION_FROM_NORMAL_MISSILES) for classical games and Set State BUFF_PRO_WEAPONS (64) and PROTECTION_FROM_NORMAL_MISSILES (109) for EE games.
 - Option 2: Use original, overpowered items.
 	- Robe of the Magi (wzrdclck)
+		- Fixed wrong weight (3 replaces 2).
 		- Added DS value #133 Stat: Proficiency (CLERIC_REGENERATION - 124).
 		- Added DS value for EE games: Set State BUFF_PRO_DAMAGE (65).
 	- Amulet of the Magi (wzrdamul)
@@ -244,24 +234,23 @@ Le programme d'installation ne comprend qu'un seul composant, le composant princ
 		- Added Protection from missing projectiles if they exist in game: spear, 1arow01, 1bolt01, 1dagg05, 1dart01.
 		- Added missing magic projectiles.
 		- Added DS values (179 PICKPOCKETMTPBONUS = 179 WIZARD_PROTECTION_FROM_NORMAL_MISSILES) for classical games and Set State BUFF_PRO_WEAPONS (64) and PROTECTION_FROM_NORMAL_MISSILES (109) for EE games.
-- Updated French translation.
-- Updated English item descriptions to allow WeiDU to automatically remove usability restrictions for EE games.
-- Renamed Setup-StuffofTheMagi.tp2 -> stuffofthemagi.tp2 to support ALIEN's "Project Infinity".
-- Added stuffofthemagi.ini with mod info metadata to support ALIEN's "Project Infinity".
-- Updated to Weidu 246.
+- Updated readmes.
+- Updated French translation (Gwendolyne).
+- Updated WeiDU installer to v246.
 
 ## 
 
 ##### Version 5
 
 - Added BG2EE compatibility. Thanks, Deratiseur! ( again :) )
+- Removed unnecessary backup folder.
 
 ## 
 
 ##### Version 4
 
 - Apparently, a version of 1.3 had gotten out into the wild labeled v3. This should remove any doubt as to which version is latest.
-- Fixed: original gauntlets gave +2 ninth level spells permanently. This was also in the nonweidu SOTM.
+- Fixed: original gauntlets gave +2 ninth level spells permanently. This was also in the non-WeiDU SOTM.
 - Fixed: Unidentified cape had description of a belt. Oops.
 - Added: French Translation! Thanks, Deratiseur!
 
@@ -293,5 +282,5 @@ Le programme d'installation ne comprend qu'un seul composant, le composant princ
 
 ##### Version 1.1
 
-- Updated to WEIDU.
+- Updated to WeiDU.
 <div style="text-align:right"><a href="#top">Haut de page</a></div>
