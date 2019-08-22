@@ -15,6 +15,7 @@ $RECYCLE.BIN/
 *.rar
 *.zip
 dev_notes.txt
+z*.*
 
 # Windows Installer files
 
