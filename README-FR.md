@@ -85,8 +85,8 @@ Voici le tableau des variables concernées (ne modifiez pas les variables non lis
 
 | Variable | Signification de l'option d'installation | Type | Valeurs | Défaut |
 | :---: | --- | :---: | :---: | :---: |
-| sotm_use | Puissance des objets<br> 1 = Utiliser les nouveaux objets, moins grobillesques (recommandé).<br>2 = Utiliser les objets originaux, surpuissants (pas de cape ni d'anneau dans ce cas).<br> | numérique | 1 or 2 | <strong>1<strong> |
-| sotm_equip | Où trouver les objets<br>1 = Ajouter les objets à l'equipement des créatures (recommandé, les ennemis les utiliseront contre vous)<br>2 = Ajouter les objets à l'inventaire des créatures (ne change en rien la difficulté des combats).<br> | numérique | 1 or 2 | <strong>1<strong> |
+| sotm_use | Puissance des objets<br> 1 = Utiliser les nouveaux objets, moins grobillesques (recommandé).<br>2 = Utiliser les objets originaux, surpuissants (pas de cape ni d'anneau dans ce cas).<br> | numérique | 1 ou 2 | <strong>1<strong> |
+| sotm_equip | Où trouver les objets<br>1 = Ajouter les objets à l'equipement des créatures (recommandé, les ennemis les utiliseront contre vous)<br>2 = Ajouter les objets à l'inventaire des créatures (ne change en rien la difficulté des combats).<br> | numérique | 1 ou 2 | <strong>1<strong> |
 
 ## 
 
