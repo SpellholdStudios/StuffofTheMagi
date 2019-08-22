@@ -71,40 +71,10 @@ The installation process will read both ini files and prioritize user's options 
 
 Here is a chart listing the install options related to the installation process (Don't change anything not listed; these are part of the testing framework.):<br>
 
-| Variable | Description | Type | Values | Default value |
+| Variable | Install Option Description | Type | Values | Default |
 | :---: | --- | :---: | :---: | :---: |
-| sotm_use | Items Power<br> 1 = Use new, less cheesy items (recommended).<br>2 = Use original, overpowered items (no cape nor ring).<br> | integer | 1 or 2 | <strong>1<strong> |
+| sotm_use | Items Power<br> 1 = Use new, less cheesy items (<u>recommended</u>).<br>2 = Use original, overpowered items (no cape nor ring).<br> | integer | 1 or 2 | <strong>1<strong> |
 | sotm_equip | Where to find items<br>1 = Add items to creatures' equipment (recommended, enemies will use these items against you).<br>2 = Add items to creatures' inventory (does not change difficulty of fights).<br>  | integer | 1 or 2 | <strong>1<strong> |
-
-<table style="margin-left: 80px" summary="Installation variables listing">
-	<tr>
-		<th>Variable</th>
-		<th>Description</th>
-		<th>Type</th>
-		<th>Scope values</th>
-		<th>Default value</th>
-	</tr>
-	<tr>
-	<tr>
-		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_use</span></td>
-		<td style="padding-left:10px;padding-right:10px;text-align: justify">Items Power<br>
-		1 = Use new, less cheesy items (recommended).<br>
-		2 = Use original, overpowered items (no cape nor ring).<br>
-		</td>
-		<td>integer</td>
-		<td>1 or 2</td>
-		<td><strong><span style="color: #FFCC33">1</span><strong></td>
-	</tr>
-	<tr>
-		<td style="padding-left:5px;padding-right:5px"><span style="color: #FFCC33">sotm_equip</span></td>
-		<td style="padding-left:10px;padding-right:10px;text-align: justify">Where to find items<br>
-		1 = Add items to creatures' equipment (recommended, enemies will use these items against you).<br>
-		2 = Add items to creatures' inventory (does not change difficulty of fights).<br>
-		<td>integer</td>
-		<td>1 or 2</td>
-		<td><strong><span style="color: #FFCC33">1</span><strong></td>
-	</tr>
-</table>
 
 ## 
 
