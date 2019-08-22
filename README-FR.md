@@ -131,7 +131,7 @@ Le programme d'installation ne comprend qu'un seul composant, le composant princ
 - Tassadar88 : Help with coding.
 - Anastasya Zakharova : <a href="https://www.artstation.com/artwork/AznzX">Matatel portrait</a> for Erevain Beraskána.
 
-Si vous avez une suggestion, ou si vous rencontrez un bogue, veuillez en informer les mainteneurs dans le <a href=""http://www.shsforums.net/topic/34134-stuff-of-the-magi/">forum du mod</a>.</br>
+Si vous avez une suggestion, ou si vous rencontrez un bogue, veuillez en informer les mainteneurs dans le <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">forum du mod</a>.</br>
 <div style="text-align:right"><a href="#top">Haut de page</a></div>
 
 

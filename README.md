@@ -119,7 +119,7 @@ The installer includes only one component, the main component.
 - Tassadar88: Help with coding.
 - Anastasya Zakharova: <a href="https://www.artstation.com/artwork/AznzX">Matatel portrait</a> for Erevain Beraskána.
 
-If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href=""http://www.shsforums.net/topic/34134-stuff-of-the-magi/">mod forum</a>.</br>
+If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="http://www.shsforums.net/topic/34134-stuff-of-the-magi/">mod forum</a>.</br>
 <div style="text-align:right"><a href="#top">Back to top</a></div>
 
 
