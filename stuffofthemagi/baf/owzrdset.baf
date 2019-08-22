@@ -1,8 +1,6 @@
 IF
 	Global("wzrdset1","GLOBAL",0)			// Global is unset or off
-	HasItemEquiped("wzrdring",Player1)		// Shield in shield slot -> player
 	HasItemEquiped("wzrdclck",Player1)		// cloak in cloak slot -> player
-	HasItemEquiped("wzrdrobe",Player1)		// robe in robe slot -> player
 	HasItemEquiped("wzrdhelm",Player1)		// Helm in helm slot -> player
 	HasItemEquiped("wzrdboot",Player1)		// boot in boot slot -> player
 	HasItemEquiped("wzrdbrac",Player1)		// bracers in glove slot -> player
@@ -18,10 +16,8 @@ END
 
 IF
 	!Global("wzrdset1","GLOBAL",0)			// Global is set or borked
-	OR(9)
-		!HasItemEquiped("wzrdring",Player1)	// Shield not in shield slot -> player
+	OR(7)
 		!HasItemEquiped("wzrdclck",Player1)	// cloak not in cloak slot -> player
-		!HasItemEquiped("wzrdrobe",Player1)	// robe not in robe slot -> player
 		!HasItemEquiped("wzrdhelm",Player1)	// Helm not in helm slot -> player
 		!HasItemEquiped("wzrdboot",Player1)	// boot not in boot slot -> player
 		!HasItemEquiped("wzrdbrac",Player1)	// bracers not in glove slot -> player
@@ -38,9 +34,7 @@ END
 
 IF
 	Global("wzrdset2","GLOBAL",0)
-	HasItemEquiped("wzrdring",player2)
 	HasItemEquiped("wzrdclck",player2)
-	HasItemEquiped("wzrdrobe",player2)
 	HasItemEquiped("wzrdhelm",player2)
 	HasItemEquiped("wzrdboot",player2)
 	HasItemEquiped("wzrdbrac",player2)
@@ -56,10 +50,8 @@ END
 
 IF
 	!Global("wzrdset2","GLOBAL",0)
-	OR(9)
-		!HasItemEquiped("wzrdring",player2)
+	OR(7)
 		!HasItemEquiped("wzrdclck",player2)
-		!HasItemEquiped("wzrdrobe",player2)
 		!HasItemEquiped("wzrdhelm",player2)
 		!HasItemEquiped("wzrdboot",player2)
 		!HasItemEquiped("wzrdbrac",player2)
@@ -76,9 +68,7 @@ END
 
 IF
 	Global("wzrdset3","GLOBAL",0)
-	HasItemEquiped("wzrdring",player3)
-	HasItemEquiped("wzrdclck",player3)
-	HasItemEquiped("wzrdrobe",player3)
+	HasItemEquiped("wzrdclck",Player1)
 	HasItemEquiped("wzrdhelm",player3)
 	HasItemEquiped("wzrdboot",player3)
 	HasItemEquiped("wzrdbrac",player3)
@@ -94,10 +84,8 @@ END
 
 IF
 	!Global("wzrdset3","GLOBAL",0)
-	OR(9)
-		!HasItemEquiped("wzrdring",player3)
-		!HasItemEquiped("wzrdclck",player3)
-		!HasItemEquiped("wzrdrobe",player3)
+	OR(7)
+		!HasItemEquiped("wzrdclck",player2)
 		!HasItemEquiped("wzrdhelm",player3)
 		!HasItemEquiped("wzrdboot",player3)
 		!HasItemEquiped("wzrdbrac",player3)
@@ -114,9 +102,7 @@ END
 
 IF
 	Global("wzrdset4","GLOBAL",0)
-	HasItemEquiped("wzrdring",player4)
-	HasItemEquiped("wzrdclck",player4)
-	HasItemEquiped("wzrdrobe",player4)
+	HasItemEquiped("wzrdclck",Player1)
 	HasItemEquiped("wzrdhelm",player4)
 	HasItemEquiped("wzrdboot",player4)
 	HasItemEquiped("wzrdbrac",player4)
@@ -132,10 +118,8 @@ END
 
 IF
 	!Global("wzrdset4","GLOBAL",0)
-	OR(9)
-		!HasItemEquiped("wzrdring",player4)
-		!HasItemEquiped("wzrdclck",player4)
-		!HasItemEquiped("wzrdrobe",player4)
+	OR(7)
+		!HasItemEquiped("wzrdclck",player2)
 		!HasItemEquiped("wzrdhelm",player4)
 		!HasItemEquiped("wzrdboot",player4)
 		!HasItemEquiped("wzrdbrac",player4)
@@ -152,9 +136,7 @@ END
 
 IF
 	Global("wzrdset5","GLOBAL",0)
-	HasItemEquiped("wzrdring",player5)
-	HasItemEquiped("wzrdclck",player5)
-	HasItemEquiped("wzrdrobe",player5)
+	HasItemEquiped("wzrdclck",Player1)
 	HasItemEquiped("wzrdhelm",player5)
 	HasItemEquiped("wzrdboot",player5)
 	HasItemEquiped("wzrdbrac",player5)
@@ -170,10 +152,8 @@ END
 
 IF
 	!Global("wzrdset5","GLOBAL",0)
-	OR(9)
-		!HasItemEquiped("wzrdring",player5)
-		!HasItemEquiped("wzrdclck",player5)
-		!HasItemEquiped("wzrdrobe",player5)
+	OR(7)
+		!HasItemEquiped("wzrdclck",player2)
 		!HasItemEquiped("wzrdhelm",player5)
 		!HasItemEquiped("wzrdboot",player5)
 		!HasItemEquiped("wzrdbrac",player5)
@@ -190,9 +170,7 @@ END
 
 IF
 	Global("wzrdset6","GLOBAL",0)
-	HasItemEquiped("wzrdring",player6)
-	HasItemEquiped("wzrdclck",player6)
-	HasItemEquiped("wzrdrobe",player6)
+	HasItemEquiped("wzrdclck",Player1)
 	HasItemEquiped("wzrdhelm",player6)
 	HasItemEquiped("wzrdboot",player6)
 	HasItemEquiped("wzrdbrac",player6)
@@ -208,10 +186,8 @@ END
 
 IF
 	!Global("wzrdset6","GLOBAL",0)
-	OR(9)
-		!HasItemEquiped("wzrdring",player6)
-		!HasItemEquiped("wzrdclck",player6)
-		!HasItemEquiped("wzrdrobe",player6)
+	OR(7)
+		!HasItemEquiped("wzrdclck",player2)
 		!HasItemEquiped("wzrdhelm",player6)
 		!HasItemEquiped("wzrdboot",player6)
 		!HasItemEquiped("wzrdbrac",player6)
