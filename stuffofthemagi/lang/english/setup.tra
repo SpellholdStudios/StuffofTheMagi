@@ -1,8 +1,13 @@
 @1001 = ~Stuff of the Magi~
-@1002 = ~This is only compatible with BGII: ToB, BGT and BG2:EE installations.~
-//@1003 = ~Modmerge is required before mods can be installed on this game. Check the readme for more information and a link to download Modmerge.~
+@1002 = ~Use new, less cheesy items AND Add them to creatures' equipment (recommended)~
+@1003 = ~Use new, less cheesy items AND Add them to creatures' inventory~
+@1004 = ~Use original, overpowered items AND Add them to creatures' equipment~
+@1005 = ~Use original, overpowered items AND Add them to creatures' inventory~
 
-// sotm_read_configuration.tph and always.tpa
+@1010 = ~This mod is only compatible with BGII: ToB, BGT and BG2:EE installations.~
+//@1020 = ~Modmerge is required before mods can be installed on this game. Check the readme for more information and a link to download Modmerge.~
+
+/* DEPRECATED: sotm_read_configuration.tph and always.tpa
 @1011 = ~Configuration option sotm_%variable_0% value (%wrong_value%) does not match its scope and has been reset to its default value (%default%).~
 @1012 = ~Configuration option sotm_%variable_0% does not exist and has been set to its default value (%default%).~
 @1013 = ~LIST OF CONFIGURATION OPTIONS SET FOR INSTALLATION:
@@ -14,6 +19,7 @@
 	{1 = Add items to creatures' equipment (recommended)
 	 2 = Add items to creatures' inventory]
 ---------------------------------------------------~
+*/
 
 /* DEPRECATED as of v 6.0.0
 @2 = ~Options:

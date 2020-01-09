@@ -1,8 +1,13 @@
 @1001 = ~Arsenal du mage~
-@1002 = ~Ce mod ne s'installe que sur le moteur de ToB classique ou sur BG2:EE.~
-//@1003 = ~Il est necessaire d'utiliser Modmerge avant d'installer des mods pour ce jeu. Consultez le readme pour plus d'informations et pour trouver un lien pour telecharger Modmerge.~
+@1002 = ~Utiliser les nouveaux objets, moins grobillesques ET les ajouter a l'equipement des creatures (recommande)~
+@1003 = ~Utiliser les nouveaux objets, moins grobillesques ET les ajouter a l'inventaire des creatures~
+@1004 = ~Utiliser les objets originaux, surpuissants ET les ajouter a l'equipement des creatures~
+@1005 = ~Utiliser les objets originaux, surpuissants ET les ajouter a l'inventaire des creatures~
 
-// sotm_read_configuration.tph and always.tpa
+@1010 = ~Ce mod ne s'installe que sur le moteur de ToB classique ou sur BG2:EE.~
+//@1020 = ~Il est necessaire d'utiliser Modmerge avant d'installer des mods pour ce jeu. Consultez le readme pour plus d'informations et pour trouver un lien pour telecharger Modmerge.~
+
+/* DEPRECATED: sotm_read_configuration.tph and always.tpa
 @1011 = ~La valeur de l'option de configuration sotm_%variable_0% (%wrong_value%) n'est pas conforme et a ete reinitialisee a sa valeur par defaut (%default%).~
 @1012 = ~L'option de configuration sotm_%variable_0% n'existe pas : elle a ete initialisee a sa valeur par defaut (%default%).~
 @1013 = ~RECAPITULATIF DES OPTIONS DE CONFIGURATION UTILISEES POUR L'INSTALLATION :
@@ -14,6 +19,7 @@
 	{1 = Ajouter les objets a l'equipement des creatures (recommande)
 	 2 = Ajouter les objets a l'inventaire des creatures]
 --------------------------------------------------------------------------~
+*/
 
 /* DEPRECATED as of v 6.0.0
 @2 = ~Options :

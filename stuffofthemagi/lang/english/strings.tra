@@ -3,10 +3,9 @@
 
 @107  = ~Erevain Beraskána~
 
-@108  = ~Cloak~
+//@108  = ~Cloak~
 @109  = ~Cloak of the Magi~
-@110 = ~The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.~
-
+//@110 = ~The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.~
 @111 =~Erevain Beraskána crafted the Cape of the Magi just as he created all of the Magi items. Erevain was a maverick among Suldanessellar's High Mages. Erevain was a master of using the Weave for wild magic centuries before the Time of Troubles made the practice more common knowledge. After his studies in Candlekeep, Erevain had become an expert in Alaundo's prophecies concerning the Bhaalspawn as well. He saw the potential for this period of strife to cause harm to the elven way of life in Suldanessellar. For reasons unknown to any except himself, Erevain bequeathed this cape to the elven High Mage Joneleth, who went on to become the Exile Irenicus, shortly before Erevain went to his death in battle against the Drow forces of Ust Natha two centuries ago. Irenicus never valued the item due to the source of his receiving it and later passed it on to his apprentice, Suneer.
 This item is one of the nine-piece set of Magi items. It is rumored that adorning oneself with the complete Magi regalia allows the wearer to gain a bonus in reigning in the chaotic effects of wild magic and it provides a bonus against elemental damage.
 
@@ -17,14 +16,15 @@ Equipped abilities:
 - Saving Throws: +2
 
 Weight: 1
+
 Only Usable by:
  Mage
  Sorcerer~
 
 
-@112 = ~Ring~
+//@112 = ~Ring~
 @113 = ~Ring of the Magi~
-@114 = ~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.~
+//@114 = ~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.~
 @115 = ~The one ring crafted by the archmage Erevain Beraskána. The Ring of the Magi was the penultimate creation of the elven High Mage in the fabrication of this set. Shortly after its creation Erevain met with the necromancer Lavok Corthala when Lavok's planar sphere last made contact with Faerûn nearly 200 years ago. The two briefly engaged in a mage duel. Even on his home turf Lavok was no match for Erevain and the engagement was brief. Upon winning the mage duel Erevain parlayed with Lavok. It is known that Lavok gained possession of the ring, though he could not make full use of it being unskilled in the ways of wild magic. What Erevain gained as the victor is unknown. It is also unknown why Erevain sought out Lavok in the first place.
 This item is one of the nine-piece set of Magi items. It is rumored that adorning oneself with the complete Magi regalia allows the wearer to gain a bonus in reigning in the chaotic effects of wild magic and it provides a bonus against elemental damage.
 
@@ -33,18 +33,19 @@ STATISTICS:
 Equipped abilities:
 - All Wild Surge checks: +10
 - Improves casting speed by 2
-- Can memorize one extr 1st-, 2nd- and 7th-level wizard spell.
+- Memorize one extra 1st-, 2nd- and 7th-level wizard spell.
 - Protection from level drain.
 
 Weight: 1
+
 Only Usable by:
  Mage
  Sorcerer~
 
 
-@116 = ~Mage Robe~
+//@116 = ~Mage Robe~
 @117 = ~Robe of the Magi~
-@118 = ~Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.~
+//@118 = ~Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.~
 @119 = ~This is the final piece of the Magi set of magic items created by Erevain Beraskána over two centuries ago, and also the most heavily enchanted. As is the case with the rest of the Magi items crafted by Erevain he lost possession of the robe prior to his death. As was often the case, Erevain did mage duel with a villainous practitioner of necromancy. In this case, Erevain tracked down the lich Vongoethe. The spell battle that ensued when they met was truly epic. Strangely enough, as often happened in these mage duels, the result was a draw. In a similar vein the two combatants engaged in conversation when the mage duel stalled. Suspiciously, as in other battles, Erevain lost one of his Magi items; this time the Robe of the Magi. As usual in this situation, Erevain apparently walked away with nothing to show for himself.
 This item is one of the nine-piece set of Magi items. It is rumored that adorning oneself with the complete Magi regalia allows the wearer to gain a bonus in reigning in the chaotic effects of wild magic and it provides a bonus against elemental damage.
 
@@ -56,14 +57,15 @@ Equipped abilities:
 - Save vs. Spell: +3
 
 Weight: 3
+
 Only usable by:
  Mages
  Sorcerers~
 
 
-@120 = ~Silver Amulet~
+//@120 = ~Silver Amulet~
 @121 = ~Amulet of the Magi~
-@122 = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.~
+//@122 = ~Amulets are usually magical devices that are commonly worn around the neck, suspended from a chain. The type of chain that comes with an amulet generally increases the item's aesthetic value, not its magical properties. Only one amulet can be dangled from the neck at a time.~
 @123 = ~The Amulet of the Magi was the first piece of the set of Magi items crafted by the elven archmage Erevain Beraskána. He possessed it from its creation until almost the end of his life. Shortly before his death in battle against the drow Erevain gave the amulet to his last apprentice, the human Vithal. Vithal, who would later become the victim of an imprisonment spell in spell battle against the drow in the Underdark, took the Amulet of the Magi to the followers of Helm who were maintaining a vigil over the Watcher's Keep. The reason for this is unknown. But then, since Erevain is one of the earliest recorded practitioners of wild magic the reason for his seemingly random acts of chaos are impossible to divine.
 This item is one of the nine-piece set of Magi items. It is rumored that adorning oneself with the complete Magi regalia allows the wearer to gain a bonus in reigning in the chaotic effects of wild magic and it provides a bonus against elemental damage.
 
@@ -76,18 +78,19 @@ Equipped abilities:
 - Save vs. Breath: +1
 
 Weight: 0
+
 Only Usable by:
  Mage
  Sorcerer~
 
 
-@124 = ~Boots~
+//@124 = ~Boots~
 @125 = ~Boots of the Magi~
-@126 = ~Boots are normally hand-made by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.
+/*@126 = ~Boots are normally hand-made by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual.
 
 STATISTICS:
 
-Weight: 4~
+Weight: 4~*/
 @127 = ~The Boots of the Magi were crafted by the elven archmage Erevain Beraskána centuries ago. Like its counterparts, these boots were designed to aid Erevain in his never ending quest for mental perfection. Erevain did do battle with Kangaxx the demilich. It is unknown why Erevain sought Kangaxx out but it is known that the battle ended in a stalemate. For an unknown reason the two negotiated with each other for a short time following the draw in their mage duel. Erevain was forced to leave his precious boots with Kangaxx. What Erevain gained from the tie in their spell battle is uncertain.
 This item is one of the nine-piece set of Magi items. It is rumored that adorning oneself with the complete Magi regalia allows the wearer to gain a bonus in reigning in the chaotic effects of wild magic and it provides a bonus against elemental damage.
 
@@ -100,14 +103,15 @@ Charge abilities:
 - Improved Alacrity once per day
 
 Weight: 2
+
 Only Usable by:
  Mage
  Sorcerer~
 
 
-@128 = ~Quarterstaff~
+//@128 = ~Quarterstaff~
 @129 = ~Staff of the Magi~
-@130 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+/*@130 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
 
 STATISTICS:
 
@@ -117,7 +121,7 @@ Weight: 4
 Speed Factor: 4
 Proficiency Type: Quarterstaff
 Type: 2-handed
-Requires: 5 Strength~
+Requires: 5 Strength~*/
 @131 = ~There is more than one Staff of the Magi. It takes an archmage to craft one of these magical artifacts and like a paladin's Holy Avenger each one has similarities and differences. This type of staff is thoroughly linked to the image of the spell casting profession, rare though it is. It is among the most powerful tools that a wizard can possess, the culmination of complex enchantment and endless study. It is the quintessential mage's item. This particular staff was crafted by the High Mage Erevain Beraskána. Erevain would never disclose, not even to his closest apprentices, how or why he crafted this set and later seemed to lose it almost willingly. How it came to be in the possession of Layene of the Twisted Rune is a bit of a mystery.
 This item is one of the nine-piece set of Magi items. It is rumored that adorning oneself with the complete Magi regalia allows the wearer to gain a bonus in reigning in the chaotic effects of wild magic and it provides a bonus against elemental damage.
 
@@ -126,17 +130,19 @@ STATISTICS:
 Equipped abilities:
 - Armor Class: +2
 - Saving Throws: +2
-- Invisibility, Immunity to charm, Protection From Evil
+- Invisibility
+- Immunity to charm
+- Protection From Evil
 
 Charge abilities:
 - Fireball-Lightning
   Damage: combined lightning and fireball damage
   Range: 150 feet
-  Use: Three times a day
+  Use: Three times per day
 
 - Spell Trap
   Duration: 8 hours or until 30 spell levels have been trapped
-  Use: Once a day
+  Use: Once per day
 
 Combat abilities:
 - Dispel Magic on target when hit
@@ -144,19 +150,21 @@ Combat abilities:
 THAC0: +2 (strikes as a +5 weapon)
 Damage: 2d6+2
 Damage type: Crushing
-Weight: 3
 Speed Factor: 1
 Proficiency Type: Quarterstaff
-Type: 2-handed
+Type: Two-handed
 Requires: 5 Strength
+
+Weight: 3
+
 Only Usable by:
  Mage
  Sorcerer~
 
 
-@132 = ~Gauntlets~
+//@132 = ~Gauntlets~
 @133 = ~Gauntlets of the Magi~
-@134 = ~Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.~
+//@134 = ~Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.~
 @135 = ~These gauntlets are prized almost as much as the venerable Staff of the Magi, and the two were originally part of a complete set designed to turn an ordinary mage into an extraordinary one. One mage in particular, actually. The aging mage who created them, Erevain Beraskána. How they came to be in the possession of Firkraag is uncertain. There is no record of Erevain and Firkraag ever meeting. However the mage Conster, who served Firkraag, was the apprentice of Malchimer, a necromancer. Malchimer served as Firkraag's right-hand man before Conster held the position. It is known that Malchimer had dealings with Erevain in Candlekeep. As an elven High Mage Erevain was not familiar with the libraries of Candlekeep. Malchimer was a frequent purveyor of the ancient tomes of that bastion of knowledge. It is quite possible that Erevain traded his precious gauntlets in exchange for the assistance Malchimer could offer in the acquisition of whatever knowledge Erevain sought within the hallowed halls of Candlekeep.
 This item is one of the nine-piece set of Magi items. It is rumored that adorning oneself with the complete Magi regalia allows the wearer to gain a bonus in reigning in the chaotic effects of wild magic and it provides a bonus against elemental damage.
 
@@ -164,41 +172,45 @@ STATISTICS:
 
 Equipped abilities:
 - Intelligence: +1
-- Can memorize one extra wizard spell of each level
+- Memorize one extra wizard spell of each level
 - Immunity to backstab
 
 Weight: 1
+
 Only Usable by:
  Mage
  Sorcerer~
 
 
-@136 = ~Golden Circlet~
+//@136 = ~Golden Circlet~
 @137 = ~Circlet of the Magi~
-@138 = ~This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface - hinting at hidden power within the golden circlet.~
+//@138 = ~This thin circlet of gold appears too simple and plain to be a crown. Although unadorned with gems, there are arcane and cryptic symbols etched along the surface - hinting at hidden power within the golden circlet.~
 @139 = ~A magnificent piece of workmanship, the Circlet of the Magi was an early creation of Erevain Beraskána. The item, like the others in the set, was crafted for unknown reasons and later lost by Erevain. However, a secondary reason for the circlet's creation can be alluded to by the next owner of the circlet after Erevain. The circlet's requirement for its wearer to have exceptional intelligence. This allowed Erevain to screen his potential apprentices. After beginning the studies he undertook in Candlekeep Erevain did something that is historically almost unheard of in an elven High Mage. He took a human as his apprentice. Erevain was loyal to the ways of the fair folk and taught no high magic to his new apprentice. He did teach the basics of traditional wizardry to the young mage, however. The youthful mage that Erevain took under his wing was Vithal. Vithal was an unlikely candidate for apprenticeship not only for being human but for being exceptionally self-centered as well. What caused Erevain to break with tradition and teach a human is unknown. It is ascertainable that Vithal was sent on his doomed expedition to the Underdark by Erevain to delve into the connection there with the elemental planes. It is likely that Sendai got the circlet from the very people who imprisoned Vithal in the Underdark.
 This item is one of the nine-piece set of Magi items. It is rumored that adorning oneself with the complete Magi regalia allows the wearer to gain a bonus in reigning in the chaotic effects of wild magic and it provides a bonus against elemental damage.
 
 STATISTICS:
 
 Equipped abilities:
-- Vocalize, Infravision
+- Vocalize
+- Infravision
 - Intelligence: +1
 - Mind Shield (Immunity to feeblemind, dire charm, etc.)
 
 Requires: 18 Intelligence
+Weight: 1
+
 Only Usable by:
  Mage
  Sorcerer~
 
 
-@140 = ~Girdle~
+//@140 = ~Girdle~
 @141 = ~Girdle of the Magi~
-@142 = ~Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.
+/*@142 = ~Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like.
 
 STATISTICS:
 
-Weight: 2~
+Weight: 2~*/
 @143 = ~This girdle is much like the other members of the set crafted by the legendary High Mage, Erevain Beraskána. Erevain was known to have crafted these pieces, used them for a short time, and then mysteriously lost possession of them. Sometimes he seemed to mislay them almost willingly. Such does not seem to be the case with the Girdle of the Magi, however. At least not apparently. Erevain was a High Mage of the elves of Suldanessellar in the Forest of Tethir. During an incursion by the drow against the elven kingdom Erevain engaged a large force of drow single-handedly. He beat them back using his spells. By this point in his life the Girdle of the Magi was the only item of the set he still possessed. It was claimed by an elven scout who saw the battle that Erevain was blasted out of existence by the combined force of drow mages and clerics aligned against Erevain. But, the scout reported, even though Erevain's body was gone after the battle the scout swore he could hear Erevain laughing when the drow retreated back to the Underdark before reinforcements from Suldanessellar could arrive on the scene. It is believed that Matron Mother Ardulace claimed the girdle as a war trophy in the failed drow campaign against Suldanessellar.
 This item is one of the nine-piece set of Magi items. It is rumored that adorning oneself with the complete Magi regalia allows the wearer to gain a bonus in reigning in the chaotic effects of wild magic and it provides a bonus against elemental damage.
 
@@ -210,6 +222,7 @@ Equipped abilities:
 - Magic Resistance: +25%
 
 Weight: 1
+
 Only Usable by:
  Mage
  Sorcerer~
@@ -223,9 +236,10 @@ Equipped abilities:
 - Magic Resistance: +50%
 - All other resistances: +25%
 - Saving Throws: +2, +3 to Save vs. Spell
-- Regenerate 1 Hit Point per round
+- Regenerate 3 Hit Points per round
 
 Weight: 3
+
 Only usable by:
  Mage
  Sorcerer~
@@ -243,6 +257,7 @@ Equipped abilities:
 - Save vs. Polymorph: +1
 
 Weight: 0
+
 Only Usable by:
  Mage
  Sorcerer~
@@ -255,9 +270,10 @@ Equipped abilities:
 - Decreases spellcasting time by two
 - Aura cleansed after each spell
 - Saving Throws: +2
-Movement rate increased by 20%
+- Movement rate increased by 20%
 
 Weight: 2
+
 Only Usable by:
  Mage
  Sorcerer~
@@ -269,17 +285,19 @@ STATISTICS:
 Equipped abilities:
 - Armor Class: +2
 - Saving Throws: +2
-- Invisibility, Immunity to charm, Protection From Evil
+- Invisibility
+- Immunity to charm
+- Protection From Evil
 
 Charge abilities:
 - Fireball-Lightning
   Damage: combined lightning and fireball damage
   Range: 150 feet
-  Use: Three times a day
+  Use: Three times per day
 
 - Spell Trap
   Duration: 8 hours or until 30 spell levels have been trapped
-  Use: Once a day
+  Use: Once per day
 
 Combat abilities:
 - Dispel Magic on target when hit
@@ -287,11 +305,13 @@ Combat abilities:
 THAC0: +2 (strikes as a +5 weapon)
 Damage: 2d6+2
 Damage type: Crushing
-Weight: 3
 Speed Factor: 1
 Proficiency Type: Quarterstaff
-Type: 2-handed
+Type: Two-handed
 Requires: 5 Strength
+
+Weight: 3
+
 Only Usable by:
  Mage
  Sorcerer~
@@ -302,11 +322,12 @@ STATISTICS:
 
 Equipped abilities:
 - Intelligence: +1
-- Can memorize two extra wizard spells of each level
+- Memorize two extra wizard spells of each level
 - Armor Class: +1
 - Immunity to backstab
 
 Weight: 1
+
 Only Usable by:
  Mage
  Sorcerer~
@@ -316,15 +337,18 @@ Only Usable by:
 STATISTICS:
 
 Equipped abilities:
-- Vocalize, Infravision
-- Can memorize three extra 8th- and 9th-level wizard spells
+- Vocalize
+- Infravision
+- Memorize three extra 8th- and 9th-level wizard spells
 - Armor Class: +1
 - Mind Shield (Immune to feeblemind, dire charm, etc.)
 
 Charge abilities:
-- Cast Feeblemind 1/day
+- Cast Feeblemind once per day
 
 Requires: 18 Intelligence
+Weight: 1
+
 Only Usable by:
  Mage
  Sorcerer~
@@ -338,20 +362,22 @@ Equipped abilities:
 - Protection from all missiles
 
 Weight: 1
+
 Only Usable by:
  Mage
  Sorcerer~
 
-@151 = ~Scroll Case~
+/*@151 = ~Scroll Case~
 @152 = ~This sturdy container allows many scrolls to be placed in it, safe from exposure to fire, rain, or lightning -- common hazards faced by any adventuring wizard.
 
 STATISTICS:
 
 Capacity: 20 scrolls
-Weight: 2~
+Weight: 2~*/
 @153 = ~Retrieved from Erevain Beraskána himself, this scroll case can hold an unlimited amount of scrolls.
 
 STATISTICS:
 
 Capacity: Unlimited scrolls
+
 Weight: 2~
