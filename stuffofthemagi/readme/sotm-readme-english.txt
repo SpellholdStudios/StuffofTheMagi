@@ -1,67 +1,69 @@
-PRÉSENTATION
+OVERVIEW
+========
+
+All the original work was done by Victor Straffe at Sorcerer's Place.
+Kevmus updated it to WeiDU, added the more balanced items, and "bugfixed like a madman".
+
+This mod adds the Stuff of the Magi set to several creatures. Read sotm-spoilers.txt for details.
+
+Once you gather all the items, the one who equip them all gain an exceptional bonus. Also, if you have all items, you will meet someone in the Pocket Plane who will want to speak with you...
+
+Note: If you choose the original overpowered items you will only end up with 7 items instead of 9, no cape nor ring.
+
+This mod adds the Stuff of the Magi set to the following creatures:
+
+- Robe: Vongoethe.</br>
+- Amulet: Demogorgon.</br>
+- Boots: Kangaxx.</br>
+- Staff: Mage (Layene) in Twisted Rune.</br>
+- Bracers: Firkraag.</br>
+- Circlet: Sendai.</br>
+- Belt: Matron Mother Ardulace.</br>
+- Cloak: Suneer in Rillifane Temple (Suldanessellar).</br>
+- Ring: Lavok.
+
+
+COMPATIBLITY
 ============
 
-Ce mod a été conçu et publié par Victor Straff sur le site Sorcerer's Place
-Kevmus l'a mis à jour au format WeiDU, a ajouté les objets plus équilibrés et a corrigé plusieurs bugs (en espérant que ça marche).
-
-Ce mod ajoute l'arsenal du mage dans l'inventaire des créatures suivantes :
-
-Robe : Vongoethe
-Amulette : Démogorgon
-Bottes : Kangaxx (une demiliche sans corps avec des bottes ? remarque, elle porte bien un anneau :x)
-Bâton : Layene à la Rune Tordue
-Bracelets : Firkraag
-Bandeau : Sendai
-Ceinture : Mère matrone Ardulace
-Cape : Temple de Rillifane dans Suldanessellar (Suneer)
-Anneau : Lavok
-
-Si vous possédez tous les objets, celui qui les porte tous obtient un bonus exceptionnel, et vous rencontrerez quelqu'un qui voudra vous parler dans l'antichambre....
-
-Note du traducteur : Si vous choisissez les objets "surpuissants", vous n'en aurez que 7 (pas de cape, ni d'anneau).
-
-
-COMPATIBLITÉ
-============
-
-Ce mod est conçu pour fonctionner sur les jeux Infinity Engine suivants : le jeu original Baldur's Gate II (Les Ombres d'Amn : BG2-SoA) avec son extension Trône de Bhaal (Throne of Bhaal : ToB), Baldur's Gate II: Enhanced Edition (BG2EE), les mods de conversion Baldur's Gate Trilogy (BGT) et Enhanced Edition Trilogy (EET).
-C'est un mod WeiDU qui devrait par conséquent être compatible avec n'importe quel mod WeiDU. Si vous rencontrez des bugs, veuillez les signaler dans le forum, s'il vous plaît.
+This mod is designed to work on the following Infinity Engine games: the original Baldur's Gate II (BG2 or just SoA) with the Throne of Bhaal (ToB) expansion, Baldur's Gate II: Enhanced Edition (BG2EE), the conversion projects Baldur's Gate Trilogy (BGT) and Enhanced Edition Trilogy (EET).
+This is a WeiDU mod, and therefore should be compatible with all WeiDU mods. If you encounter any bugs, please report them on the forum!
 ( http://www.shsforums.net/topic/60857-stuff-ot-the-magi-updated-to-v600-with-ee-compatibility/ )
 
 
 INSTALLATION
 ============
 
-Si une ancienne version de ce mod est déjà installée, il est nécessaire de la désinstaller d'abord. Pour cela, lancez setup-stuffofthemagi.exe et désinstallez le composant principal précédemment installé. Une fois la désinstallation achevée, supprimez le répertoire stuffofthemagi.
+If you've previously installed the mod, remove it before extracting the new version. To do this, run setup-stuffofthemagi.exe, un-install the previously installed main component and delete the stuffofthemagi folder.
 
-- Note pour les jeux en Édition Améliorée (EE)
-  Les Éditions améliorées sont des jeux que le développeur fait encore évoluer, notamment par l'ajout de capacités supplémentaires destinées à la création de mods et par l'ajout de contenus. N'oubliez pas que chaque patch de mise à jour effacera les mods que vous avez installés ! Ce mod ne fera pas exception à la règle.
-  Si vous pouvez retarder la mise à jour du patch en plein milieu d'un partie moddée (si vous en avez la possibilité, notamment chez Beamdog et Good Old Games), n'oubliez pas que même après avoir réinstallé les mods sur un nouveau patch, vous ne pourrez peut-être pas continuer le jeu avec vos anciennes sauvegardes, en particulier à cause de noms de personnages, de lieux, etc, qui pourraient être incorrects. Pour y remédier, copiez tout le dossier du jeu dans un nouveau dossier dans lequel vous installerez vos mods, et qui ne sera pas modifié par les patches de mise à jour. Il est important que vous installiez le mod dans la version linguistique dans laquelle vous jouez. Sinon, les dialogues du mod ne s'afficheront pas et provoqueront des messages d'erreur.
+- Enhanced Editions Note
+  The Enhanced Editions are actively supported games. Please note that every patch update will wipe your current mod setup! If in the middle of a modded game you might want to delay the patch update (if possible) as even after reinstalling the mods, you might not be able to continue with your old savegames. Alternatively, copy the whole game's folder into a new one that can be modded and will stay untouched by game patches. It is important that you install the mod to the language version you are playing the game in. Otherwise, the dialogues of the mod will not show but give error messages.
 
 - Windows
-  Vous devez extraire les fichiers de l'archive dans votre répertoire de jeu (le dossier qui contient le fichier CHITIN.KEY) à l'aide de 7zip, de WinRAR< ou de tout autre utilitaire de compression gérant les fichiers zip. Une fois l'archive extraite correctement, vous devriez trouver le répertoire stuffofthemagi et le fichier setup-stuffofthemagi.exe dans votre répertoire de jeu. Pour installer le mod, il suffit de double-cliquer sur setup-stuffofthemagi.exe et de suivre les instructions affichées à l'écran.
-  Vous pouvez lancer setup-stuffofthemagi.exe dans votre répertoire de jeu pour réinstaller, désinstaller, ou encore modifier les paramètres du composant.
+  The Stuff of the Magi mod for Windows is distributed as an extractable compressed archive and includes a WeiDU installer.
+  Extract the contents of the mod archive into the folder of the game you wish to modify (the folder which contains the "CHITIN.KEY" file), using 7zip, WinRAR, or another file compression utility that handles .zip files. On successful extraction, there should be an stuffofthemagi folder and a setup-stuffofthemagi.exe file in your game folder. To install, simply double-click setup-stuffofthemagi.exe and follow the instructions on screen.
+  Run setup-stuffofthemagi.exe in your game folder to reinstall, un-install or otherwise change the component settings.
 
-- Note pour effectuer une désinstallation complète
-  En plus des méthodes détaillées plus haut pour supprimer des composants, il est possible de désinstaller complètement le mod en tapant "setup-stuffofthemagi --uninstall" dans une ligne de commandes, ce qui supprimera tous les composants sans devoir ingurgiter tous les messages.
-
-
-COMPOSANTS
-=======---
-
-À partir de la version 6.0.0, le programme d'installation scinde le composant principal en quatre sous-composants, et vous demande de choisir lequel installer.  
-Chacun possède un numéro distinct et pré-défini qui lui attribue une position déterminée (mot-clé *DESIGNATED* en langage WeiDU) ; ce qui permet aux autres composants de le détecter et aux utilitaires d'installation automatiques de préciser quels composants installer.
-
-0. Utiliser les nouveaux objets, moins grobillesques ET les ajouter a l'équipement des créatures (recommandé) 
-1. Utiliser les nouveaux objets, moins grobillesques ET les ajouter a l'inventaire des créatures
-2. Utiliser les objets originaux, surpuissants RT les ajouter a l'équipement des créatures
-3. Utiliser les objets originaux, surpuissants RT les ajouter a l'équipement des créatures
-
-Veuillez noter que les options d'installation recommandées sont "Utiliser les nouveaux objets, moins grobillesques" et "les ajouter a l'équipement des créatures".
-Si vous choisissez "les ajouter a l'équipement des créatures", les ennemis utiliseront les objets contre vous, alors que l'option "les ajouter a l'inventaire des créatures" ne change en rien la difficulté des combats.
+- Note for Complete Un-installation
+  In addition to the methods above for removing individual components, you can completely un-install the mod using "setup-stuffofthemagi --uninstall" at the command line to remove all components without wading through prompts.
 
 
-CRÉDITS
+COMPONENTS
+==========
+
+As of v6.0.0, the installer splits main component into four sub components, letting the player decide which one he/she wants to install.  
+The number of each is the component DESIGNATED number which gives it a fixed install position and allows automated installers to specify component choices.
+
+0. Use new, less cheesy items AND Add them to creatures' equipment (recommended)
+1. Use new, less cheesy items AND Add them to creatures' inventory
+2. Use original, overpowered items AND Add them to creatures' equipment
+3. Use original, overpowered items AND Add them to creatures' inventory
+
+Please note that the recommended installation options are "Use new, less cheesy items" and "Add them to creatures' equipment".<br>
+If you choose "Add items to creatures' equipment", enemies will use these items against you, while "Add items to creature's inventory" option won't change difficulty of fights.
+
+
+CREDITS
 =======
 
 - Cmorgan: Help with bug-squishing/tidiness/etc.
@@ -76,14 +78,12 @@ CRÉDITS
 - AL|EN: Wrote Auto Packager tool which automatically provides Windows, Linux and Mac versions in the same archive file.
 ( https://forums.beamdog.com/discussion/78364/infinity-auto-packager-automatically-generate-and-adds-mod-packages-to-release-when-you-publish-it )
 
-Si vous avez une suggestion, ou si vous rencontrez un bogue, veuillez en informer les mainteneurs dans le forum du mod : http://www.shsforums.net/topic/60857-stuff-ot-the-magi-updated-to-v600-with-ee-compatibility/
+If you wish to translate the mod, has a suggestion,or should encounter any bugs, please report them to the maintainers at the mod forum: http://www.shsforums.net/topic/60857-stuff-ot-the-magi-updated-to-v600-with-ee-compatibility/
 (Deprecated: Or send a PM to Kevmus at spellholdstudios.net Or email me at KevmusBG@gmail.com)
 
 
-VERSIONS
-========
-
-Note du traducteur : l'historique n'est volontairement pas traduit afin de faciliter la mise à jour continue du mod.
+VERSIONS HISTORY
+================
 
 Version 6.0.0
 -------------

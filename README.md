@@ -57,7 +57,7 @@ This mod adds the Stuff of the Magi set to the following creatures:
 </p>
 </details><br>
 
-**Never forget:** All the original work was done by Victor Straffe at Sorcerer's Place. Kevmus updated it to WeiDU, added the more balanced items, and "bugfixed like a madman".
+**Never forget:** All the original work was done by Victor Straffe at <a href="https://sorcerers.net/Games/BG2/index_mods_hosted_items_spells2.php">Sorcerer's Place</a>. Kevmus updated it to WeiDU, added the more balanced items, and "bugfixed like a madman".
 
 <hr>
 
@@ -149,7 +149,7 @@ The number of each is the component DESIGNATED number which gives it a fixed ins
 ## 
 
 :warning: Please note that the recommended installation options are "*Use new, less cheesy items*" and "*Add them to creatures' equipment*".<br>
-If you choose "*Add items to creatures' equipment*", enemies will use these items against you, while "*Add items to creature's inventory*" option, won't change difficulty of fights.
+If you choose "*Add items to creatures' equipment*", enemies will use these items against you, while "*Add items to creature's inventory*" option won't change difficulty of fights.
 
 <div align="right"><a href="#top">Back to top</a></div>
 
@@ -169,7 +169,7 @@ If you choose "*Add items to creatures' equipment*", enemies will use these item
 - Kevmus: Updated the mod to WeiDU, added the more balanced items, and fixed bugs.
 - Rastamage: Item stories/Erevain's talk.
 - Tassadar88: Help with coding.
-- Deratiseur: Made it compatible with translations, wrote the French translation, and provided the native BG2:EE compatible version 5.
+- Deratiseur: Made it compatible with translations, wrote the French translation, and provided native BG2:EE compatible version 5.
 - Gwendolyne: Released version 6.0.0.
 - ilot: Italian translation.
 - The BiG World Textpack Russian team: Russian translation.
@@ -182,7 +182,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 #### Copyrights Information
 
-###### the Stuff of the Magi is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by Victor Straffe, based on material from the game Baldur's Gate II and its expansion.
+###### The Stuff of the Magi is not developed, supported, or endorsed by BioWare&trade; or Interplay/BlackIsle, Overhaul, Beamdog or the Wizards of the Coast. It was developed by Victor Straffe, based on material from the game Baldur's Gate II and its expansion.
 ###### All mod content is &copy;Victor Straffe and Rastamage.
 ###### Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp. All other trademarks and copyrights are property of their respective owners.
 

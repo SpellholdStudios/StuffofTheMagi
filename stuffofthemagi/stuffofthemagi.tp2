@@ -7,7 +7,7 @@ SUPPORT ~SHS Staff at http://www.shsforums.net/topic/60857-stuff-ot-the-magi-upd
 
 VERSION ~6.0.0~ // version number
 
-README ~stuffofthemagi/readme/sotm-readme-%LANGUAGE%.txt~ ~stuffofthemagi/readme/sotm-readme.txt~
+README ~stuffofthemagi/readme/sotm-readme-%LANGUAGE%.txt~ ~stuffofthemagi/readme/sotm-readme-english.txt~
 
 ALWAYS
 

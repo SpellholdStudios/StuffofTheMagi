@@ -25,64 +25,65 @@ wzrdstaf - staff
 Effects of the items:
 
 Cloak:
-      +2 AC Bonus
-      +2 to all Saving throws
+    +2 AC Bonus
+    +2 to all Saving throws
 
 Ring:
-      +10 to all Wild Surge checks
-      -2 Spell casting speed
-      +1 spell of 1st, 2nd and 7th level.
-      Protection from Level Drain.
+    +10 to all Wild Surge checks
+    -2 Spell casting speed
+    +1 spell of 1st, 2nd and 7th level.
+    Protection from level drain.
 
 Robe:
-      Armor Class: 2
-      Magic Resistance: +25%
-      +3 to Save vs. Spells
+    Armor Class: 2
+    Magic Resistance: +25%
+    +3 to Save vs. Spell
 
 Amulet:
-      Decrease spellcasting speed by two
-      Immune to Flesh to Stone
-      +1 to Save vs. Petrification/Polymorph
-      +1 to Save vs. Breath Weapons
+    Decreases spellcasting speed by two
+    Immune to petrification
+    +1 to Save vs. Petrification/Polymorph
+    +1 to Save vs. Breath Weapons
 
 Boots:
-      Aura cleansing
-      Movement rate increased by 50%
+    Doubles movement rate
+    Improved Alacrity once per day
 
 Staff:
-      Armor Class: +2 bonus
-      Saving Throws: +2 bonus
-      Equipped Abilities: Invisibility, Immunity to Charm, Protection From Evil
+    Armor Class: +2 bonus
+    Saving Throws: +2 bonus
+    Equipped Abilities: Invisibility, Immunity to Charm, Protection From Evil
 
-        Fireball-Lightning
-         Damage: combined lightning and fireball damage
-         Range: 150 feet
-         Use: Three times a day
+    Ability: Fireball-Lightning
+     Damage: combined lightning and fireball damage
+     Range: 150 feet
+     Use: Three times per day
 
-      Abilities: Spell Trap
-         Duration: 8 hours or until 30 spell levels have been trapped
-         Use: Once a day
+    Ability: Spell Trap
+     Duration: 8 hours or until 30 spell levels have been trapped
+     Use: Once per day
 
-      Combat Ability (each hit): Dispel Magic  
-      Thac0: +2 bonus  (strikes as a +5 weapon)
-      Damage:  2d6 +2
-      Damage type:  Crushing
-      Weight: 3
-      Speed Factor: 1
-      Proficiency Type: Quarterstaff
-      Type:  2-handed
-      Requires: 5 Strength
+    Combat Ability (each hit): Dispel Magic  
+    Thac0: +2 bonus (strikes as a +5 weapon)
+    Damage: 2d6 +2
+    Damage type: Crushing
+    Weight: 3
+    Speed Factor: 1
+    Proficiency Type: Quarterstaff
+    Type: 2-handed
+    Requires: 5 Strength
 
 Gauntlets:
-      Memorize one extra spells of each level
-      Immunity to backstab
+    Memorize one extra spells of each level
+    Immunity to backstab
+    +1 Intelligence
 
 Circlet:
-      Equipped Abilities: Vocalize, Infravision
-      +1 Intelligence
-      Mind Shield (Immune to Feeblemind, Dire Charm, etc.)
+    Vocalize, Infravision
+    +1 Intelligence
+    Mind Shield (Immune to Feeblemind, Dire Charm, etc.)
       
 Belt:
-      Improve spellcasting speed by one
-      Protection from normal missiles
-      +25% Magic Resistance
+    Improve spellcasting speed by one
+    Protection from normal missiles
+    +25% Magic Resistance
