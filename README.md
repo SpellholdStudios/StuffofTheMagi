@@ -38,10 +38,8 @@ This mod adds a new set of Mage items scattered through the game. Please read <a
 
 Once you gather all the items, the one who equip them all gain an exceptional bonus. Also, if you have all items, you will meet someone in the Pocket Plane who will want to speak with you...
 
-Note: If you choose the original overpowered items you will only end up with 7 items instead of 9, no cape nor ring.
+Note: If you choose the original overpowered items you will only end up with 7 items instead of 9, no cape nor ring.  
 
-
-**Never forget:** All the original work was done by Victor Straffe at Sorcerer's Place. Kevmus updated it to WeiDU, added the more balanced items, and "bugfixed like a madman".
 
 <details><summary><ins>Minor spoiler for lazy players!</ins></summary>
 <p><br>
@@ -57,8 +55,9 @@ This mod adds the Stuff of the Magi set to the following creatures:
 - Cloak: Suneer in Rillifane Temple (Suldanessellar).</br>
 - Ring: Lavok.
 </p>
-</details><br>
+</details><br><br>
 
+**Never forget:** All the original work was done by Victor Straffe at Sorcerer's Place. Kevmus updated it to WeiDU, added the more balanced items, and "bugfixed like a madman".
 
 <hr>
 
@@ -214,6 +213,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Added "*always.tpa*" library.
 - Added native EET, 1PP and ToBEx compatibility.
 - Commented code as much as possible.
+- Fixed wrong *ACTION.IDS* patching.
 - Fixed an installation issue preventing the player wearing whole Stuff of the Magi set to gain an extra bonus if Option 2 ("*Use original, overpowered items*") was selected.
 - Does not compile anymore *wzrdlich.baf* twice.
 - wzrdlich.cre: moved RNDTREnn items from quick item slots to inventory.
