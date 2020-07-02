@@ -1,8 +1,17 @@
-@9001 = ~[Uu]tilisable[ %tab%]+[Uu]niquement[ %tab%]+[Pp]ar[ %tab%]*:~
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+@9001 = ~[Uu]tilisable\([ %tab%]+[Ss]eulement\|[ %tab%]+[Uu]niquement\)?[ %tab%]+[Pp]ar[ %tab%]*:~
 @9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
 
-@107  = ~Erevain Beraskána~
+/* ================= *
+ *  Character names  *
+ * ================= */
+@107 = ~Erevain Beraskána~
 
+/* ======= *
+ *  Items  *
+ * ======= */
 //@108  = ~Cape~
 @109  = ~Cape du Mage~
 /*@110 = ~Une cape peut être fabriquée dans presque n'importe quel type de tissu et prendre n'importe quelle forme. Les capes les plus courantes sont faites d'un morceau de tissu circulaire troué en son centre pour passer la tête et d'un tissu drapé à partir du cou, attaché par une chaîne, une broche, une ficelle ou des épingles.
@@ -293,6 +302,7 @@ Capacités d'équipement :
 - Vitesse de déplacement augmentée de 20 %
 
 Poids : 2
+
 Utilisable uniquement par :
  Mage
  Sorcier~
@@ -346,6 +356,7 @@ Capacités d'équipement :
 - Immunité aux attaques sournoises
 
 Poids : 1
+
 Utilisable uniquement par :
  Mage
  Sorcier~

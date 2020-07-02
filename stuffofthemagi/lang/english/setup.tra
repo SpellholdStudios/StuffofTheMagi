@@ -4,8 +4,8 @@
 @1004 = ~Use original, overpowered items AND Add them to creatures' equipment~
 @1005 = ~Use original, overpowered items AND Add them to creatures' inventory~
 
-@1010 = ~This mod is only compatible with BGII: ToB, BGT and BG2:EE installations.~
-//@1020 = ~Modmerge is required before mods can be installed on this game. Check the readme for more information and a link to download Modmerge.~
+@1010 = ~You must have ToB, BGT, BG2:EE or EET installed to install Stuff of the Magi.~ // This mod is only compatible with BGII: ToB, BGT, BG2:EE and EET installations
+//@1020 = ~Your SoD game needs to be modmerged before mods can be installed on this game. Check the readme for more information and a link to download the DLC Merger or Modmerge..~
 
 /* DEPRECATED: sotm_read_configuration.tph and always.tpa
 @1011 = ~Configuration option sotm_%variable_0% value (%wrong_value%) does not match its scope and has been reset to its default value (%default%).~

@@ -1,10 +1,20 @@
-@9001 = ~[Oo]nly[ %tab%]+[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+@9001 = ~\([Oo]nly[ %tab%]+\)?[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 @9002 = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
+//@9001 = ~[Oo]nly[ %tab%]+[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 
-@107  = ~Erevain Beraskána~
+/* ================= *
+ *  Character names  *
+ * ================= */
+@107 = ~Erevain Beraskána~
 
+/* ======= *
+ *  Items  *
+ * ======= */
 //@108  = ~Cloak~
-@109  = ~Cloak of the Magi~
+@109 = ~Cloak of the Magi~
 //@110 = ~The cloak can be made in every possible shape with just about every type of fabric. The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.~
 @111 =~Erevain Beraskána crafted the Cape of the Magi just as he created all of the Magi items. Erevain was a maverick among Suldanessellar's High Mages. Erevain was a master of using the Weave for wild magic centuries before the Time of Troubles made the practice more common knowledge. After his studies in Candlekeep, Erevain had become an expert in Alaundo's prophecies concerning the Bhaalspawn as well. He saw the potential for this period of strife to cause harm to the elven way of life in Suldanessellar. For reasons unknown to any except himself, Erevain bequeathed this cape to the elven High Mage Joneleth, who went on to become the Exile Irenicus, shortly before Erevain went to his death in battle against the Drow forces of Ust Natha two centuries ago. Irenicus never valued the item due to the source of his receiving it and later passed it on to his apprentice, Suneer.
 This item is one of the nine-piece set of Magi items. It is rumored that adorning oneself with the complete Magi regalia allows the wearer to gain a bonus in reigning in the chaotic effects of wild magic and it provides a bonus against elemental damage.

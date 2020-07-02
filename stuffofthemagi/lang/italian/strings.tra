@@ -1,8 +1,7 @@
 /* ================= *
  *  Usability flags  *
  * ================= */
-//@9001 =~[Uu]tilizzabile[ %tab%]+\([Ss]olo[ %tab%]+\)?[Dd]a[ %tab%]*:~
-@9001 =~[Uu]tilizzabile\([ %tab%]+[Ss]olo+\|[ %tab%]+{Ss]olamente\)?[ %tab%]+[Dd]a[ %tab%]*:~
+@9001 =~[Uu]tilizzabile\([ %tab%]+[Ss]olo+\|[ %tab%]+[Ss]olamente\)?[ %tab%]+[Dd]a[ %tab%]*:~
 @9002 =~[Nn]on[ %tab%]+[Uu]tilizzabile[ %tab%]+[Dd]a[ %tab%]*:~
 
 /* ================= *
@@ -181,6 +180,7 @@ STATISTICHE:
 Abilità d'equipaggiamento: Vocalizzazione, Infravisione
 +1 all'Intelligenza
 Scudo Mentale (Immune to Regressione Mentale, Charme Distruttivo, ecc.)
+
 Richiede: 18 all'Intelligenza
 Peso: 1
 
@@ -308,10 +308,11 @@ Memorizza tre incantesimi supplementari di livello 8 e di livello 9
 Classe Armatura: bonus +1
 Lancia Regressione Mentale 1 volta al giorno
 Scudo Mentale (Immune alla Regressione Mentale, allo Charme Distruttivo, ecc.)
+
 Requires: 18 Intelligence
 
 Utilizzabile da:
-  Maghi/Incantatori~
+ Maghi/Incantatori~
 
 @150 = ~Questa cintura é parte di uno dei pezzi del set creati da Erevain Beraskána, ed é forse il meno incantato dei sette. Fornisce l'immunità alle armi da lancio di tutte le forme ed inoltre diminuisce il tempo di lancio di tutti gli incantesimi di una unità.
 

@@ -55,7 +55,7 @@ This mod adds the Stuff of the Magi set to the following creatures:
 - Cloak: Suneer in Rillifane Temple (Suldanessellar).</br>
 - Ring: Lavok.
 </p>
-</details><br><br>
+</details><br>
 
 **Never forget:** All the original work was done by Victor Straffe at Sorcerer's Place. Kevmus updated it to WeiDU, added the more balanced items, and "bugfixed like a madman".
 
