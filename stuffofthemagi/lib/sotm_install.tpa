@@ -1,0 +1,386 @@
+/* =============================================================================================== *
+ *         SUB-COMPONENTS INSTALLATION                                                             *
+ * =============================================================================================== *
+ *  - Adds CD_STATE_NOTVALID and other actions.                                     => line #  18  *
+ *  - Defines variables.                                                            => line #  37  *
+ *  - Installs Items: Use new, less cheesy items (recommended).                     => line #  49  *
+ *  - Installs Items: Use original, overpowered items.                              => line # 153  *
+ *  - Shared tooltip.                                                               => line # 257  *
+ *  - Scatters items through the game.                                              => line # 265  *
+ *  - Installs Spells.                                                              => line # 317  *
+ *  - Installs Erevain Beraskána.                                                   => line # 323  *
+ *  - Installs Scroll Case.                                                         => line # 346  *
+ *  - Compiles Dialog and scripts.                                                  => line # 369  *
+ * =============================================================================================== */
+
+SILENT
+/* ---------------------------------------------------------------------------------------------------------------------- *
+ *     Adds CamDawg's custom IsValidForPartyDialogue state used throughout dialogs. Thanks Cam!                           *
+ * ---------------------------------------------------------------------------------------------------------------------- *
+ *  covers STATE_CONFUSED, STATE_FEEBLEMINDED, STATE_SILENCED, STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH,           *
+ *  STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH, STATE_HELPLESS, STATE_STUNNED, STATE_PANIC,             *
+ *  STATE_BERSERK, STATE_SLEEPING                                                                                         *
+ * ---------------------------------------------------------------------------------------------------------------------- *
+ *   	ADDs CamDawg's custom state needed to fix Dead() triggers that don't use DVs. Thanks Cam!                         *
+ * ---------------------------------------------------------------------------------------------------------------------- *
+ *  covers STATE_DEAD, STATE_ACID_DEATH, STATE_FLAME_DEATH, STATE_EXPLODING_DEATH, STATE_STONE_DEATH, STATE_FROZEN_DEATH  *
+ * ---------------------------------------------------------------------------------------------------------------------- */
+APPEND ~state.IDS~ ~0x80101FEF CD_STATE_NOTVALID~ UNLESS ~CD_STATE_NOTVALID~
+APPEND ~state.ids~ ~0x00000FC0 STATE_REALLY_DEAD~ UNLESS ~^0x00000FC0[ %TAB]+STATE_REALLY_DEAD[ %TAB%%LNL%%MNL%%WNL%]~
+
+// Adds other actions
+// ------------------
+APPEND ~action.ids~ ~160 ApplySpellRES(S:RES,O:Target)~ UNLESS ~ApplySpellRES(S:RES\*,O:Target)~	// maybe useless!
+
+
+/* ------------------- *
+ *  Defines variables  *
+ * ------------------- */
+ACTION_IF (sotm_use = 1) BEGIN		// Option 1: "Use new, less cheesy items (recommended)"	==> compile "scriptfile.baf"
+	OUTER_SPRINT prefix_ovp ""
+END ELSE BEGIN						// Option 2: "Use original, overpowered items"			==> compile "oscriptfile.baf"
+	OUTER_SPRINT prefix_ovp "o"
+END
+
+LAM ~GW_READ_COL_TOOLTIP~			// Reads how many columns are in tooltip.2da file.
+
+
+/* ---------------------------------------------------- *
+ *  Option 1: Use new, less cheesy items (recommended)  *
+ * ---------------------------------------------------- */
+ACTION_IF (sotm_use = 1) BEGIN
+
+	// Cape of the Magi
+	COPY ~%MOD_FOLDER%/items/wzrdrobe.itm~ ~override~
+//		SAY NAME1 @108	SAY UNIDENTIFIED_DESC @110	==> Removed because useless.
+		SAY NAME2 @109
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@111" END
+	BUT_ONLY
+
+	// Ring of the Magi
+	COPY ~%MOD_FOLDER%/items/wzrdring.itm~ ~override~
+//		SAY NAME1 @112	SAY UNIDENTIFIED_DESC @114	==> Removed because useless.
+		SAY NAME2 @113
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@115" END
+	BUT_ONLY
+
+	// Robe of the Magi
+	COPY ~%MOD_FOLDER%/items/wzrdclck.itm~ ~override~
+//		SAY NAME1 @116	SAY UNIDENTIFIED_DESC @118	==> Removed because useless.
+		SAY NAME2 @117
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@119" END
+	BUT_ONLY
+
+	// Amulet of the Magi
+	COPY ~%MOD_FOLDER%/items/wzrdamul.itm~ ~override~
+//		SAY NAME1 @120	SAY UNIDENTIFIED_DESC @122	==> Removed because useless.
+		SAY NAME2 @121
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@123" END
+		PATCH_IF is_ee BEGIN
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 328 parameter1 = 0 parameter2 = 107 special = 1 STR_VAR insert = below END	// PROTECTION_FROM_PETRIFICATION
+		END ELSE BEGIN
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 282 parameter1 = 1 parameter2 = 20 STR_VAR insert = below END					// WIZARD_PROTECTION_FROM_PETRIFICATION
+		END
+	BUT_ONLY
+
+	// Boots of the Magi
+	COPY ~%MOD_FOLDER%/items/wzrdboot.itm~ ~override~
+//		SAY NAME1 @124	SAY UNIDENTIFIED_DESC @126	==> Removed because useless.
+		SAY NAME2 @125
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@127" END
+	BUT_ONLY
+
+	// Staff of the Magi
+	COPY ~%MOD_FOLDER%/items/wzrdstaf.itm~ ~override~
+//		SAY NAME1 @128	SAY UNIDENTIFIED_DESC @130	==> Removed because useless.
+		SAY NAME2 @129
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@131" END
+		PATCH_IF (is_ee) BEGIN
+			LPF ~GW_ALTER_ITEM_ALTER_HEADER_FLAGS~ INT_VAR type = 3 header = 2 flag_breaksanctuary = 1 END
+		END
+		PATCH_IF (is_ee OR is_1pp_staff) BEGIN
+			LPF ~1pp_staf11~ END
+		END
+		PATCH_IF (is_1pp_staff0) BEGIN
+			LPF ~1pp_staf11_0~ END
+		END
+	BUT_ONLY
+
+	// Gauntlets of the Magi
+	COPY ~%MOD_FOLDER%/items/wzrdbrac.itm~ ~override~
+//		SAY NAME1 @132	SAY UNIDENTIFIED_DESC @134	==> Removed because useless.
+		SAY NAME2 @133
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@135" END
+	BUT_ONLY
+
+	// Circlet of the Magi
+	COPY ~%MOD_FOLDER%/items/wzrdhelm.itm~ ~override~
+//		SAY NAME1 @136	SAY UNIDENTIFIED_DESC @138	==> Removed because useless.
+		SAY NAME2 @137
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@139" END
+		PATCH_IF (is_ee OR is_1pp_helmet) BEGIN
+			WRITE_ASCII 0x22 ~JB~	// Circlet
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 101 opcode = 7 parameter1 = 207 parameter2 = 52 STR_VAR insert = first END	// Set Color: 207 NOBLE_MINOR2-CHROME_GOLD
+		END
+		PATCH_IF (is_ee OR is_tobex) BEGIN
+			WRITE_LONG 0x18 THIS | BIT25	// Adds EE/Ex: Toggle critical hits flag
+		END
+	BUT_ONLY
+
+	// Girdle of the Magi
+	COPY ~%MOD_FOLDER%/items/wzrdbelt.itm~ ~override~
+//		SAY NAME1 @140	SAY UNIDENTIFIED_DESC @142	==> Removed because useless.
+		SAY NAME2 @141
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@143" END
+		PATCH_FOR_EACH proj IN 1arow01 1bolt01 1dagg05 1dart01 BEGIN
+			SET projnb = IDS_OF_SYMBOL (~projectl~ ~%proj%~)
+			PATCH_IF projnb > 0 BEGIN
+				LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 83 parameter2 = projnb STR_VAR insert = last END
+			END
+		END
+		PATCH_IF is_ee BEGIN
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 328 parameter1 = 0 parameter2 = 109 special = 1 STR_VAR insert = below END	// PROTECTION_FROM_NORMAL_MISSILES
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 328 parameter1 = 0 parameter2 = 64 special = 1 STR_VAR insert = below END		// BUFF_PRO_WEAPONS
+		END ELSE BEGIN
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 282 parameter1 = 1 parameter2 = 23 STR_VAR insert = below END	// 179 PICKPOCKETMTPBONUS (WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+		END
+	BUT_ONLY
+
+	LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~wzrdboot~ GW_tooltips = ~63217~ END	// Improved Alacrity once per day
+
+
+/* ------------------------------------------- *
+ *  Option 2: Use original, overpowered items  *
+ * ------------------------------------------- */
+END ELSE BEGIN
+
+	// Robe of the Magi
+	COPY ~%MOD_FOLDER%/itemsorig/wzrdclck.itm~ ~override~
+//		SAY NAME1 @116	SAY UNIDENTIFIED_DESC @118	==> Removed because useless.
+		SAY NAME2 @117
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@144" END
+		PATCH_IF is_ee BEGIN
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 328 parameter1 = 0 parameter2 = 65 special = 1 STR_VAR insert = below END	// BUFF_PRO_DAMAGE
+		END
+	BUT_ONLY
+
+	// Amulet of the Magi
+	COPY ~%MOD_FOLDER%/itemsorig/wzrdamul.itm~ ~override~
+//		SAY NAME1 @120	SAY UNIDENTIFIED_DESC @122	==> Removed because useless.
+		SAY NAME2 @121
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@145" END
+		PATCH_IF is_ee BEGIN
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 328 parameter1 = 0 parameter2 = 107 special = 1 STR_VAR insert = below END	// PROTECTION_FROM_PETRIFICATION
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 328 parameter1 = 0 parameter2 = 111 special = 1 STR_VAR insert = below END	// PROTECTION_FROM_NORMAL_WEAPONS
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 328 parameter1 = 0 parameter2 = 64 special = 1 STR_VAR insert = below END		// BUFF_PRO_WEAPONS
+		END ELSE BEGIN
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 282 parameter1 = 1 parameter2 = 20 STR_VAR insert = below END					// WIZARD_PROTECTION_FROM_PETRIFICATION
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 282 parameter1 = 1 parameter2 = 25 STR_VAR insert = below END					// 181 PROTECTION_FROM_NORMAL_WEAPONS
+		END
+	BUT_ONLY
+
+	// Boots of the Magi
+	COPY ~%MOD_FOLDER%/itemsorig/wzrdboot.itm~ ~override~
+//		SAY NAME1 @124	SAY UNIDENTIFIED_DESC @126	==> Removed because useless.
+		SAY NAME2 @125
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@146" END
+	BUT_ONLY
+
+	// Staff of the Magi
+	COPY ~%MOD_FOLDER%/itemsorig/wzrdstaf.itm~ ~override~
+//		SAY NAME1 @128	SAY UNIDENTIFIED_DESC @130	==> Removed because useless.
+		SAY NAME2 @129
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@147" END
+		PATCH_IF (is_ee) BEGIN
+			LPF ~GW_ALTER_ITEM_ALTER_HEADER_FLAGS~ INT_VAR type = 3 header = 2 flag_breaksanctuary = 1 END
+		END
+		PATCH_IF (is_ee OR is_1pp_staff) BEGIN
+			LPF ~1pp_staf11~ END
+		END
+		PATCH_IF (is_1pp_staff0) BEGIN
+			LPF ~1pp_staf11_0~ END
+		END
+	BUT_ONLY
+
+	// Gauntlets of the Magi
+	COPY ~%MOD_FOLDER%/itemsorig/wzrdbrac.itm~ ~override~
+//		SAY NAME1 @132	SAY UNIDENTIFIED_DESC @134	==> Removed because useless.
+		SAY NAME2 @133
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@148" END
+	BUT_ONLY
+
+	// Circlet of the Magi
+	COPY ~%MOD_FOLDER%/itemsorig/wzrdhelm.itm~ ~override~
+//		SAY NAME1 @136	SAY UNIDENTIFIED_DESC @138	==> Removed because useless.
+		SAY NAME2 @137
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@149" END
+		PATCH_IF (is_ee) BEGIN
+			LPF ~GW_ALTER_ITEM_ALTER_HEADER_FLAGS~ INT_VAR flag_breaksanctuary = 1 END
+		END
+		PATCH_IF (is_ee OR is_1pp_helmet) BEGIN
+			WRITE_ASCII 0x22 ~JB~	// Circlet
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 101 opcode = 7 parameter1 = 207 parameter2 = 52 STR_VAR insert = first END	// Set Color: 207 NOBLE_MINOR2-CHROME_GOLD
+		END
+		PATCH_IF (is_ee OR is_tobex) BEGIN
+			WRITE_LONG 0x18 THIS | BIT25	// Adds EE/Ex: Toggle critical hits flag
+		END
+	BUT_ONLY
+
+	// Girdle of the Magi
+	COPY ~%MOD_FOLDER%/itemsorig/wzrdbelt.itm~ ~override~
+//		SAY NAME1 @140	SAY UNIDENTIFIED_DESC @142	==> Removed because useless.
+		SAY NAME2 @141
+		LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@150" END
+		// 1pp new projectiles (protection from all types of missiles, including magic ones)
+		PATCH_IF (is_ee OR is_1pp_401) BEGIN
+			PATCH_FOR_EACH proj IN 1arow01 1arow02 1arow03 1arow04 1arow05 1arow07 1arow10 1arow11 1arow15 1axe05 1axe08 1axe09 1axe10 1axe16 1bolt01 1bolt02 1bolt03 1bolt04 1bolt05 1bolt06 1bolt09 1bull02 1bull03 1bull04 1bull05 1bull06 1dagg05 1dagg11 1dagg12 1dagg16 1dart01 1dart02 1dart03 1dart04 1dart05 1dart08 BEGIN
+				SET projnb = IDS_OF_SYMBOL (~projectl~ ~%proj%~)
+				PATCH_IF projnb > 0 BEGIN
+					LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 83 parameter2 = projnb STR_VAR insert = above END
+				END
+			END
+		END
+		PATCH_IF is_ee BEGIN
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 328 parameter1 = 0 parameter2 = 109 special = 1 STR_VAR insert = below END	// PROTECTION_FROM_NORMAL_MISSILES
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 328 parameter1 = 0 parameter2 = 64 special = 1 STR_VAR insert = below END		// BUFF_PRO_WEAPONS
+		END ELSE BEGIN
+			LPF CLONE_EFFECT INT_VAR silent = 1 check_headers = 0 multi_match = 1 match_opcode = 142 opcode = 282 parameter1 = 1 parameter2 = 23 STR_VAR insert = below END	// 179 PICKPOCKETMTPBONUS (WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+		END
+	BUT_ONLY
+
+	LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~wzrdhelm~ GW_tooltips = ~22612~ END // Feeblemind once per day
+
+END	// of ACTION_IF (sotm_use = 1) BEGIN
+
+
+/* ---------------- *
+ *  Shared tooltip  *
+ * ---------------- */
+LAF ~GW_ADD_ITEM_TOOLTIPS~ STR_VAR GW_objet = ~wzrdstaf~ GW_tooltips = ~@129 3895 26304~ END	// Staff of the Magi = Melee - Fireball-Lightning 3 times per day - Spell Trap once per day
+COPY_EXISTING ~tooltip.2da~ ~override~
+	PRETTY_PRINT_2DA
+
+
+/* --------------------------------- *
+ *  Scatters items through the game  *
+ * --------------------------------- */
+// Adds items to creatures' equipment (recommended, enemies will use them against you)
+ACTION_IF (sotm_equip = 1) BEGIN
+	COPY_EXISTING ~amlich01.cre~ ~override~									// Vongoethe
+		ADD_CRE_ITEM ~wzrdclck~ #0 #0 #0 ~NONE~ ~ARMOR~						// Robe of the Magi
+	COPY_EXISTING ~demogor2.cre~ ~override~									// Demogorgon
+		ADD_CRE_ITEM ~wzrdamul~ #0 #0 #0 ~NONE~ ~AMULET~					// Amulet of the Magi
+	COPY_EXISTING ~hldemi.cre~ ~override~									// Kangaxx the Demilich
+		ADD_CRE_ITEM ~wzrdboot~ #0 #0 #0 ~NONE~ ~BOOTS~						// Boots of the Magi
+	COPY_EXISTING ~hllayen.cre~ ~override~									// Layene
+		ADD_CRE_ITEM ~wzrdstaf~ #0 #0 #0 ~NONE~ ~WEAPON1~ EQUIP TWOHANDED	// Staff of the Magi
+		REMOVE_CRE_ITEM ~staf11~
+	COPY_EXISTING ~firkra02.cre~ ~override~									// Firkraag
+		ADD_CRE_ITEM ~wzrdbrac~ #0 #0 #0 ~NONE~ ~GLOVES~					// Gauntlets of the Magi
+	COPY_EXISTING ~sendai.cre~ ~override~									// Sendai
+		ADD_CRE_ITEM ~wzrdhelm~ #0 #0 #0 ~NONE~ ~HELMET~					// Circlet of the Magi
+	COPY_EXISTING ~udardul.cre~ ~override~									// Matron Mother Ardulace
+		ADD_CRE_ITEM ~wzrdbelt~ #0 #0 #0 ~NONE~ ~BELT~						// Girdle of the Magi
+	ACTION_IF (sotm_use = 1) BEGIN
+		COPY_EXISTING ~lavok02.cre~ ~override~								// Lavok
+			ADD_CRE_ITEM ~wzrdring~ #0 #0 #0 ~NONE~ ~LRING RRING~			// Ring of the Magi
+		COPY_EXISTING ~susuneer.cre~ ~override~								// Suneer
+			ADD_CRE_ITEM ~wzrdrobe~ #0 #0 #0 ~NONE~ ~CLOAK~					// Cape of the Magi
+	END
+// Adds items to creatures' inventory (does not change difficulty of fights)
+END ELSE BEGIN
+	COPY_EXISTING ~amlich01.cre~ ~override~									// Vongoethe
+		ADD_CRE_ITEM ~wzrdclck~ #0 #0 #0 ~NONE~ ~INV16~						// Robe of the Magi
+	COPY_EXISTING ~demogor2.cre~ ~override~									// Demogorgon
+		ADD_CRE_ITEM ~wzrdamul~ #0 #0 #0 ~NONE~ ~INV16~						// Amulet of the Magi
+	COPY_EXISTING ~hldemi.cre~ ~override~									// Kangaxx the Demilich
+		ADD_CRE_ITEM ~wzrdboot~ #0 #0 #0 ~NONE~ ~INV16~						// Boots of the Magi
+	COPY_EXISTING ~hllayen.cre~ ~override~									// Layene
+		ADD_CRE_ITEM ~wzrdstaf~ #0 #0 #0 ~NONE~ ~INV16~						// Staff of the Magi
+		REMOVE_CRE_ITEM ~staf11~
+	COPY_EXISTING ~firkra02.cre~ ~override~									// Firkraag
+		ADD_CRE_ITEM ~wzrdbrac~ #0 #0 #0 ~NONE~ ~INV16~						// Gauntlets of the Magi
+	COPY_EXISTING ~sendai.cre~ ~override~									// Sendai
+		ADD_CRE_ITEM ~wzrdhelm~ #0 #0 #0 ~NONE~ ~INV16~						// Circlet of the Magi
+	COPY_EXISTING ~udardul.cre~ ~override~									// Matron Mother Ardulace
+		ADD_CRE_ITEM ~wzrdbelt~ #0 #0 #0 ~NONE~ ~INV16~						// Girdle of the Magi
+	ACTION_IF (sotm_use = 1) BEGIN
+		COPY_EXISTING ~lavok02.cre~ ~override~								// Lavok
+			ADD_CRE_ITEM ~wzrdring~ #0 #0 #0 ~NONE~ ~INV16~					// Ring of the Magi
+		COPY_EXISTING ~susuneer.cre~ ~override~								// Suneer
+			ADD_CRE_ITEM ~wzrdrobe~ #0 #0 #0 ~NONE~ ~INV16~					// Cape of the Magi
+	END
+END
+
+
+/* ----------------- *
+ *  Installs Spells  *
+ * ----------------- */
+COPY ~%MOD_FOLDER%/spells~ ~override~
+
+
+/* --------------------------- *
+ *  Install Erevain Beraskána  *
+ * --------------------------- */
+COPY ~%MOD_FOLDER%/cre/wzrdlich.cre~ ~override~
+	SAY NAME1 @107
+	SAY NAME2 @107
+	ADD_CRE_ITEM ~wzrdclck~ #0 #0 #0 ~unstealable&undroppable~ ~ARMOR~						// Robe of the Magi
+	ADD_CRE_ITEM ~wzrdamul~ #0 #0 #0 ~unstealable&undroppable~ ~AMULET~						// Amulet of the Magi
+	ADD_CRE_ITEM ~wzrdboot~ #0 #0 #0 ~unstealable&undroppable~ ~BOOTS~						// Boots of the Magi
+	ADD_CRE_ITEM ~wzrdstaf~ #0 #0 #0 ~unstealable&undroppable~ ~WEAPON1~ EQUIP TWOHANDED	// Staff of the Magi
+	ADD_CRE_ITEM ~wzrdbrac~ #0 #0 #0 ~unstealable&undroppable~ ~GLOVES~						// Gauntlets of the Magi
+	ADD_CRE_ITEM ~wzrdhelm~ #0 #0 #0 ~unstealable&undroppable~ ~HELMET~						// Circlet of the Magi
+	ADD_CRE_ITEM ~wzrdbelt~ #0 #0 #0 ~unstealable&undroppable~ ~BELT~						// Girdle of the Magi
+	ADD_CRE_ITEM ~wzrdbag1~ #0 #0 #0 ~NONE~ ~INV16~											// Scroll Case
+	PATCH_IF (sotm_use = 1) BEGIN
+		ADD_CRE_ITEM ~wzrdring~ #0 #0 #0 ~unstealable&undroppable~ ~LRING~					// Ring of the Magi
+		ADD_CRE_ITEM ~wzrdrobe~ #0 #0 #0 ~unstealable&undroppable~ ~CLOAK~					// Cape of the Magi
+	END
+BUT_ONLY
+
+COPY ~%MOD_FOLDER%/portraits%ee_file%/wzrdlich.bmp~ ~override~
+
+
+/* ---------------------- *
+ *  Installs Scroll Case  *
+ * ---------------------- */
+COPY ~%MOD_FOLDER%/items/wzrdbag1.itm~ ~override~
+//	SAY NAME1 @151	SAY NAME2 @151	SAY UNIDENTIFIED_DESC @152	==> Removed because useless.
+	LPF ~GW_WRITE_EE_ITM_DESCRIPTIONS~ STR_VAR GW_desc_to_update = "@153" END
+
+// His scroll case starts out with some powerful spells in it : Freedom, Black Blade of Disaster, Chain Contingency, Timestop, Imprisonment, Horrid wilting, Delayed Blast Fireball, Protection From Magical Weapons, Simulacrum and Spellstrike. *Phew*.
+COPY ~%MOD_FOLDER%/stores/wzrdbag1.sto~ ~override~
+	WRITE_SHORT 0x22 32767								// Makes Scroll case bottomless (instead of 20)
+	ADD_STORE_ITEM "scrl9z" #1 #0 #0 ~IDENTIFIED~ #1	// Freedom
+	ADD_STORE_ITEM "scrl9x" #1 #0 #0 ~IDENTIFIED~ #1	// Black Blade of Disaster
+	ADD_STORE_ITEM "scrl9s" #1 #0 #0 ~IDENTIFIED~ #1	// Imprisonment
+	ADD_STORE_ITEM "scrl9r" #1 #0 #0 ~IDENTIFIED~ #1	// Timestop
+	ADD_STORE_ITEM "scrl9q" #1 #0 #0 ~IDENTIFIED~ #1	// Chain Contingency
+	ADD_STORE_ITEM "scrl9g" #1 #0 #0 ~IDENTIFIED~ #1	// Abi-Dalzim's Horrid Wilting
+	ADD_STORE_ITEM "scrl8n" #1 #0 #0 ~IDENTIFIED~ #1	// Delayed Blast Fireball
+	ADD_STORE_ITEM "scrl7o" #1 #0 #0 ~IDENTIFIED~ #1	// Protection From Magical Weapons
+	ADD_STORE_ITEM "scrl8z" #1 #0 #0 ~IDENTIFIED~ #1	// Simulacrum
+	ADD_STORE_ITEM "scrl9m" #1 #0 #0 ~IDENTIFIED~ #1	// Spellstrike
+BUT_ONLY
+
+
+/* ----------------- *
+ *  Compiles Dialog  *
+ * ----------------- */
+COMPILE ~%MOD_FOLDER%/dialog/wzrdlich.d~
+
+
+/* ------------------ *
+ *  Compiles Scripts  *
+ * ------------------ */
+COMPILE ~%MOD_FOLDER%/baf/wzrdlich.baf~
+//COMPILE ~%MOD_FOLDER%/scripts/wzrdlic2.baf~	==> Removed because useless.
+EXTEND_TOP ~ar4500.bcs~		~%MOD_FOLDER%/baf/%prefix_ovp%ar4500.baf~	// Pocket Plane
+EXTEND_TOP ~ar3020.bcs~		~%MOD_FOLDER%/baf/ar3020.baf~				// Watcher's Keep -- Imprisoned One
+WITH_TRA ~%MOD_FOLDER%/lang/%s/wzrdset.tra~  BEGIN
+	EXTEND_TOP ~baldur.bcs~		~%MOD_FOLDER%/baf/%prefix_ovp%wzrdset.baf~
+	EXTEND_TOP ~baldur25.bcs~	~%MOD_FOLDER%/baf/%prefix_ovp%wzrdset.baf~
+END
+
+VERBOSE

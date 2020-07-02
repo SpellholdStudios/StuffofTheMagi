@@ -1,14 +1,12 @@
-/* ===  FONCTIONS FOR INTERNAL USE  === */
-
 /* ================================================================================================================================================== *
  * LIST of FUNCTIONS :                                                                                                                                *
  * -------------------                                                                                                                                *
- *  - FUNCTION GW_UPDATE_ITM_DESCRIPTION_TO_EE		: MODIFIES item descriptions to fit EE description format.                         => line #  15  *
- *  - FUNCTION GW_WRITE_EE_ITM_DESCRIPTIONS			: WRITES item descriptions in ITM files according to the game (classical or EE).   => line #  54  *
- *  - MACRO GW_ADJUST_TOOLTIP						: ADDS new columns in tooltip.2da file if needed.                                  => line # 104  *
- *  - MACRO GW_COL_TOOLTIP							: READS tooltip.2da file number of columns.                                        => line # 138  *
- *  - FUNCTION GW_ADD_ITEM_TOOLTIPS					: ADDS a new line in tooltip.2da. file.                                            => line # 153  *
- *  - FONCTION GW_ALTER_ITEM_ALTER_HEADER_FLAGS		: ALTERS itm extender headers new EE (or ToBEx) flags.                             => line # 196  *
+ *  - FUNCTION GW_UPDATE_ITM_DESCRIPTION_TO_EE      : MODIFIES item descriptions to fit EE description format.                         => line #  13  *
+ *  - FUNCTION GW_WRITE_EE_ITM_DESCRIPTIONS         : WRITES item descriptions in ITM files according to the game (classical or EE).   => line #  52  *
+ *  - MACRO GW_ADJUST_TOOLTIP                       : ADDS new columns in tooltip.2da file if needed.                                  => line # 102  *
+ *  - MACRO GW_READ_COL_TOOLTIP                     : READS tooltip.2da file number of columns.                                        => line # 136  *
+ *  - FUNCTION GW_ADD_ITEM_TOOLTIPS                 : ADDS a new line in tooltip.2da. file.                                            => line # 151  *
+ *  - FUNCTION GW_ALTER_ITEM_ALTER_HEADER_FLAGS     : ALTERS itm extender headers new EE (or ToBEx) flags.                             => line # 196  *
  * ================================================================================================================================================== */
 
 /* ========================================================================================================== *
@@ -40,7 +38,7 @@ OUTER_SPRINT GW_desc_updated
 			INCLUDE ~.../inlined/GW_%GW_desc_to_update%.tpp~
 			OUTER_SPRINT usab @9001		// ~[Uu]niquement[ %tab%]+[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~ = ~[Oo]nly[ %tab%]+[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
 			OUTER_SPRINT unus @9002		// ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~ = ~\(Not[ %tab%]+\|Un\)[Uu]sable[ %tab%]+[Bb]y[ %tab%]*:~
-			OUTER_PATCH_SAVE GW_desc_updated ~%GW_desc_updated%~ BEGIN	// Removes all classes and kits (un-)usability flags.
+			OUTER_PATCH_SAVE GW_desc_updated ~%GW_desc_updated%~ BEGIN	// Suppression de toutes les références aux classes et aux kits pouvant ou pas utiliser l'objet. - Removes all classes and kits (un-)usability flags.
 				REPLACE_TEXTUALLY ~\(\([%LNL%%MNL%%WNL%][ %TAB%]*\(%usab%\|%unus%\)[ %TAB%]*\)\(\([%LNL%%MNL%%WNL%].*\)*\)?\)~  ~~
 			END
 		END ELSE BEGIN
@@ -75,7 +73,7 @@ BEGIN
 
 	END ELSE BEGIN			// classical games
 		PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_desc_to_update%" STR_CMP ~~) BEGIN
-			INNER_PATCH_SAVE GWdesc ~%GW_desc_to_update%~ BEGIN		// Removes first character (@ or #).
+			INNER_PATCH_SAVE GWdesc ~%GW_desc_to_update%~ BEGIN		// Suppression du premier caractère (@ ou #) - Removes 1st character (@ or #).
 				REPLACE_TEXTUALLY ~^[@#]~  ~~
 			END
 			PATCH_IF ("%GW_desc_to_update%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
@@ -85,7 +83,7 @@ BEGIN
 			END
 		END
 		PATCH_IF ("%GW_undesc_to_update%" STRING_COMPARE_REGEXP ~^[@#]-?[0-9]+$~ = 0) AND ("%GW_undesc_to_update%" STR_CMP ~~) BEGIN
-			INNER_PATCH_SAVE GWundesc ~%GW_undesc_to_update%~ BEGIN	// Removes first character (@ or #).
+			INNER_PATCH_SAVE GWundesc ~%GW_undesc_to_update%~ BEGIN	// Suppression du premier caractère (@ ou #) - Removes 1st character (@ or #).
 				REPLACE_TEXTUALLY ~^[@#]~  ~~
 			END
 			PATCH_IF ("%GW_undesc_to_update%" STRING_COMPARE_REGEXP ~^[@]-?[0-9]+$~ = 0) BEGIN
@@ -149,37 +147,40 @@ DEFINE_ACTION_MACRO ~GW_READ_COL_TOOLTIP~ BEGIN
 END
 
 
-/* ===================================================================== *
- *  FUNCTION GW_ADD_ITEM_TOOLTIPS: ADDS new line in tooltip.2da. file.   *
- * --------------------------------------------------------------------- *
- *  Parse %GW_tooltips% string chain and adds a new line in tooltip.2da.  *
- * ===================================================================== */
+/* ======================================================================= *
+ *  FUNCTION GW_ADD_ITEM_TOOLTIPS: ADDS a new line in tooltip.2da. file.   *
+ * ----------------------------------------------------------------------- *
+ *  PARSES %GW_tooltips% string chain and adds a new line in tooltip.2da.  *
+ * ======================================================================= */
 
 DEFINE_ACTION_FUNCTION ~GW_ADD_ITEM_TOOLTIPS~
 	STR_VAR	GW_objet	= ~N~	// item code: ~sw1h01~
-			GW_tooltips	= ~~	// tooltips stringref list: ~@123 @124 6620~, takes combination of tra refs and strrefs for as many abilities as you need to specify
+			GW_tooltips	= ~~	// tooltips stringref list: ~@123 @124 6620~, accepts combination of tra refs and strrefs for as many abilities as you need to specify
 BEGIN
 
 	ACTION_IF ("%GW_objet%" STRING_COMPARE_CASE "N") BEGIN
 		ACTION_TO_UPPER GW_objet
 
-	// generates a row to add to tooltip.2da
+	// Generates a new row to be added to tooltip.2da
 		OUTER_TEXT_SPRINT new_row ~%GW_objet%~
-		OUTER_PATCH ~ %GW_tooltips%~ BEGIN // extract each tooltip from GW_tooltips string
+		OUTER_PATCH ~ %GW_tooltips%~ BEGIN	// Extracts each tooltip from GW_tooltips string
 			COUNT_REGEXP_INSTANCES ~[ %TAB%]+\(@?-?[0-9]+\)~ num_tooltips
 			REPLACE_EVALUATE ~[ %TAB%]+\(@?-?[0-9]+\)~ BEGIN
 				PATCH_IF ((~%MATCH1%~ STRING_MATCHES_REGEXP ~@-?[0-9]+~) = 0) BEGIN // tra ref
-					SET GW_tool = RESOLVE_STR_REF ((AT %MATCH1%))
-					TEXT_SPRINT new_row ~%new_row% %GW_tool%~ 	// adds to the row
+					INNER_PATCH_SAVE GW_tooltip ~%MATCH1%~ BEGIN
+						REPLACE_TEXTUALLY ~[@]~  ~~
+					END
+					SET GW_tool = RESOLVE_STR_REF ( (AT GW_tooltip) )
+					TEXT_SPRINT new_row ~%new_row% %GW_tool%~ 	// Adds to the new row
 				END ELSE BEGIN // strref
-					TEXT_SPRINT new_row ~%new_row% %MATCH1%~ 	// adds to the row
+					TEXT_SPRINT new_row ~%new_row% %MATCH1%~ 	// Adds to the new row
 				END
 				TEXT_SPRINT empty_cols ~~
 			END ~~
 		END
 
 		ACTION_IF num_tooltips < (cols_tooltip -1) BEGIN
-			OUTER_FOR (i = (cols_tooltip - 1) ; i > num_tooltips ; --i) BEGIN // generates -1 entries for the number of missing columns
+			OUTER_FOR (i = (cols_tooltip - 1) ; i > num_tooltips ; --i) BEGIN	// Generates -1 entries for the number of missing columns
 				OUTER_TEXT_SPRINT empty_cols ~%empty_cols% -1~
 			END
 		END
@@ -189,7 +190,7 @@ BEGIN
 
 	END
 
-END
+END	// of DEFINE_ACTION_FUNCTION
 
 
 /* ====================================================================================================================================== *
@@ -197,7 +198,7 @@ END
  * -------------------------------------------------------------------------------------------------------------------------------------- *
  *  INTEGER VARIABLES :                                                                                                                   *
  *    - type                : header type (1 = Melee - 2 = Range - 3 = Magical - 4) Launcher - default = "-1", all).                      *
- *    - header              : modifizs specified header (default = 0, matches all headers, used with type = -1).                          *
+ *    - header              : modifies specified header (default = 0, matches all headers, used with type = -1).                          *
  *    - flag_strength       : adds strength bonus, set in bit0  (1 = adds - 0 = remove - default = "-1", no change).                      *
  *    - flag_break          : breakable, set in bit1 (1 = adds - 0 = remove - default = "-1", no change).                                 *
  *    - flag_breaksanctuary : breaks sanctuary (EE), set in bit9 (1 = adds - 0 = remove - default = "-1", no change).                     *
@@ -315,4 +316,4 @@ BEGIN
 
 	END
 
-END
+END	// of DEFINE_ACTION_FUNCTION

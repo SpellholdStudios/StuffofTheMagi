@@ -312,7 +312,6 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 		- Fixed wrong coding in opcodes #83: parameter1 and parameter2 were inverted.
 		- Added Protection from missing vanilla magic projectiles and from missing 1PP projectiles if they exist (EE games and classical 1PP modded games).
 		- Added missing DS values: op#282 (Script: Scripting State Modifier: parameter1 = 1 parameter2 = 23 [179 PICKPOCKETMTPBONUS aka WIZARD_PROTECTION_FROM_NORMAL_MISSILES]) for classical games and op#328 Set state (64 BUFF_PRO_WEAPONS and 109 PROTECTION_FROM_NORMAL_MISSILES) for EE games.
-- last
 
 ## 
 
