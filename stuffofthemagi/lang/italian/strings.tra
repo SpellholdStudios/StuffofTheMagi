@@ -1,0 +1,342 @@
+/* ================= *
+ *  Usability flags  *
+ * ================= */
+//@9001 =~[Uu]tilizzabile[ %tab%]+\([Ss]olo[ %tab%]+\)?[Dd]a[ %tab%]*:~
+@9001 =~[Uu]tilizzabile\([ %tab%]+[Ss]olo+\|[ %tab%]+{Ss]olamente\)?[ %tab%]+[Dd]a[ %tab%]*:~
+@9002 =~[Nn]on[ %tab%]+[Uu]tilizzabile[ %tab%]+[Dd]a[ %tab%]*:~
+
+/* ================= *
+ *  Character names  *
+ * ================= */
+@107 = ~Erevain Beraskána~
+
+/* ======= *
+ *  Items  *
+ * ======= */
+//@108 = ~Mantello~
+@109 = ~Mantello dei Maghi~
+//@110 = ~Il mantello può avere qualsiasi forma ed essere di qualsiasi tipo di stoffa. Le forme più comuni sono un pezzo circolare di tessuto con un foro per la testa e tessuto drappeggiato attorno al collo legato da una catenella, una spilla, una cordicella o spilli.~
+@111 =~Erevain Beraskána ha creato il Mantello dei Maghi esattamente come ha creato tutti gli altri oggetti da Mago. Erevain era un anticonformista tra i Sommi Maghi di Suldanesselar ed era un maestro nell'utilizzare la secolare Trama della Magia selvaggia ancor prima che il Periodo dei Disordini la rendesse di comune conoscenza. Dopo i suoi studi a Candlekeep, Erevain divenne un esperto nelle profezie di Alaundo che, tra l'altro, riguardavano anche la progenie di Bhaal. Intravide che questo periodo di lotte avrebbe causato danno e pericoli agli elfi ed al loro stile di vita a Suldanesselar. Per ragioni sconosciute a tutti, tranne che a lui, Erevain tramandò questo mantello al Sommo Mago Elfo di nome Joneleth, che sarebbe poi divenuto l'Esiliato Irenicus, poco prima della morte di Erevain che avvenne a seguito di una battaglia contro le forze Drow provenienti da Ust Natha due secoli fa. Irenicus non apprezzò mai questo oggetto a causa della sua provenienza, e poco dopo passò al suo apprendista, Suneer.
+Questo è uno dei nove oggetti che costituiscono la serie del cosiddetto Set per Maghi. Si dice che chi si adorna con il Set completo per Maghi potrà guadagnare un bonus per controllare gli effetti caotici della magia selvaggia e fornisce un bonus contro i danni elementali.
+
+STATISTICHE:
+
++2 CA Bonus
++2 a tutti i Tiri Salvezza
+
+Peso: 1
+
+Utilizzabile da:
+ Maghi/Incantatori~
+
+
+//@112 = ~Anello~
+@113 = ~Anello dei Maghi~
+//@114 = ~Un anello è una piccola fascia di metallo prezioso utilizzata come gioiello. Alcuni anelli rari sono stati incantati e hanno acquisito poteri magici. Questi anelli sono molto ricercati, soprattutto dagli avventurieri~
+@115 = ~Questo è l'anello unico fabbricato dall'arcimago Erevain Beraskána. L'Anello dei maghi è stata la penultima creazione del Set per Maghi del Sommo Mago. Subito dopo aver fabbricato questo anello Erevain si incontrò con il negromante Lavok Corthala quando la sfera planare di Lavok ebbe un ultimo contatto con Faerûn circa 200 anni fa. I due in breve tempo vennero ad un duello. Anche se a casa sua Lavok non riuscì ad avere la meglio su Erevain ed il combattimento fu di breve durata. Appena vinto il duello Erevain ebbe un colloquio con Lavok. Si dice che Lavok ottenne il possesso dell'anello, sebbene non poteva utilizzarlo appieno a causa della sua incompetenza di magia selvaggia. Quello che invece guadagnò Erevain dalla sua vittoria è sconosciuto. Come è sconosciuto anche il motivo per il quale Erevain andò a cercare Lavok in quel luogo.
+Questo è uno dei nove oggetti che costituiscono la serie del cosiddetto Set per Maghi. Si dice che chi si adorna con il Set completo per Maghi potrà guadagnare un bonus per controllare gli effetti caotici della magia selvaggia e fornisce un bonus contro i danni elementali.
+
+STATISTICHE:
+
++10 al controllo di tutte le Fluttuazioni Magiche Selvagge
+-2 al tempo di lancio degli incantesimi
++1 incantesimo di livello 1, 2 e 7.
+Protezione dal Risucchio di Livello.
+
+Peso: 1
+
+Utilizzabile da:
+ Maghi/Incantatori~
+
+
+//@116 = ~Abito del Mago~
+@117 = ~Abito dei Maghi~
+//@118 = ~Fin dall'era di Netheril, i maghi hanno imparato ad attribuire varie proprietà magiche agli oggetti che li circondano. Uno degli oggetti preferiti per questi incantesimi è il abito comune. E leggero, economico e tiene bene l'incantesimo, facendone l'equipaggiamento ideale per un mago. Per il loro patrimonio magico, tuttavia, solo i maghi di classe singola, duale e multiclasse possono indossare questi abiti incantati.~
+@119 = ~Questo è il pezzo finale del Set di oggetti magici per Maghi creati da Erevain Beraskána oltre due secoli fa, ed anche il più incantato. Come per il resto degli oggetti per Maghi fabbricati da Erevain perse il possesso di questo abito prima di morire. Come succedeva spesso, Erevain intraprese un duello con un malvagio negromante. In questo caso, Erevain rintracciò il lich Vongoethe. La battaglia di incantesimi che ne seguì quando si scontrarono fu di dimensioni epiche. Abbastanza stranamente, ma come spesso è successo in questo tipo di megaduelli, il risultato fu un pareggio. In questa situazione di stallo i due combattenti ingaggiarono una conversazione. In modo sospetto, ma come successe anche in altre battaglie, Erevain perse uno dei suoi oggetti dei Maghi; questa volta fu l'Abito dei Maghi. Come di consueto in queste situazioni, Erevain anche questa volta non sembrò trarre nessun vantaggio per se stesso.
+Questo è uno dei nove oggetti che costituiscono la serie del cosiddetto Set per Maghi. Si dice che chi si adorna con il Set completo per Maghi potrà guadagnare un bonus per controllare gli effetti caotici della magia selvaggia e fornisce un bonus contro i danni elementali.
+
+STATISTICHE:
+
+Classe Armatura: 2
+Resistenza Magica: +25%
++3 ai Tiri Salvezza contro gli Incantesimi
+
+Peso: 3
+
+Utilizzabile solamente da:
+ Maghi/Incantatori~
+
+
+//@120 = ~Amuleto d'Argento~
+@121 = ~Amuleto dei Maghi~
+//@122 = ~Gli amuleti sono di solito oggetti magici che vengono generalmente indossati attorno al collo appesi a una catena. Il tipo di catena utilizzato aumenta solitamente il valore estetico dell'oggetto, ma non le proprietà magiche. E possibile indossare al collo solo un amuleto.~
+@123 = ~L'Amuleto dei Maghi fu il primo oggetto del Set per Maghi creati dall'arcimago elfo Erevain Beraskána. Rimase di sua proprietà dalla creazione fin quasi alla fine della sua vita. Appena prima di morire in battaglia contro i drow, Erevain diede l'amuleto al suo ultimo apprendista, l'umano Vithal. Vithal, che più tardi sarebbe stato vittima dell'incantesimo Imprigionamento in una battaglia di incantesimi contro i drow del Sottosuolo, diede l'Amuleto dei Maghi ad alcuni seguaci di Helm dediti alla sorveglianza della Fortezza dell'Osservatore. La ragione di questo gesto è sconosciuta. D'altra parte, poiché Erevain è uno dei più grandi praticanti di magia selvaggia la ragione può apparire insignificante e le azioni apparentemente così caotiche e casuali sono impossibili da comprendere.
+Questo è uno dei nove oggetti che costituiscono la serie del cosiddetto Set per Maghi. Si dice che chi si adorna con il Set completo per Maghi potrà guadagnare un bonus per controllare gli effetti caotici della magia selvaggia e fornisce un bonus contro i danni elementali.
+
+STATISTICHE:
+
+Diminuisce il tempo di lancio dell'incantesimo di due
+Immune a Carne in Pietra 
++1 ai Tiri Salvezza contro la Pietrificazione/Metamorfosi
++1 ai Tiri Salvezza contro le Armi da Soffio
+
+Peso: 0
+
+Utilizzabile solamente da: 
+ Maghi/Incantatori~
+
+
+//@124 = ~Stivali~
+@125 = ~Stivali dei Maghi~
+/*@126 = ~Gli stivali vengono di solito fatti a mano dai ciabattini. Gli stivali comuni sono fatti utilizzando una forma, ma quelli di buona qualità sono fatti su misura per il piede di chi li indosserà. 
+
+STATISTICHE:
+
+Peso: 4~*/
+@127 = ~Gli Stivali dei Maghi furono creati dall'arcimago elfo Erevain Beraskána secoli fa. Come i loro equivalenti, questi stivali furono creati per aiutare Erevain durante la sua interminabile ricerca della perfezione mentale. Erevain combattè contro Kangaxx il semi-lich. Non si sa il motivo per cui Erevain andò alla ricerca di Kangaxx, si conosce invece che la battaglia terminò senza né vinti e né vincitori. Per motivi sconosciuti i due negoziarono l'un l'altro per un breve periodo di tempo appena terminò in parità il loro megaduello. Erevain lasciò i suoi preziosi stivali a Kangaxx. Quello che invece ci guadagnò Erevain da questa battaglia di incantesimi non si conosce.
+Questi stivali fanno parte dei nove oggetti che costituiscono la serie del cosiddetto Set per Maghi. Si dice che chi si adorna con il Set completo per Maghi potrà guadagnare un bonus per controllare gli effetti caotici della magia selvaggia e fornisce un bonus contro i danni elementali.
+
+STATISTICHE:
+
+Aura Purificata dopo ogni incantesimo
+Velocità di movimento aumentata del 50%
+
+Peso: 2
+
+Utilizzabile da: 
+ Maghi/Incantatori~
+
+
+//@128 = ~Bastone Rinforzato~
+@129 = ~Bastone dei Maghi~
+/*@130 = ~Il bastone rinforzato è la più semplice e umile delle armi lunghe ed è costituito da un pezzo di legno lungo da 1,8 a 2,7 m. I bastoni rinforzati di alta qualità vengono fatti in duro legno di quercia e sono ricoperti di metallo a entrambe le estremità. Quest'arma deve essere brandita con entrambe le mani.  
+
+STATISTICHE:
+
+Danno: 1D6
+Tipo di danno: schiacciamento
+Peso: 4
+Fattore velocità: 4
+Tipo di competenza: Bastone
+Tipo: a due mani
+Richiede: 5 alla Forza~*/
+@131 = ~Esiste più di un Bastone dei Maghi. E' necessario un arcimago per costruire uno di questo artefatti magici, un po' come per le Sacre Vendicatrici dei paladini, ogni tipo ha le sue somiglianze e le sue differenze. Questo tipo di bastone é direttamente collegato all'immagine della professione del lanciatore di incantesimi, una professione comunque rara. Questo bastone é tra i migliori oggetti che un mago può possedere, è il culmine di complessi incantesimi e di infiniti studi. E' la quintessenza di un oggetto per mago. Questo particolare bastone fu creato dal Sommo Mago Erevain Beraskána. Erevain non disse mai a nessuno che lo possedeva, nemmeno ai suoi apprendisti più fidati, come o perché creò questo set che poi sembrò abbandonare quasi volontariamente. Come venne in possesso di Layene della Runa Contorta rimane un mistero. 
+Questo è uno dei nove oggetti che costituiscono la serie del cosiddetto Set per Maghi. Si dice che chi si adorna con il Set completo per Maghi potrà guadagnare un bonus per controllare gli effetti caotici della magia selvaggia e fornisce un bonus contro i danni elementali.
+
+STATISTICHE:
+
+Classe Armatura: bonus +2
+Tiri Salvezza: bonus +2
+Abilità d'Equipaggiamento: Invisibilità, Immunità allo Charme, Protezione dal Male
+
+  Palla di fuoco-Fulmine
+   Danno: danni combinati della Palla di fuoco e del Fulmine
+   Raggio d'Azione: 50 metri
+   Utilizzo: Tre volte al giorno
+
+Abilità: Intrappolare incantesimi
+   Durata: 8 ore o fino a che 30 livelli di incantesimi non sono stati intrappolati
+   Utilizzo: Una volta al giorno
+
+Abilità di combattimento (ogni colpo): Dissolvi magie  
+Thac0: bonus +2 (colpisce come un'arma +5)
+Danno: 2d6 +2
+Tipo di danno: Schiacciamento
+Fattore velocità: 1
+Tipo di competenza: Bastone Rinforzato
+Tipo: a due mani
+Richiede: 5 alla Forza
+
+Peso: 3
+
+Utilizzabile da:
+ Maghi/Incantatori~
+
+
+//@132 = ~Guanti~
+@133 = ~Guanti dei Maghi~
+//@134 = ~I guanti servono da protezione per le mani. Possono essere di pelle, di piastre o di maglia. Ogni corazza completa dovrebbe includere guanti del tipo più appropriato. I guanti magici tendono a essere più fini, leggeri e più facilmente indossabili delle varietà normali.~
+@135 = ~Questi guanti sono preziosi quasi quanto il venerabile Bastone dei Maghi, e questo paio faceva inizialmente parte di un set creato per trasformare un mago ordinario in un mago straordinario. In verità erano destinati ad un mago in particolare. Questi guanti furono creati da un vecchio mago, Erevain Beraskána. Come sono venuti in possesso di Firkraag non si sa. Non ci sono prove che Erevain e Firkraag si siano mai incontrati. Tuttavia il  mago Conster, che é stato al servizio di Firkraag, fu l'apprendista di Malchimer, un negromante. Malchimer era il braccio destro di Firkraag prima che Conster ne prese il posto. Si sa che Malchimer negoziò qualcosa con Erevain a Candlekeep. Questo perché il Sommo Mago elfo Erevain non aveva familiarità con le biblioteche di Candlekeep. Malchimer era un frequente fornitore di vecchi tomi di quella roccaforte di conoscenza. E' molto probabile che Erevain scambiò i suoi preziosi guanti per ottenere l'assistenza che Malchimer avrebbe potuto offrirgli per l'acquisizione di qualunque conoscenza che Erevain cercava all'interno delle sacre sale di Candlekeep.
+Questo è uno dei nove oggetti che costituiscono la serie del cosiddetto Set per Maghi. Si dice che chi si adorna con il Set completo per Maghi potrà guadagnare un bonus per controllare gli effetti caotici della magia selvaggia e fornisce un bonus contro i danni elementali.
+
+STATISTICHE:
+
+Memorizza un incantesimo supplementare per ogni livello
+Immunità al colpo alle spalle
+
+Peso: 1
+
+Utilizzabile solamente da: 
+ Maghi/Incantatori~
+
+
+//@136 = ~Diadema d'Oro~
+@137 = ~Diadema dei Maghi~
+//@138 = ~Questo sottile diadema d'oro sembra troppo semplice e liscio per essere una corona. Anche se non decorato da gemme, ci sono simboli arcani e criptici incisi lungo la superficie: indizio di un potere nascosto all'interno del diadema stesso.~
+@139 = ~Questo è un magnifico pezzo di artigianato, il Diadema dei Maghi è stata la prima creazione di Erevain Beraskána. Questo oggetto, come gli altri facenti parte del Set, fu creato per ragioni sconosciute e poi perduto dallo stesso Erevain. Tuttavia, una ragione secondaria per la creazione del diadema può essere riferita dal secondo proprietario del diadema dopo Erevain. La richiesta principale per poter indossare il diadema è quella di avere un'intelligenza eccezionale. Ciò permetteva ad Erevain di selezionare i suoi potenziali assistenti. Dopo aver iniziato gli studi che aveva intrapreso a Candlekeep Erevain fece qualcosa di storicamente quasi mai visto per un Sommo Mago elfo. Prese un umano come apprendista. Erevain però era fedele alla Razza Chiara e non insegnò nessuna magia di alto grado al suo nuovo apprendista. Tuttavia al giovane mago apprendista insegnò la basi tradizionali della magia. Il giovane mago che Erevain prese sotto la sua ala protettrice si chiamava Vithal. Vithal era un improbabile candidato per quel tipo di apprendistato poiché oltre ad essere un umano era anche molto egocentrico. Il motivo per cui Erevain ruppe la tradizione e si dedicò ad insegnare ad un umano non si conosce. E' accertabile che Vithal fu inviato in una funesta spedizione nel Sottosuolo da Erevain per esplorare le connessioni con i vari piani elementali. E' probabile che Sendai prese questo diadema dalle stesse persone che imprigionarono Vithal nel Sottosuolo.
+Questo è uno dei nove oggetti che costituiscono la serie del cosiddetto Set per Maghi. Si dice che chi si adorna con il Set completo per Maghi potrà guadagnare un bonus per controllare gli effetti caotici della magia selvaggia e fornisce un bonus contro i danni elementali.
+
+STATISTICHE:
+
+Abilità d'equipaggiamento: Vocalizzazione, Infravisione
++1 all'Intelligenza
+Scudo Mentale (Immune to Regressione Mentale, Charme Distruttivo, ecc.)
+Richiede: 18 all'Intelligenza
+Peso: 1
+
+Utilizzabile da:
+ Maghi/Incantatori~
+
+
+//@140 = ~Cinghia~
+@141 = ~Cinghia dei Maghi~
+/*@142 = ~Le cinghie generalmente somigliano alle cinture. A differenza delle cinture, le cinghie non vengono utilizzate per tenere su pantaloni o tute, ma per trasportare borse, foderi e cose del genere.  
+
+STATISTICHE:
+
+Peso: 2~*/
+@143 = ~Questa cintura é simile agli altri pezzi del Set creati dal Sommo Mago, il leggendario Erevain Beraskána. Erevain era famoso per aver creato questi pezzi, li utilizzò per un breve periodo di tempo e poi misteriosamente ne perse di possesso. A volte sembra averli volontariamente ceduti o abbandonati. Tuttavia non sembra essere questo il caso della Cinghia dei Maghi. Almeno non apparentemente. Erevain era uno dei Sommi Maghi elfi di Suldanessellar della Foresta di Tethir. Durante un'incursione di drow al reame elfico Erevain ingaggiò da solo una battaglia contro un gran numero di drow. Riuscì a rimandarli indietro utilizzando i suoi incantesimi. In quel momento la Cinghia dei Maghi era il solo oggetto del set che lui ancora possedeva. Il tutto fu riportato da un esploratore elfo che vide la battaglia e disse anche che Erevain alla fine morì a causa dalle forze combinate di maghi drow e di sacerdoti allineati contro Erevain. Ma l'esploratore giurò anche che, sebbene il corpo di Erevain era stato distrutto, sentì comunque ridere Erevain quando i drow si stavano ritirando verso il Sottosuolo poco prima che i rinforzi di Suldanesselar arrivarono sulla scena della battaglia. Si crede che la Matrona Ardulace rivendicò la cinghia come trofeo di guerra nella campagna, fallita, dei drow contro Suldanesselar.
+Questo è uno dei nove oggetti che costituiscono la serie del cosiddetto Set per Maghi. Si dice che chi si adorna con il Set completo per Maghi potrà guadagnare un bonus per controllare gli effetti caotici della magia selvaggia e fornisce un bonus contro i danni elementali.
+
+STATISTICHE:
+
+Migliora la velocità di lancio di Incantesimi di uno
+Protezione dai Proiettili Normali
++25% di Resistenza alla Magia
+
+Peso: 1
+
+Utilizzabile da:
+ Maghi/Incantatori~
+
+@144 = ~Questo é il pezzo finale del set di sette pezzi creati da Erevain Beraskána oltre due secoli fa, ed inoltre è il più pesantemente incantato. Incrementa la classe armatura dell'utilizzatore come una corazza di piastre completa sebbene sia alquanto leggero.
+
+STATISTICHE:
+
+Classe Armatura: 1
+Resistenza Magica: +50%
+Tutte le altre resistenze: +25%
+Tiri Salvezza: bonus +2, +3 al Tiro Salvezza contro Incantesimi
+Rigenerazione: 3 punti ferita per round
+
+Peso: 3
+
+Utilizzabile solo da:
+ Maghi/Incantatori~
+
+@145 = ~Ecco. Il glorioso Amuleto dei Maghi, ancora un'altra parte del set completo. E' stato il primo oggetto del set ad essere stato creato, ed é molto potente. Protegge colui che lo indossa dalla metamorfosi ostile, riducendo il tempo di lancio degli incantesimi e fornendo una resistenza alla magia del 25% a colui che lo utilizza.
+
+STATISTICHE:
+
+Intelligenza: bonus +1
+Resistenza Magica: +25%
+Riduce il tempo di lancio degli incantesimi di tre
+Immune a Carne in Pietra 
+Immune alle armi normali
++1 al Tiro Salvezza contro Pietrificazione/Metamorfosi 
+
+Peso: 0
+
+Utilizzabile solo da: 
+ Maghi/Incantatori~
+
+@146 = ~Come le loro controparti, questi stivali sono stati creati per aiutare i maghi nella loro infinita ricerca della perfezione mentale. O piuttosto aiutare il loro creatore nella sua ricerca della perfezione mentale. Migliorano il tempo di lancio degli incantesimi e forniscono un significativo bonus ai tiri salvezza ed anche alcuni altri "piccoli benefici".
+
+STATISTICHE:
+
+Diminuisce il tempo di lancio degli incantesimi di due unità.
+Aura Purificata dopo ogni incantesimo
+Tiri Salvezza: bonus +2
+Velocità di movimento incrementata del 20%
+
+Peso: 2
+
+Utilizzabile solo da: 
+ Maghi/Incantatori~
+
+@147 = ~Questo tipo di bastone é direttamente collegato all'immagine della professione del lanciatore di incantesimi, una professione comunque rara. E' uno dei più potenti strumenti che un mago può avere, il culmine di complessi incantesimi e di studi senza fine. Questo particolare esempio è ottimo nella lotta in mischia, conferisce Invisibilità e offre protezione contro lo Charme e il Male. Può anche lanciare l' incantesimo Trappola, lanciare una combinazione di fulmini e palle di fuoco, e Dissolvere magie. Il massimo degli strumenti di un mago. Faceva originariamente parte di un set di sette pezzi creati secoli fa da un potente elfo mago chiamato Erevain Beraskána.
+
+STATISTICHE:
+
+Classe Armatura: bonus +2
+Tiri Salvezza: bonus +2
+Abilità durante l'equipaggiamento: Invisibilità, Immunità allo Charme, Protezione dal Male
+
+  Palla di fuoco-Fulmine
+   Danno: danni combinati della Palla di fuoco e del Fulmine
+   Raggio d'azione: 50 metri
+   Utilizzo: Tre volte al giorno
+
+Abilità: Intrappolare Incantesimi
+   Durata: 8 ore o fino a che 30 livelli di incantesimi non sono stati intrappolati
+   Utilizzo: Una volta al giorno
+
+Abilità di combattimento (ogni colpo): Dissolvi magie  
+Thac0: bonus +2 (colpisce come n'arma +5)
+Danno: 2d6 +2
+Tipo di danno: Schiacciamento
+Fattore velocità: 1
+Tipo di competenza: Bastone Rinforzato
+Tipo: a due mani
+Richiede: 5 alla Forza
+
+Peso: 3
+
+Utilizzabile da:
+ Maghi/Incantatori~
+
+@148 = ~Questi guanti sono preziosi quasi quanto il venerabile Bastone dei Maghi, e questo paio faceva inizialmente parte di un set creato per trasformare un mago ordinario in un mago straordinario. In verità era destinato ad un mago in particolare. Questi guanti furono creati da un vecchio mago, Erevain Beraskána. Forniscono un bonus alla classe armatura, degli incantesimi supplementari ed alcune altre capacità.
+
+STATISTICHE:
+
+Intelligenza: bonus +1
+Memorizza due incantesimi supplementari di ogni livello
+Classe Armatura: bonus +1
+Immunità al colpo alle spalle
+
+Peso: 1
+
+Utilizzabile solamente da: 
+ Maghi/Incantatori~ 
+
+@149 = ~Questo diadema é simile agli altri pezzi del set. A causa della sua locazione vicino al cervello é in grado di fornire una protezione superiore simile ad uno scudo mentale e fornisce incantesimi supplementari di alto livello. Funzionerà solamente sui maghi che possiedono un'elevata intelligenza.
+
+STATISTICHE:
+
+Abilità d'equipaggiamento: Vocalizzazione, Infravisione
+Memorizza tre incantesimi supplementari di livello 8 e di livello 9
+Classe Armatura: bonus +1
+Lancia Regressione Mentale 1 volta al giorno
+Scudo Mentale (Immune alla Regressione Mentale, allo Charme Distruttivo, ecc.)
+Requires: 18 Intelligence
+
+Utilizzabile da:
+  Maghi/Incantatori~
+
+@150 = ~Questa cintura é parte di uno dei pezzi del set creati da Erevain Beraskána, ed é forse il meno incantato dei sette. Fornisce l'immunità alle armi da lancio di tutte le forme ed inoltre diminuisce il tempo di lancio di tutti gli incantesimi di una unità.
+
+STATISTICHE:
+
+Diminuisce il tempo di lancio degli incantesimi di uno
+Protezione da tutti i proiettili
+
+Peso: 1
+
+Utilizzabile da:
+ Maghi/Incantatori~
+
+/*@151 = ~Custodia della pergamena~
+@152 = ~Questo robusto contenitore è fatto in modo che diverse pergamene possano essere messe al suo interno e tenute al sicuro dal fuoco, dalla pioggia o dall'elettricità -- il genere di problemi che un mago avventuriero si trova spesso ad affrontare.
+
+STATISTICHE:
+
+Capacità: 20 pergamene
+Peso: 2~*/
+
+@153 = ~Questa Custodia della pergamena è stata modificata dallo stesso Erevain Beraskána e può contenere un numero illimitato di pergamene.
+
+STATISTICHE:
+
+Capacità: Pergamene illimitate
+
+Peso: 2~

@@ -43,7 +43,7 @@ Note: If you choose the original overpowered items you will only end up with 7 i
 
 **Never forget:** All the original work was done by Victor Straffe at Sorcerer's Place. Kevmus updated it to WeiDU, added the more balanced items, and "bugfixed like a madman".
 
-<details><summary><ins>Minor spoiler for lazy players!</ins</summary>
+<details><summary><ins>Minor spoiler for lazy players!</ins></summary>
 <p><br>
 This mod adds the Stuff of the Magi set to the following creatures:
 
