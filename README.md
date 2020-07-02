@@ -15,7 +15,7 @@ Baldur's Gate Trilogy and EET<h3>
 **Mod Forum:** <a href="http://www.shsforums.net/topic/60857-stuff-ot-the-magi-updated-to-v600-with-ee-compatibility/">Stuff of The Magi</a><br>
 
 
-**Note:** This mod was first released at <a href="https://sorcerers.net/Games/BG2/index_mods_hosted_items_spells2.php">Sorcerer's Place</a> and has been converted to WeiDU and officially mirrored at <a href="http://www.shsforums.net/files/category/49-mod-resurrections/">Spellhold Studios Mod Resurrections mirror</a> by <a href="http://www.shsforums.net/user/10434-kevmus/">Kevmus</a>.<br>
+**Note:** This mod was first released at <a href="https://sorcerers.net/Games/BG2/index_mods_hosted_items_spells2.php">Sorcerer's Place</a> and has been converted to WeiDU and officially mirrored at <a href="http://www.shsforums.net/files/category/49-mod-resurrections/">Spellhold Studios Mod Resurrections mirror</a> by <a href="http://www.shsforums.net/user/10434-kevmus/">Kevmus</a>.<br><br>
 
 
 [Read the mod's readme](https://spellholdstudios.github.io/readmes/sotm-readme-english.txt) - <a href="README-FR.md">Français</a>
@@ -25,7 +25,7 @@ Baldur's Gate Trilogy and EET<h3>
 &nbsp;
 
 <div align="center">
-<a href="#intro">Overview</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Components</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#versions">Version History</a></br>
+<a href="#intro">Overview</a> &#8226; <a href="#compat">Compatibility</a> &#8226; <a href="#installation">Installation</a> &#8226; <a href="#components">Components</a> &#8226; <a href="#credits">Credits</a> &#8226; <a href="#versions">Version History</a></br>
 </div>
 
 
@@ -43,8 +43,8 @@ Note: If you choose the original overpowered items you will only end up with 7 i
 
 **Never forget:** All the original work was done by Victor Straffe at Sorcerer's Place. Kevmus updated it to WeiDU, added the more balanced items, and "bugfixed like a madman".
 
-<details><summary>Minor spoiler for lazy players!</summary>
-<p>
+<details><summary><ins>Minor spoiler for lazy players!</ins</summary>
+<p><br>
 This mod adds the Stuff of the Magi set to the following creatures:
 
 - Robe: Vongoethe.</br>
@@ -55,7 +55,7 @@ This mod adds the Stuff of the Magi set to the following creatures:
 - Circlet: Sendai.</br>
 - Belt: Matron Mother Ardulace.</br>
 - Cloak: Suneer in Rillifane Temple (Suldanessellar).</br>
-- Ring: Lavok.</br>
+- Ring: Lavok.
 </p>
 </details><br>
 
