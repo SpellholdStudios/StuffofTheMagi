@@ -15,7 +15,7 @@ Baldur's Gate Trilogy and EET<h3>
 **Mod Forum:** <a href="http://www.shsforums.net/topic/60857-stuff-ot-the-magi-updated-to-v600-with-ee-compatibility/">Stuff of The Magi</a>  
 
 
-[Read the mod's readme](https://spellholdstudios.github.io/readmes/sotm-readme-english.txt) [Français](https://spellholdstudios.github.io/readmes/sotm-readme-french.txt)
+[Read the mod's readme](https://spellholdstudios.github.io/readmes/sotm-readme-english.txt) - <a href="README-FR.md">Français</a>
 
 [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/643-stuff-of-the-magi-weidu/)<br>
 
