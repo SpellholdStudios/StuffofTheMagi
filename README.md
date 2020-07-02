@@ -15,14 +15,14 @@ Baldur's Gate Trilogy and EET<h3>
 **Mod Forum:** <a href="http://www.shsforums.net/topic/60857-stuff-ot-the-magi-updated-to-v600-with-ee-compatibility/">Stuff of The Magi</a>  
 
 
-[Read the mod's readme](https://spellholdstudios.github.io/readmes/sotm-readme-english.txt)
+[Read the mod's readme](https://spellholdstudios.github.io/readmes/sotm-readme-english.txt) [Français](https://spellholdstudios.github.io/readmes/sotm-readme-french.txt)
 
 [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/643-stuff-of-the-magi-weidu/)<br>
 
 &nbsp;
 
 <div align="center">
-<a href="#intro">Overview</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Components</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#versions">Versions History</a></br>
+<a href="#intro">Overview</a> &#x2B25; <a href="#compat">Compatibility</a> &#x2B25; <a href="#installation">Installation</a> &#x2B25; <a href="#components">Components</a> &#x2B25; <a href="#credits">Credits</a> &#x2B25; <a href="#versions">Version History</a></br>
 </div>
 
 
@@ -119,19 +119,19 @@ In addition to the methods above for removing individual components, you can com
 ## <a name="components" id="components"></a>Components
 
 As of v6.0.0, the installer splits main component into four sub components, letting the player decide which one he/she wants to install.  
-The number of each is the component DESIGNATED number which gives it a fixed install position and allows automated installers to specify component choices.<br /><br />
+The number of each is the component DESIGNATED number which gives it a fixed install position and allows automated installers to specify component choices.<br />
 
 ## 
 
 **0. Use new, less cheesy items AND Add them to creatures' equipment** (recommended)  
 **1. Use new, less cheesy items AND Add them to creatures' inventory**  
-**2. Use original, overpowered items AND Add them to creatures' equipment** 
+**2. Use original, overpowered items AND Add them to creatures' equipment**  
 **3. Use original, overpowered items AND Add them to creatures' inventory**  
 
 ## 
 
-Please note that the recommended installation options are Use new, less cheesy items and Add them to creatures' equipment<hr>
-If you choose "*Add items to creatures' equipment*", enemies will use these items against you while "*Add items to creature's inventory*" option, won't change difficulty of fights.
+:warning: Please note that the recommended installation options are "*Use new, less cheesy items*" and "*Add them to creatures' equipment*".<br>
+If you choose "*Add items to creatures' equipment*", enemies will use these items against you, while "*Add items to creature's inventory*" option, won't change difficulty of fights.
 
 <div align="right"><a href="#top">Back to top</a></div>
 
@@ -245,14 +245,14 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 		- Modified opcode #20 (Invisibility) resistance: set to 3 Dispel/Bypass resistance.
 		- Added missing opcodes for a full Immunity to Charm effects: op#296 Protection from Specific Animation (SPNWCHRM), op#267 (protection from string = 8364 *Dominated* - 14780 *Dire charmed* - 14672 *Charmed*). Fixed opcode #142 (Display Special Effect Icon) = replaced wrong parameter2 28 (Protection from Magic) with 52 (Mind Shield).
 		- Removed ugly Protection from Evil glowing colors: Glow Pulse [9] effect
-		- Added missing DS values (117 PROTECTION_FROM_EVIL).
+		- Added missing DS values {117 PROTECTION_FROM_EVIL].
 		- Replaced Dispel magic effects with more accurate BG2 Fixpack ones.
 		- Fireball-Lightning Bolt ability: added *Break Sanctuary* flag for EE games.
 		- Spell trap ability: replaced with STAF11.spl.
 		- Added 1PP compatibility with EE games and classical 1PP modded games: added Glowing staff animation (and colors) and harmonized colors item.
 		- Appended tooltip.2da: *Staff of the Magi, Fireball-Lightning, Spell Trap*.
 	- <ins>Gauntlets of the Magi</ins> (wzrdbrac):
-		- Updated item description (was missing +1 Intelligence)
+		- Updated item description (was missing +1 Intelligence).
 	- <ins>Circlet of the Magi</ins> (wzrdhelm):
 		- Item description: added missing Weight (1).
 		- Added missing opcodes for a full Immunity to Silence effects: op#169 (Immunity Special Effect Icon = 34 Silenced) and op#267 (protection from string = 14002 *Silence* - 14676 *Silenced*).
@@ -262,10 +262,9 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 	- <ins>Girdle of the Magi</ins> (wzrdbelt):
 		- Added missing opcode #142 (Display portrait icon): 11 (Protection from Missiles).
 		- Fixed wrong coding in opcodes #83: parameter1 and parameter2 were inverted.
-		- Added missing Protection from normal 1PP projectiles if they exist (EE games and classical 1PP modded games): 1arow01, 1bolt01, 1dagg05, 1dart01
+		- Added missing Protection from normal 1PP projectiles if they exist (EE games and classical 1PP modded games): 1arow01, 1bolt01, 1dagg05, 1dart01.
 		- Added missing 25% Magic resistance opcode.
 		- Added missing DS values: op#282 (Script: Scripting State Modifier: parameter1 = 1 parameter2 = 23 [179 PICKPOCKETMTPBONUS aka WIZARD_PROTECTION_FROM_NORMAL_MISSILES]) for classical games and op#328 Set state (64 BUFF_PRO_WEAPONS and 109 PROTECTION_FROM_NORMAL_MISSILES) for EE games.
-
 - Option 2: "*Use original, overpowered items*"
 	- <ins>Robe of the Magi</ins> (wzrdclck):
 		- Fixed wrong weight (3 - was 2).
@@ -273,7 +272,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 		- Added DS value for EE games: op#328 Set state (65 BUFF_PRO_DAMAGE).
 	- <ins>Amulet of the Magi</ins> (wzrdamul):
 		- Replaced Protection from Flesh to Stone spell opcodes (#206) with full effects granting immunity to Petrification.
-		- Removed all inaccurate opcodes #206 (Protection from Spell) protecting from Polymorph Other spells with a +1 bonus to Save vs. Polymorph.
+		- Replaced all inaccurate opcodes #206 (Protection from Spell) protecting from Polymorph Other spells with a +1 bonus to Save vs. Polymorph.
 		- Added missing DS value: op#282 (Script: Scripting State Modifier: parameter1 = 1 - parameter2 = 20 [176 LOCKPICKINGMTPBONUS aka WIZARD_PROTECTION_FROM_PETRIFICATION]) for classical games and op#328 Set state (107 PROTECTION_FROM_PETRIFICATION) for EE games.
 		- Added missing DS values: op#282 (Script: Scripting State Modifier: parameter1 = 1 - parameter2 = 25 [181 DETECTILLUSIONSMTPBONUS aka PROTECTION_FROM_NORMAL_WEAPONS]) for classical games and op#328 Set state Set State (111 PROTECTION_FROM_NORMAL_WEAPONS and 64 BUFF_PRO_WEAPONS) for EE games.
 	- <ins>Boots of the Magi</ins> (wzrdboot):
@@ -294,6 +293,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 		- Fixed wrong coding in opcodes #83: parameter1 and parameter2 were inverted.
 		- Added Protection from missing vanilla magic projectiles and from missing 1PP projectiles if they exist (EE games and classical 1PP modded games).
 		- Added missing DS values: op#282 (Script: Scripting State Modifier: parameter1 = 1 parameter2 = 23 [179 PICKPOCKETMTPBONUS aka WIZARD_PROTECTION_FROM_NORMAL_MISSILES]) for classical games and op#328 Set state (64 BUFF_PRO_WEAPONS and 109 PROTECTION_FROM_NORMAL_MISSILES) for EE games.
+- last
 
 ## 
 
