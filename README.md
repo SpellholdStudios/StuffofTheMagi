@@ -2,7 +2,7 @@
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20Italian%20%7C%20Russian&color=limegreen)
 
-<div align="center"><h1></a>Stuff of The Magi (WIP)</h1>
+<div align="center"><h1></a>Stuff of The Magi</h1>
 
 <h3>A mod hosted by Spellhold Studios for Baldur's Gate II: Throne of Bhaal (classical and EE games),
 Baldur's Gate Trilogy and EET<h3>
@@ -34,7 +34,7 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## <a name="intro" id="intro"></a>Overview
 
-This mod adds a new set of Mage items scattered through the game. Please read <a href="https://spellholdstudios.github.io/sotm-spoilers.txt">sotm-spoilers.txt</a> for details.
+This mod adds a new set of Mage items scattered through the game. Please read <a href="https://spellholdstudios.github.io/readmes/sotm-spoilers.txt">sotm-spoilers.txt</a> for details.
 
 Once you gather all the items, the one who equip them all gain an exceptional bonus. Also, if you have all items, you will meet someone in the Pocket Plane who will want to speak with you...
 

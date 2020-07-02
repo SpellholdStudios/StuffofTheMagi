@@ -12,14 +12,14 @@ Note: If you choose the original overpowered items you will only end up with 7 i
 
 This mod adds the Stuff of the Magi set to the following creatures:
 
-- Robe: Vongoethe.</br>
-- Amulet: Demogorgon.</br>
-- Boots: Kangaxx.</br>
-- Staff: Mage (Layene) in Twisted Rune.</br>
-- Bracers: Firkraag.</br>
-- Circlet: Sendai.</br>
-- Belt: Matron Mother Ardulace.</br>
-- Cloak: Suneer in Rillifane Temple (Suldanessellar).</br>
+- Robe: Vongoethe.
+- Amulet: Demogorgon.
+- Boots: Kangaxx.
+- Staff: Mage (Layene) in Twisted Rune.
+- Bracers: Firkraag.
+- Circlet: Sendai.
+- Belt: Matron Mother Ardulace.
+- Cloak: Suneer in Rillifane Temple (Suldanessellar).
 - Ring: Lavok.
 
 
