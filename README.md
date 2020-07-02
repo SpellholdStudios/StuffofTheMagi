@@ -12,7 +12,10 @@ Baldur's Gate Trilogy and EET<h3>
 
 **Original Author:** Victor Straffe  
 **Mod Website:** <a href="http://www.shsforums.net/forum/127-mod-resurrections/">Spellhold Studios</a>  
-**Mod Forum:** <a href="http://www.shsforums.net/topic/60857-stuff-ot-the-magi-updated-to-v600-with-ee-compatibility/">Stuff of The Magi</a>  
+**Mod Forum:** <a href="http://www.shsforums.net/topic/60857-stuff-ot-the-magi-updated-to-v600-with-ee-compatibility/">Stuff of The Magi</a><br>
+
+
+**Note:** This mod was first released at <a href="https://sorcerers.net/Games/BG2/index_mods_hosted_items_spells2.php">Sorcerer's Place</a> and has been converted to WeiDU and officially mirrored at <a href="http://www.shsforums.net/files/category/49-mod-resurrections/">Spellhold Studios Mod Resurrections mirror</a> by <a href="http://www.shsforums.net/user/10434-kevmus/">Kevmus</a>.<br>
 
 
 [Read the mod's readme](https://spellholdstudios.github.io/readmes/sotm-readme-english.txt) - <a href="README-FR.md">Français</a>
@@ -33,12 +36,28 @@ Baldur's Gate Trilogy and EET<h3>
 
 This mod adds a new set of Mage items scattered through the game. Please read <a href="https://spellholdstudios.github.io/sotm-spoilers.txt">sotm-spoilers.txt</a> for details.
 
-Also, if you have all items, you will meet someone in the Pocket Plane who will want to speak with you...
-Si vous possédez tous les objets, celui qui les porte tous obtient un bonus exceptionnel, et vous rencontrerez quelqu'un qui voudra vous parler dans l'antichambre....
+Once you gather all the items, the one who equip them all gain an exceptional bonus. Also, if you have all items, you will meet someone in the Pocket Plane who will want to speak with you...
 
 Note: If you choose the original overpowered items you will only end up with 7 items instead of 9, no cape nor ring.
 
-**Never forget:** All the original work was done by Victor Straffe at Sorcerer's Place.
+
+**Never forget:** All the original work was done by Victor Straffe at Sorcerer's Place. Kevmus updated it to WeiDU, added the more balanced items, and "bugfixed like a madman".
+
+<details><summary>Minor spoiler for lazy players!</summary>
+<p>
+This mod adds the Stuff of the Magi set to the following creatures:
+
+- Robe: Vongoethe.</br>
+- Amulet: Demogorgon.</br>
+- Boots: Kangaxx.</br>
+- Staff: Mage (Layene) in Twisted Rune.</br>
+- Bracers: Firkraag.</br>
+- Circlet: Sendai.</br>
+- Belt: Matron Mother Ardulace.</br>
+- Cloak: Suneer in Rillifane Temple (Suldanessellar).</br>
+- Ring: Lavok.</br>
+</p>
+</details><br>
 
 
 <hr>
@@ -181,7 +200,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 
 ## <a name="versions" id="versions"></a>Version History
 
-##### Version 6.0.0 (July , 2020)
+##### Version 6.0.0 (July 2, 2020)
 
 <ins>Major updates:</ins>
 - Added *stuffofthemagi.ini* metadata file to support AL|EN's "Project Infinity".
