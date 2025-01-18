@@ -1,3 +1,9 @@
+<hr>
+
+:warning: **The maintenance and support of this project has been moved to a [new repository](https://github.com/Spellhold-Studios/Stuff-of-the-Magi).**
+
+<hr><br>
+
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/StuffofTheMagi?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20Italian%20%7C%20Russian&color=limegreen)
@@ -18,7 +24,7 @@ Baldur's Gate Trilogy and EET<h3>
 **Note:** This mod was first released at <a href="https://sorcerers.net/Games/BG2/index_mods_hosted_items_spells2.php">Sorcerer's Place</a> and has been converted to WeiDU and officially mirrored at <a href="http://www.shsforums.net/files/category/49-mod-resurrections/">Spellhold Studios Mod Resurrections mirror</a> by <a href="http://www.shsforums.net/user/10434-kevmus/">Kevmus</a>.<br><br>
 
 
-[Read the mod's readme](https://spellholdstudios.github.io/readmes/sotm-readme-english.txt) - <a href="README-FR.md">FranÁais</a>
+[Read the mod's readme](https://spellholdstudios.github.io/readmes/sotm-readme-english.txt) - <a href="README-FR.md">Fran√ßais</a>
 
 [Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/643-stuff-of-the-magi-weidu/)<br>
 
@@ -173,7 +179,7 @@ If you choose "*Add items to creatures' equipment*", enemies will use these item
 - Gwendolyne: Released version 6.0.0.
 - ilot: Italian translation.
 - The BiG World Textpack Russian team: Russian translation.
-- Anastasya Zakharova: <a href="https://www.artstation.com/artwork/AznzX">Matatel portrait</a> for Erevain Berask·na.
+- Anastasya Zakharova: <a href="https://www.artstation.com/artwork/AznzX">Matatel portrait</a> for Erevain Berask√°na.
 - AL|EN: Wrote <a href="https://forums.beamdog.com/discussion/78364/infinity-auto-packager-automatically-generate-and-adds-mod-packages-to-release-when-you-publish-it">Infinity Auto Packager</a> tool which automatically provides Windows, Linux and Mac versions in the same archive file.
 
 If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="http://www.shsforums.net/topic/60857-stuff-ot-the-magi-updated-to-v600-with-ee-compatibility/">mod forum</a>.</br>
@@ -217,7 +223,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - Fixed an installation issue preventing the player wearing whole Stuff of the Magi set to gain an extra bonus if Option 2 ("*Use original, overpowered items*") was selected.
 - Does not compile anymore *wzrdlich.baf* twice.
 - wzrdlich.cre: moved RNDTREnn items from quick item slots to inventory.
-- Provided a portrait to Erevain Berask·na.
+- Provided a portrait to Erevain Berask√°na.
 - Updated *string.tra* files for compatibility with GW_UPDATE_ITM_DESCRIPTION_TO_EE WeiDU function requirements which automatically removes usability restrictions for EE games.
 - Added foreign languages WeiDU prompts whenever possible.
 - Split *setup.tra* file into separate thematic files for more comfortable readability.
